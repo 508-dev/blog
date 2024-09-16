@@ -2,6 +2,8 @@
 
 508.dev's blog.
 
+508.dev LLC is a USA-based company that helps organizations find the best offshore talent. On the flip side, we help the best local talent connect with roles that are befitting their experience. As a co-op, 508.dev can offer unprecedented levels of ownership to our members, while offering highly motivated talent to our clients at unbeatable margins. Learn more at [508.dev](https://508.dev).
+
 ## Local Development
 
 1. Ensure you have `hugo` installed. See: https://gohugo.io/getting-started/quick-start/
