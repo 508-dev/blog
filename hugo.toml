@@ -1,0 +1,4 @@
+baseURL = 'https://blog.508.dev/'
+languageCode = 'en-us'
+title = '508.dev Blog'
+theme = 'FixIt'
