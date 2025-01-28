@@ -1,5 +1,5 @@
 ---
-title: Navigating Taiwan Tech Job Market as a foreigner
+title: Navigating Taiwan's Tech Job Market as a Foreigner
 subtitle: A Comprehensive Guide for Foreign Professionals
 date: 2025-01-07T22:08:25+08:00
 slug: tech-job-market
@@ -47,7 +47,7 @@ Why? Because I realized that programming was something I truly enjoyed. I stoppe
 
 # Why Consider Taiwan for Your Tech Career?
 
-Taiwan boasts a vibrant and rapidly growing tech scene, supported by a strong infrastructure and a government that prioritizes innovation. With its blend of traditional and modern cultures, Taiwan provides a unique environment for personal and professional growth. The country's high standard of living, best healthcare system in the world, and opportunities in many different industries make it an appealing destination for tech professionals from around the world.
+Taiwan boasts a vibrant and rapidly growing tech scene, supported by a strong infrastructure and a government that prioritizes innovation. With its blend of traditional and modern cultures, Taiwan provides a unique environment for personal and professional growth. The country's high standard of living, one of the best healthcare systems in the world, and opportunities in many different industries make it an appealing destination for tech professionals from around the world.
 
 Here are some reasons to consider Taiwan:
 - **Diverse tech opportunities**: From startups to FAANG companies, Taiwan offers a range of roles.
