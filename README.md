@@ -8,7 +8,7 @@
 
 1. Ensure you have `hugo` installed. See: https://gohugo.io/getting-started/quick-start/
 2. Clone this repo
-3. In the new directory to which you cloned this repo, you can run `hugo serve` to create a local webserver running on `localhost:1313`, where you can view a hot-reloading version of the blog.
+3. In the new directory to which you cloned this repo, run `git submodule update --init --recursive` to initialize [FixIt](https://github.com/hugo-fixit/FixIt) submodule inside themes folder, then you can run `hugo serve` to create a local webserver running on `localhost:1313`, where you can view a hot-reloading version of the blog.
 
 ## Deployment
 
