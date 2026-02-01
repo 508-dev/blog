@@ -27,7 +27,6 @@ hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRelated: false
 hiddenFromFeed: false
-summary:
 resources:
   - name: python
     src: python.png

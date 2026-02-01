@@ -23,7 +23,6 @@ hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRelated: false
 hiddenFromFeed: false
-summary:
 resources:
   - name: featured-image
     src: coop.jpg
@@ -41,7 +40,6 @@ summary: 508.dev is a co-op. A co-op is a type of business where the workers are
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-
 
 508.dev LLC is a software co-op, also known as a software [ cooperative ](https://en.wikipedia.org/wiki/Cooperative). Our business structure differs from traditional corporations in many ways, but the largest differences involve ownership, profit, and decision making. As a co-op, all members are partial owners of 508.dev, and our value is that no member should profit off the labor of another member. Furthermore, we employ a consensus-based decision making framework that ensure all members have the ability to steer the direction of our co-op, help us explore interesting new directions, and ensure we stick to our values.
 
