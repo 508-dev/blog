@@ -1,58 +1,43 @@
 ---
-title: "Part 4: Smart Contracts + AI Agents"
+title: "Part 4: AI for Blockchain Fraud & Anomaly Detection"
 date: 2026-02-10
 author: "Tom Wang"
 tags: ["AI", "Web3", "Blockchain", "Cloud", "Engineering"]
 series: "AI Meets Web3: Reality, Architecture, and the Future"
-summary: "Part 4 of AI Meets Web3: Reality, Architecture, and the Future."
+summary: "Using ML to detect on-chain fraud and anomalies: patterns, features, model choices, enforcement hooks, and production pitfalls like drift."
 ---
-
 ## 📚 Series Navigation  
   
 👉 **[Part 1: AI, Blockchain, and Cloud – Who Does What](/posts/ai-blockchain-cloud-who-does-what/)**  
 👉 **[Part 2: Why Fully Decentralized AI Is Mostly a Myth](/posts/why-fully-decentralized-ai-is-a-myth/)**  
 👉 **[Part 3: How Cloud ML Pipelines Power Web3 Analytics](/posts/web3-data-to-cloud-ml-pipelines/)**  
-👉 **Part 4: Smart Contracts + AI Agents**  
-👉 **[Part 5: Trust, Governance, and Auditable AI](/posts/smart-contracts-ai-agents-autonomous-systems/)**  
+👉 **Part 4: AI for Blockchain Fraud & Anomaly Detection**  
+👉 **[Part 5: Smart Contracts + AI Agents](/posts/smart-contracts-ai-agents-autonomous-systems/)**  
 👉 **[Part 6: What Comes Next (Predictions)](/posts/what-comes-next-predictions/)**
 
-# Part 4: Smart Contracts + AI Agents
+# AI for Blockchain Fraud & Anomaly Detection
 
-## Fraud Is Behavioral
-Most blockchain attacks do not break cryptography. They exploit human and system behavior.
-
-## Common Fraud Patterns
-- Wash trading
-- Sybil wallets
-- Bot farms
-- Flash-loan abuse
-
-## Feature Engineering Examples
-| Feature | Signal |
-| --- | --- |
-| tx_rate | Automation |
-| counterparty_entropy | Wallet diversity |
-| value_variance | Manipulation |
-
-## Isolation Forest Example — Python
+## Start with anomaly detection
 ```python
 from sklearn.ensemble import IsolationForest
 
-model = IsolationForest(contamination=0.01)
-
-model.fit(features)
-
-risk = model.predict(features)
+model = IsolationForest(
+    n_estimators=300,
+    contamination=0.01,
+    random_state=42
+)
+model.fit(X_features)
+score = model.decision_function(X_features)
+flag = model.predict(X_features)  # -1 anomaly, +1 normal
 ```
 
-## Blockchain Integration
-- Store scores on-chain
-- Trigger smart-contract rules
-- Maintain immutable audit trail
+## On-chain enforcement hook
+```solidity
+require(riskScore < 75, "Wallet flagged by risk model");
+```
 
-## Conclusion
-AI detects.  
-Blockchain enforces.
+## Production note
+Fraud evolves. Add drift monitoring, scheduled retraining, versioning, and incident-review logs.
 
 ---
 
