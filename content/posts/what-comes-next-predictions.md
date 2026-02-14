@@ -1,6 +1,6 @@
 ---
 title: "Part 6: Auditable AI: Using Blockchain for Trust & Governance"
-date: 2026-02-16
+date: 2026-02-13
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-6-what-comes-next-predictions"

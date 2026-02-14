@@ -1,6 +1,6 @@
 ---
 title: "Part 1: AI, Blockchain, and Cloud: Who Actually Does What?"
-date: 2026-02-11
+date: 2026-02-08
 author: "Tom Wang"
 tags: ["AI", "Web3", "Blockchain", "Cloud", "Engineering"]
 summary: "A clear mental model for how AI, blockchain, and cloud computing work together in production."

@@ -1,6 +1,6 @@
 ---
 title: "Part 4: AI for Blockchain Fraud & Anomaly Detection"
-date: 2026-02-14
+date: 2026-02-11
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-4-ai-for-blockchain-fraud-anomaly-detection"

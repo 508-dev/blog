@@ -1,6 +1,6 @@
 ---
 title: "AI Meets Web3: Reality, Architecture, and the Future"
-date: 2026-02-10
+date: 2026-02-07
 author: "Tom Wang"
 tags: ["AI", "Web3", "Blockchain", "Cloud", "Engineering"]
 summary: "A practical, engineer-focused series on how AI, blockchain, and cloud computing work together in production systems."
