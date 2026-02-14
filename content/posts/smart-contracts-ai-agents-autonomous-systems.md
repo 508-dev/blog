@@ -1,6 +1,6 @@
 ---
 title: "Part 5: Smart Contracts + AI Agents"
-date: 2026-02-12
+date: 2026-02-15
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Smart Contracts","Agents","Security"]
@@ -9,12 +9,12 @@ summary: "How to combine deterministic smart contracts with adaptive AI agents s
 
 ## 📚 Series Navigation
 
-👉 **[Part 1: AI, Blockchain, and Cloud – Who Does What](/posts/ai-blockchain-cloud-who-does-what/)**  
-👉 **[Part 2: Why Fully Decentralized AI Is Mostly a Myth](/posts/why-fully-decentralized-ai-is-a-myth/)**  
-👉 **[Part 3: How Cloud ML Pipelines Power Web3 Analytics](/posts/web3-data-to-cloud-ml-pipelines/)**  
-👉 **[Part 4: AI for Blockchain Fraud & Anomaly Detection](/posts/ai-for-blockchain-fraud-anomaly-detection/)**  
+👉 **[Part 1: AI, Blockchain, and Cloud – Who Does What](/posts/part-1-ai-blockchain-cloud-who-does-what/)**  
+👉 **[Part 2: Why Fully Decentralized AI Is Mostly a Myth](/posts/part-2-why-fully-decentralized-ai-is-a-myth/)**  
+👉 **[Part 3: How Cloud ML Pipelines Power Web3 Analytics](/posts/part-3-web3-data-to-cloud-ml-pipelines/)**  
+👉 **[Part 4: AI for Blockchain Fraud & Anomaly Detection](/posts/part-4-ai-for-blockchain-fraud-anomaly-detection/)**  
 👉 **Part 5: Smart Contracts + AI Agents**  
-👉 **[Part 6: What Comes Next (Predictions)](/posts/what-comes-next-predictions/)**  
+👉 **[Part 6: What Comes Next (Predictions)](/posts/part-6-what-comes-next-predictions/)**  
 
 ---
 
