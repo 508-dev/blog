@@ -136,7 +136,7 @@ enableEmoji = true
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.132.0"
+    min = "0.146.0"
 
 # -------------------------------------------------------------------------------------
 # Markup related configuration in Hugo
@@ -213,7 +213,7 @@ enableEmoji = true
 
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = "posts/:slugorcontentbasename"
+  posts = "/posts/:slug"
 
 # -------------------------------------------------------------------------------------
 # Privacy Configuration
