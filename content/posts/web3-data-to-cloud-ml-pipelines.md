@@ -1,6 +1,6 @@
 ---
 title: "Part 3: Web3 Data -> Cloud ML Pipelines (Spark in Practice)"
-date: 2026-02-13
+date: 2026-02-10
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-3-web3-data-to-cloud-ml-pipelines"

@@ -1,6 +1,6 @@
 ---
 title: "Part 5: Smart Contracts + AI Agents: Autonomous Systems"
-date: 2026-02-15
+date: 2026-02-12
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-5-smart-contracts-ai-agents-autonomous-systems"
