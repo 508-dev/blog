@@ -5,6 +5,7 @@ author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Governance","Cloud"]
 summary: "Where hybrid AI+Web3 systems are going next: auditability, governance guardrails, and realistic near-term predictions."
+slug: "part-6-what-comes-next-predictions"
 ---
 
 ## 📚 Series Navigation

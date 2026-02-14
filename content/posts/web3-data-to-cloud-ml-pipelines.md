@@ -5,6 +5,7 @@ author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Cloud","Data Engineering"]
 summary: "A practical end-to-end pipeline: ingest Web3 data, engineer features at scale, and train models in the cloud — with optional on-chain commitments."
+slug: "part-3-web3-data-to-cloud-ml-pipelines"
 ---
 
 ## 📚 Series Navigation

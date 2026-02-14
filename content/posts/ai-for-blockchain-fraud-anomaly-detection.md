@@ -5,6 +5,7 @@ author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Security","Fraud Detection"]
 summary: "Engineer-first patterns for detecting on-chain fraud using anomaly detection, plus practical production guardrails."
+slug: "part-4-ai-for-blockchain-fraud-anomaly-detection"
 ---
 
 ## 📚 Series Navigation

@@ -3,6 +3,7 @@ title: "Part 2: Why Fully Decentralized AI Is Mostly a Myth"
 date: 2026-02-12
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
+slug: "part-2-why-fully-decentralized-ai-is-a-myth"
 ---
 
 ## 📚 Series Navigation

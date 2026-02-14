@@ -5,6 +5,7 @@ author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Cloud","Engineering"]
 summary: "A production-grade mental model for dividing responsibility between AI, blockchain, and cloud — plus a practical hybrid pattern."
+slug: "part-1-ai-blockchain-cloud-who-does-what"
 ---
 
 ## 📚 Series Navigation

@@ -5,6 +5,7 @@ author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Smart Contracts","Agents","Security"]
 summary: "How to combine deterministic smart contracts with adaptive AI agents safely: architecture, guardrails, failure modes, and governance patterns."
+slug: "part-5-smart-contracts-ai-agents-autonomous-systems"
 ---
 
 ## 📚 Series Navigation
