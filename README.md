@@ -24,4 +24,4 @@ After following the steps in Local Development, open a new terminal window.
 4. Modify the frontmatter as needed. See: https://pre.fixit.lruihao.cn/documentation/content-management/introduction/ Important: Make sure to include your author info so you properly receive credit for the post!
 5. Write your blog post using Markdown syntax. See https://pre.fixit.lruihao.cn/documentation/content-management/markdown-syntax/
 6. Ensure you change the `draft` frontmatter property to `false`
-7. When you're done writing, commit your changes and issues a pull request on codeberg.
+7. When you're done writing, commit your changes and issues a pull request.
