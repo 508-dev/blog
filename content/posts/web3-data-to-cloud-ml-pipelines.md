@@ -1,20 +1,21 @@
 ---
 title: "Part 3: How Cloud ML Pipelines Power Web3 Analytics"
-date: 2026-02-12
+date: 2026-02-13
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Cloud","Data Engineering"]
 summary: "A practical end-to-end pipeline: ingest Web3 data, engineer features at scale, and train models in the cloud — with optional on-chain commitments."
+slug: "part-3-web3-data-to-cloud-ml-pipelines"
 ---
 
 ## 📚 Series Navigation
 
-👉 **[Part 1: AI, Blockchain, and Cloud – Who Does What](/posts/ai-blockchain-cloud-who-does-what/)**  
-👉 **[Part 2: Why Fully Decentralized AI Is Mostly a Myth](/posts/why-fully-decentralized-ai-is-a-myth/)**  
+👉 **[Part 1: AI, Blockchain, and Cloud – Who Does What](/posts/part-1-ai-blockchain-cloud-who-does-what/)**  
+👉 **[Part 2: Why Fully Decentralized AI Is Mostly a Myth](/posts/part-2-why-fully-decentralized-ai-is-a-myth/)**  
 👉 **Part 3: How Cloud ML Pipelines Power Web3 Analytics**  
-👉 **[Part 4: AI for Blockchain Fraud & Anomaly Detection](/posts/ai-for-blockchain-fraud-anomaly-detection/)**  
-👉 **[Part 5: Smart Contracts + AI Agents](/posts/smart-contracts-ai-agents-autonomous-systems/)**  
-👉 **[Part 6: What Comes Next (Predictions)](/posts/what-comes-next-predictions/)**  
+👉 **[Part 4: AI for Blockchain Fraud & Anomaly Detection](/posts/part-4-ai-for-blockchain-fraud-anomaly-detection/)**  
+👉 **[Part 5: Smart Contracts + AI Agents](/posts/part-5-smart-contracts-ai-agents-autonomous-systems/)**  
+👉 **[Part 6: What Comes Next (Predictions)](/posts/part-6-what-comes-next-predictions/)**  
 
 ---
 

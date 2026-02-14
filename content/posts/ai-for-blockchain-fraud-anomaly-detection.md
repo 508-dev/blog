@@ -1,20 +1,21 @@
 ---
 title: "Part 4: AI for Blockchain Fraud & Anomaly Detection"
-date: 2026-02-12
+date: 2026-02-14
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 tags: ["AI","Web3","Blockchain","Security","Fraud Detection"]
 summary: "Engineer-first patterns for detecting on-chain fraud using anomaly detection, plus practical production guardrails."
+slug: "part-4-ai-for-blockchain-fraud-anomaly-detection"
 ---
 
 ## 📚 Series Navigation
 
-👉 **[Part 1: AI, Blockchain, and Cloud – Who Does What](/posts/ai-blockchain-cloud-who-does-what/)**  
-👉 **[Part 2: Why Fully Decentralized AI Is Mostly a Myth](/posts/why-fully-decentralized-ai-is-a-myth/)**  
-👉 **[Part 3: How Cloud ML Pipelines Power Web3 Analytics](/posts/web3-data-to-cloud-ml-pipelines/)**  
+👉 **[Part 1: AI, Blockchain, and Cloud – Who Does What](/posts/part-1-ai-blockchain-cloud-who-does-what/)**  
+👉 **[Part 2: Why Fully Decentralized AI Is Mostly a Myth](/posts/part-2-why-fully-decentralized-ai-is-a-myth/)**  
+👉 **[Part 3: How Cloud ML Pipelines Power Web3 Analytics](/posts/part-3-web3-data-to-cloud-ml-pipelines/)**  
 👉 **Part 4: AI for Blockchain Fraud & Anomaly Detection**  
-👉 **[Part 5: Smart Contracts + AI Agents](/posts/smart-contracts-ai-agents-autonomous-systems/)**  
-👉 **[Part 6: What Comes Next (Predictions)](/posts/what-comes-next-predictions/)**  
+👉 **[Part 5: Smart Contracts + AI Agents](/posts/part-5-smart-contracts-ai-agents-autonomous-systems/)**  
+👉 **[Part 6: What Comes Next (Predictions)](/posts/part-6-what-comes-next-predictions/)**  
 
 ---
 
