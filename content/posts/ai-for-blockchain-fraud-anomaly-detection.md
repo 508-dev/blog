@@ -4,6 +4,8 @@ date: 2026-02-11
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-4-ai-for-blockchain-fraud-anomaly-detection"
+tags: ["AI", "Web3", "Fraud", "Anomaly Detection", "Security"]
+summary: "How behavioral signals and feature engineering enable AI-driven fraud and anomaly detection on blockchain networks."
 ---
 
 ## 📚 Series Navigation

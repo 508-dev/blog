@@ -4,6 +4,8 @@ date: 2026-02-09
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-2-why-fully-decentralized-ai-is-a-myth"
+tags: ["AI", "Web3", "Decentralization", "Infrastructure", "Cloud"]
+summary: "Why physics, costs, and tooling make fully decentralized AI impractical at scale, and what that implies for real-world systems."
 ---
 
 ## 📚 Series Navigation
