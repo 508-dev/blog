@@ -4,6 +4,8 @@ date: 2026-02-12
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-5-smart-contracts-ai-agents-autonomous-systems"
+tags: ["AI", "Web3", "Smart Contracts", "Agents", "Governance"]
+summary: "How to combine AI agents with smart contracts safely using on-chain guardrails, validation, and auditability."
 ---
 
 ## 📚 Series Navigation

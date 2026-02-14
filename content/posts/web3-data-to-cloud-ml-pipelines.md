@@ -4,6 +4,8 @@ date: 2026-02-10
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-3-web3-data-to-cloud-ml-pipelines"
+tags: ["AI", "Web3", "Data", "ML", "Spark"]
+summary: "A practical pipeline for moving blockchain data into cloud ML systems, from raw chain data to features and models."
 ---
 
 ## 📚 Series Navigation
