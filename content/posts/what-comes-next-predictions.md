@@ -4,6 +4,8 @@ date: 2026-02-13
 author: "Tom Wang"
 series: "AI Meets Web3: Reality, Architecture, and the Future"
 slug: "part-6-what-comes-next-predictions"
+tags: ["AI", "Web3", "Blockchain", "Auditability", "Governance"]
+summary: "Why combining AI with blockchain audit trails improves accountability, compliance, and incident response."
 ---
 
 ## 📚 Series Navigation
