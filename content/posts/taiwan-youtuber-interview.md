@@ -8,7 +8,7 @@ author:
   name: Caleb Rogers
   link: https://calebjay.com
   email: caleb@508.dev
-  avatar: caleb.JPG
+  avatar: /caleb.jpg
 description: A video in which a Taiwanese tech Youtuber discusses what the benefits of a co-op are with Caleb, as well as other subjects such as advice for junior engineers.
 keywords: Taiwan, software co-op, AI
 license:

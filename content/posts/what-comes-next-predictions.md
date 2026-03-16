@@ -21,7 +21,7 @@ summary: "Why combining AI with blockchain audit trails improves accountability,
 
 # Auditable AI: Using Blockchain for Trust & Governance
 
-![Part 6 overview](/images/ai-web3-series/part6-audit.jpeg)
+![Part 6 overview](/images/ai-web3-series/part6-audit.jpg)
 
 ## The Trust Problem
 

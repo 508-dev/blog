@@ -8,7 +8,7 @@ author:
   name: Caleb Rogers
   link: https://calebjay.com
   email: caleb@508.dev
-  avatar: caleb.JPG
+  avatar: /caleb.jpg
 description: Describing the basics of what a software co-op (cooperative) is, and why 508.dev chose this model in our business formation.
 keywords: software co-op, engineering services,
 license:

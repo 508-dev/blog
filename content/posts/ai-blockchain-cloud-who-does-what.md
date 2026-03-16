@@ -9,7 +9,7 @@ slug: "part-1-ai-blockchain-cloud-who-does-what"
 
 # AI, Blockchain, and Cloud: Who Actually Does What?
 
-![Part 1 overview](/images/ai-web3-series/part1-overview.jpeg)
+![Part 1 overview](/images/ai-web3-series/part1-overview.jpg)
 
 ## Introduction
 
@@ -49,7 +49,7 @@ What works in real systems:
 
 This keeps heavy compute off-chain while preserving an auditable trail.
 
-![Part 1 architecture](/images/ai-web3-series/part1-architecture.jpeg)
+![Part 1 architecture](/images/ai-web3-series/part1-architecture.jpg)
 
 ## Minimal Code Example
 

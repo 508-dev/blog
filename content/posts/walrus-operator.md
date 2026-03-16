@@ -8,7 +8,7 @@ author:
   name: Abdallah Idriss Lutaaya
   link: https://www.linkedin.com/in/abdallah-idriss-lutaaya-0231a3193/
   email: bdllhltydrss@gmail.com
-  avatar: lutaaya.jpeg
+  avatar: /lutaaya.jpg
 description: Exploring the walrus operator, its use cases, and how it simplifies Python code.
 keywords: Python, walrus operator, assignment expressions, Python 3.8
 license:
