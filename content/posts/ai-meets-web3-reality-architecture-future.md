@@ -21,7 +21,7 @@ slug: "ai-meets-web3-reality-architecture-future"
 <a id="part-1-ai-blockchain-and-cloud--who-does-what"></a>
 ## Part 1: AI, Blockchain, and Cloud: Who Actually Does What?
 
-![Part 1 overview](/images/ai-web3-series/part1-overview.jpeg)
+![Part 1 overview](/images/ai-web3-series/part1-overview.jpg)
 
 ### Introduction
 
@@ -61,7 +61,7 @@ What works in real systems:
 
 This keeps heavy compute off-chain while preserving an auditable trail.
 
-![Part 1 architecture](/images/ai-web3-series/part1-architecture.jpeg)
+![Part 1 architecture](/images/ai-web3-series/part1-architecture.jpg)
 
 ### Minimal Code Example
 
@@ -268,7 +268,7 @@ Web3 generates data. Cloud turns it into intelligence, and the chain preserves t
 <a id="part-4-ai-for-blockchain-fraud--anomaly-detection"></a>
 ## Part 4: AI for Blockchain Fraud & Anomaly Detection
 
-![Part 4 overview](/images/ai-web3-series/part4-fraud.jpeg)
+![Part 4 overview](/images/ai-web3-series/part4-fraud.jpg)
 
 ### Fraud Is Behavioral
 
@@ -459,7 +459,7 @@ Let AI propose, let contracts enforce, and let governance control parameters. Th
 <a id="part-6-what-comes-next-predictions"></a>
 ## Part 6: Auditable AI: Using Blockchain for Trust & Governance
 
-![Part 6 overview](/images/ai-web3-series/part6-audit.jpeg)
+![Part 6 overview](/images/ai-web3-series/part6-audit.jpg)
 
 ### The Trust Problem
 

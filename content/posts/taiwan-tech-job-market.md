@@ -8,7 +8,7 @@ author:
   name: Dan Anfernee Diaz
   link: https://www.linkedin.com/in/anferneediaz/
   email: dananferneediaz@gmail.com
-  avatar: dan.jpg
+  avatar: /dan.jpg
 description: A guide to navigate the tech job market for foreigners in Taiwan
 keywords: software jobs, Taiwan, tech careers, visa sponsorship
 tags:

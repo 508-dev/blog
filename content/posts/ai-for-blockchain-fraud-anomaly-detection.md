@@ -21,7 +21,7 @@ summary: "How behavioral signals and feature engineering enable AI-driven fraud 
 
 # AI for Blockchain Fraud & Anomaly Detection
 
-![Part 4 overview](/images/ai-web3-series/part4-fraud.jpeg)
+![Part 4 overview](/images/ai-web3-series/part4-fraud.jpg)
 
 ## Fraud Is Behavioral
 
