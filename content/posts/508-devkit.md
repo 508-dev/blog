@@ -7,7 +7,7 @@ draft: false
 author:
   name: Michael Wu
   link: https://www.michaelmwu.com/
-  email: michaelmwu@gmail.com
+  email: michael@508.dev
   avatar:
 description: Why we started 508 Devkit, a set of opinionated project defaults for repos that expect AI coding agents to contribute from day one.
 keywords: 508-devkit, AI agents, coding agents, developer experience, project templates, Bun, pnpm, uv
@@ -31,7 +31,7 @@ password:
 repost:
   enable: false
   url:
-summary: 508-devkit is a collection of opinionated project defaults for repos that expect AI coding agents to contribute from day one. It captures the conventions we want in place before a new project grows around accidental omissions.
+summary: 508 Devkit is a collection of opinionated project defaults for repos that expect AI coding agents to contribute from day one. It captures the conventions we want in place before a new project grows around accidental omissions.
 ---
 
 We started a new project: [508 Devkit](https://github.com/508-dev/508-devkit), a collection of opinionated project defaults for repos. It is intentionally not an application framework.
