@@ -36,8 +36,6 @@ repost:
 summary: I vibecoded something useful, then had to deal with the usual mess that comes after. This is a short guide to using clawpatch to review the repo, fix one thing at a time, and slowly make the codebase a bit less cursed.
 ---
 
-# How to Use clawpatch to Fix Your Vibecoded AI Slop
-
 So, you have been vibecoding.
 
 You managed to create a useful, maybe even awesome, tool. But now you have realised something slightly uncomfortable: the thing has become a bit of a monster.
