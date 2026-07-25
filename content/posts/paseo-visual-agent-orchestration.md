@@ -37,8 +37,6 @@ summary: >-
 
 If you are looking for an agentic development environment (ADE), I would check out [Paseo](https://paseo.sh/).
 
-I use “agentic development environment” because it says what I mean better than “visual agent orchestrator.” The visual interface matters, but I am not looking only for a dashboard. I want an environment for running and coordinating coding agents across the devices I already own. The ADE is the broader working environment; agent orchestration is the capability I care about inside it.
-
 There has been an explosion of tools in this category. I have been looking at a small mix of GUI-based and terminal-first options. This is not a feature matrix or a ranking—just the short list I considered and the details that stood out to me while I was deciding what to use.
 
 ## Other Tools I Looked At
@@ -47,16 +45,16 @@ There has been an explosion of tools in this category. I have been looking at a 
 
 - [Agentastic](https://www.agentastic.dev/): not open source yet.
 - [Agents Room](https://agentsroom.dev/): supports remote use, but is not open source.
-- [Warp](https://www.warp.dev/)
+- [Conductor](https://www.conductor.build/): what I was using previously.
 - [Orca](https://www.onorca.dev/): supports remote use, is open source, and has a mobile app.
-- [Conductor](https://www.conductor.build/): the tool I was using previously.
 - [Emdash](https://emdash.ai/): open source and appears to support remote use.
 
 ### Terminal-First
 
-- `cmux`
+- [cmux](https://cmux.com/)
+- [Herdr](https://herdr.dev/)
 
-For a broader overview, see Ryan Walker’s [comparison of Mac coding-agent apps](https://rywalker.com/research/mac-coding-agent-apps).
+For a broader overview, see Ryan Walker’s [comparison of Mac coding-agent apps](https://rywalker.com/research/mac-coding-agent-apps). I encourage people to try out various tools to see how they work for you!
 
 I had previously recommended [Conductor](https://www.conductor.build/), and I still think it has the best UI and flow for making development more automatic. It is a genuinely polished experience, and that matters when the goal is to make agent work easier to follow and manage.
 
@@ -79,7 +77,7 @@ Those are the things I need from an ADE more than a broad feature-by-feature com
 
 ## The ADE I Actually Need
 
-I have Paseo instances running on both my MacBook and a mini PC at home. I can control them through Hermes or the mobile app.
+I have Paseo instances running on both my MacBook and a mini PC at home. I can control them through my Hermes agent or the mobile app.
 
 That is the difference that makes Paseo practical for me. I am not choosing an ADE only by how it feels on one machine at one desk. I want it to fit the way I already split work across my MacBook and a machine at home, while still being reachable when I am away from either one.
 
@@ -87,7 +85,9 @@ The visual interface still matters, of course. But in my setup, the requirement 
 
 ## Why Open Source Changes How I Use It
 
-I am actively making improvements to Paseo and seeing whether they will get merged. That is another meaningful part of the appeal for me: I can participate in improving the tool I use instead of treating it as a fixed service.
+The maintainer is also serious about keeping Paseo open source. As he has described it, the plan is to keep everything open source—including the relay—while fully supporting self-hosting and offering paid hosted services for people who want that option. That combination matters to me: it keeps self-hosting as a first-class option without taking away the convenience of a hosted service.
+
+I am actively making improvements to Paseo and seeing whether they will get merged. These are things like support for `.worktreeinclude`, importing sessions from other ADEs, and more automatic development. That is another meaningful part of the appeal for me: I can participate in improving the tool I use instead of treating it as a fixed service.
 
 The maintainer has been responsive in my experience. That does not guarantee that every contribution will be accepted, but it makes experimentation and upstream collaboration feel worthwhile.
 
