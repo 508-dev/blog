@@ -1,6 +1,6 @@
 ---
-title: Why I’m Using Paseo to Orchestrate Coding Agents Across My Own Devices
-subtitle: Conductor still has my favorite UI, but Paseo fits the way I coordinate coding agents across devices I own.
+title: Why I Switched to Paseo to Orchestrate Coding Agents
+subtitle: Conductor still has my favorite UI, but Paseo better fits the way I coordinate coding agents across my own devices.
 date: 2026-07-25T00:00:00+09:00
 slug: paseo-visual-agent-orchestration
 draft: false
@@ -9,7 +9,7 @@ author:
   link: https://www.michaelmwu.com/
   email: michael@508.dev
   avatar:
-description: I still like Conductor’s UI and flow, but I use Paseo as an agentic development environment for coordinating coding agents across my own devices. Its fully open source model, Linux and Windows apps, mobile apps, and CLI better fit my setup.
+description: I recently switched from Conductor to Paseo for my multi-device agentic development environment. Paseo is fully open source, has Linux and Windows apps, mobile apps, and can itself be orchestrated through a CLI.
 keywords: Paseo, agentic development environment, ADE, agent orchestration, coding agents, Conductor, Hermes, CLI, open source
 weight: 0
 tags:
@@ -32,12 +32,31 @@ repost:
   enable: false
   url:
 summary: >-
-  I use Paseo as an agentic development environment (ADE) for coordinating coding agents across my own devices. Conductor still has the best UI and flow in my view, but Paseo better fits my own setup because it is fully open source, has Linux and Windows apps, mobile apps, and a CLI.
+  I recently switched from Conductor to Paseo for my multi-device agentic development environment. Conductor still has the best UI and flow in my view, but Paseo better fits my setup because it is fully open source, has Linux and Windows apps, mobile apps, and can itself be orchestrated through a CLI.
 ---
 
 If you are looking for an agentic development environment (ADE), I would check out [Paseo](https://paseo.sh/).
 
 I use “agentic development environment” because it says what I mean better than “visual agent orchestrator.” The visual interface matters, but I am not looking only for a dashboard. I want an environment for running and coordinating coding agents across the devices I already own. The ADE is the broader working environment; agent orchestration is the capability I care about inside it.
+
+There has been an explosion of tools in this category. I have been looking at a small mix of GUI-based and terminal-first options. This is not a feature matrix or a ranking—just the short list I considered and the details that stood out to me while I was deciding what to use.
+
+## Other Tools I Looked At
+
+### GUI-Based
+
+- [Agentastic](https://www.agentastic.dev/): not open source yet.
+- [Agents Room](https://agentsroom.dev/): supports remote use, but is not open source.
+- [Warp](https://www.warp.dev/)
+- [Orca](https://www.onorca.dev/): supports remote use, is open source, and has a mobile app.
+- [Conductor](https://www.conductor.build/): the tool I was using previously.
+- [Emdash](https://emdash.ai/): open source and appears to support remote use.
+
+### Terminal-First
+
+- `cmux`
+
+For a broader overview, see Ryan Walker’s [comparison of Mac coding-agent apps](https://rywalker.com/research/mac-coding-agent-apps).
 
 I had previously recommended [Conductor](https://www.conductor.build/), and I still think it has the best UI and flow for making development more automatic. It is a genuinely polished experience, and that matters when the goal is to make agent work easier to follow and manage.
 
