@@ -79,6 +79,8 @@ Those are the things I need from an ADE more than a broad feature-by-feature com
 
 I have Paseo instances running on both my MacBook and a mini PC at home. I can control them through my Hermes agent or the mobile app.
 
+![Paseo mobile app showing MacBook and home mini PC remote hosts](/images/paseo-mobile-remote-control.png)
+
 That is the difference that makes Paseo practical for me. I am not choosing an ADE only by how it feels on one machine at one desk. I want it to fit the way I already split work across my MacBook and a machine at home, while still being reachable when I am away from either one.
 
 The visual interface still matters, of course. But in my setup, the requirement that changes the decision is being able to operate my own devices.
