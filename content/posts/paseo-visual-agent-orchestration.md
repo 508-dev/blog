@@ -79,6 +79,8 @@ Those are the things I need from an ADE more than a broad feature-by-feature com
 
 I have Paseo instances running on both my MacBook and a mini PC at home. I can control them through my Hermes agent or the mobile app.
 
+To let an agent do the same, I use [Paseo Agent Orchestration](https://github.com/508-dev/paseo-agent-orchestration). It is an Agent Skills-compatible package: install its `skills/paseo-agent-orchestration` directory using your client’s Agent Skills mechanism, configure the client with an authorized native Paseo MCP server, and add a trusted, read-only alias configuration for the repositories and workspaces it is allowed to manage. I use it with Hermes, but the core skill is agent-neutral, so it can also be used with OpenClaw or another compatible client.
+
 ![Paseo mobile app showing MacBook and home mini PC remote hosts](/images/paseo-mobile-remote-control.png)
 
 That is the difference that makes Paseo practical for me. I am not choosing an ADE only by how it feels on one machine at one desk. I want it to fit the way I already split work across my MacBook and a machine at home, while still being reachable when I am away from either one.
