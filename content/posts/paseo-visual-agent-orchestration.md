@@ -79,7 +79,7 @@ Those are the things I need from an ADE more than a broad feature-by-feature com
 
 I have Paseo instances running on both my MacBook and a mini PC at home. I can control them through my Hermes agent or the mobile app.
 
-To let an agent do the same, I use [Paseo Agent Orchestration](https://github.com/508-dev/paseo-agent-orchestration). It is an Agent Skills-compatible package: install its `skills/paseo-agent-orchestration` directory using your client’s Agent Skills mechanism, configure the client with an authorized native Paseo MCP server, and add a trusted, read-only alias configuration for the repositories and workspaces it is allowed to manage. I use it with Hermes, but the core skill is agent-neutral, so it can also be used with OpenClaw or another compatible client.
+To give an agent the same access, I wrote [Paseo Agent Orchestration](https://github.com/508-dev/paseo-agent-orchestration), an Agent Skills-compatible package for safely coordinating trusted coding agents through Paseo. Install its `skills/paseo-agent-orchestration` directory using your client’s Agent Skills mechanism, then point the client at the Paseo daemon it will manage and add a trusted, read-only alias configuration for the repositories and workspaces it is allowed to manage. On the same machine, that can be the local daemon the desktop app has already started; for a remote host, the client needs a secure route to the relevant daemon’s MCP endpoint. I use it with Hermes, but I intentionally kept the core skill agent-neutral, so it can also be used with OpenClaw or another compatible client.
 
 ![Paseo mobile app showing MacBook and home mini PC remote hosts](/images/paseo-mobile-remote-control.png)
 
