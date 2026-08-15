@@ -87,6 +87,14 @@ That is the difference that makes Paseo practical for me. I am not choosing an A
 
 The visual interface still matters, of course. But in my setup, the requirement that changes the decision is being able to operate my own devices.
 
+## Adding Workflows with Hub
+
+[Paseo Hub](https://github.com/getpaseo/hub) is a self-hosted automation layer for Paseo. It can start coding agents from GitHub, Slack, Discord, or a manual run, then dispatch them to the Paseo daemons on the machines you already own.
+
+That is an interesting extension of the setup I want: not just a visual tool I open when I sit down, but a way for work that arrives in Discord or GitHub to trigger the right workflow on the right machine. Hub keeps its triggers, environments, permissions, and prompts in version-controlled `.paseo/hub.yml` and `.paseo/workflows/` files.
+
+It is still in early development; Hub’s README warns that breaking changes and data loss are possible. I would treat it as something to experiment with rather than production infrastructure for now.
+
 ## Why Open Source Changes How I Use It
 
 The maintainer is also serious about keeping Paseo open source. As he has described it, the plan is to keep everything open source—including the relay—while fully supporting self-hosting and offering paid hosted services for people who want that option. That combination matters to me: it keeps self-hosting as a first-class option without taking away the convenience of a hosted service.
