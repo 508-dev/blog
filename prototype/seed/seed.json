@@ -1,0 +1,1774 @@
+{
+  "version": "1",
+  "meta": {
+    "name": "508.dev blog prototype",
+    "author": "508.dev"
+  },
+  "settings": {
+    "title": "508.dev Blog",
+    "tagline": "Ideas and updates from the 508.dev co-op",
+    "url": "https://emdash.508.dev"
+  },
+  "collections": [
+    {
+      "slug": "posts",
+      "label": "Posts",
+      "labelSingular": "Post",
+      "urlPattern": "/posts/{slug}",
+      "supports": [
+        "drafts",
+        "revisions",
+        "preview",
+        "scheduling",
+        "search",
+        "seo"
+      ],
+      "commentsEnabled": false,
+      "fields": [
+        {
+          "slug": "title",
+          "label": "Title",
+          "type": "string",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "featured_image",
+          "label": "Featured Image",
+          "type": "image"
+        },
+        {
+          "slug": "content",
+          "label": "Content",
+          "type": "portableText",
+          "searchable": true
+        },
+        {
+          "slug": "excerpt",
+          "label": "Excerpt",
+          "type": "text"
+        },
+        {
+          "slug": "original_date",
+          "label": "Original publication date",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "name": "category",
+      "label": "Categories",
+      "labelSingular": "Category",
+      "hierarchical": true,
+      "collections": [
+        "posts"
+      ],
+      "terms": [
+        {
+          "slug": "non-technical",
+          "label": "non-technical"
+        },
+        {
+          "slug": "technical",
+          "label": "technical"
+        }
+      ]
+    },
+    {
+      "name": "tag",
+      "label": "Tags",
+      "labelSingular": "Tag",
+      "hierarchical": false,
+      "collections": [
+        "posts"
+      ],
+      "terms": [
+        {
+          "slug": "business",
+          "label": "business"
+        },
+        {
+          "slug": "co-op",
+          "label": "co-op"
+        },
+        {
+          "slug": "ai",
+          "label": "AI"
+        },
+        {
+          "slug": "tooling",
+          "label": "tooling"
+        },
+        {
+          "slug": "developer-experience",
+          "label": "developer experience"
+        },
+        {
+          "slug": "open-source",
+          "label": "open source"
+        }
+      ]
+    }
+  ],
+  "bylines": [
+    {
+      "id": "byline-caleb-rogers",
+      "slug": "caleb-rogers",
+      "displayName": "Caleb Rogers"
+    },
+    {
+      "id": "byline-michael-wu",
+      "slug": "michael-wu",
+      "displayName": "Michael Wu"
+    }
+  ],
+  "menus": [
+    {
+      "name": "primary",
+      "label": "Primary Navigation",
+      "items": [
+        {
+          "type": "custom",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "type": "custom",
+          "label": "Posts",
+          "url": "/posts"
+        },
+        {
+          "type": "custom",
+          "label": "Search",
+          "url": "/search"
+        }
+      ]
+    }
+  ],
+  "content": {
+    "posts": [
+      {
+        "id": "post-6f1e60c",
+        "slug": "6f1e60c",
+        "status": "published",
+        "data": {
+          "title": "Why is 508.dev a Co-Op?",
+          "excerpt": "508.dev is a co-op. A co-op is a type of business where the workers are all co-owners of the business, and have a say in how the business should be run. 508.dev in particular has the value that no member should be profiting off the labor of another member. We decided to formulate our business this way out of ethical considerations, but also because we believe the evidence that indicates that co-ops are more profitable, longer-lasting business than traditional companies, that offer better outcomes both for our members as well as our clients.",
+          "original_date": "2024-09-16T08:46:05.000Z",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k4",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k1",
+                  "_type": "link",
+                  "href": "https://en.wikipedia.org/wiki/Cooperative"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k0",
+                  "text": "508.dev LLC is a software co-op, also known as a software ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2",
+                  "text": " cooperative ",
+                  "marks": [
+                    "k1"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3",
+                  "text": ". Our business structure differs from traditional corporations in many ways, but the largest differences involve ownership, profit, and decision making. As a co-op, all members are partial owners of 508.dev, and our value is that no member should profit off the labor of another member. Furthermore, we employ a consensus-based decision making framework that ensure all members have the ability to steer the direction of our co-op, help us explore interesting new directions, and ensure we stick to our values.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k9",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k6",
+                  "_type": "link",
+                  "href": "https://www.uk.coop/sites/default/files/2020-10/co-operative_survival_1.pdf"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5",
+                  "text": "There are a great many reasons we felt this was the best structure for us, beyond just ethical considerations. For example, ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k7",
+                  "text": "80% of co-ops survive their first 5 years of business",
+                  "marks": [
+                    "k6"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k8",
+                  "text": ", compared to only 44% of other business structures. Not only does this ensure continued employment for us all, it can also lend our clients confidence that we'll be around for the long term to continue servicing the applications we build.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "ke",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "kb",
+                  "_type": "link",
+                  "href": "https://508.dev/pricing"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "ka",
+                  "text": "A large reason we prefer this structure is based around the nature of the engineering services industry. Oftentimes, services firms offer \"high value offshore engineering,\" then bill clients perhaps only 10 or 20 percent under domestic rates, then turn around and only pay 20% of the rate to the talent. The people being hired aren't stupid, they're engineers after all! They're aware of the massive margins being kept by our competition and it leads to resentment, lack of ownership, poor performance, and also means that clients aren't getting the maximum potential of the talent. Since 508.dev is a co-op, all of our members have a say in what happens with our margins after cost. This lets us set razor-thin margins, since any profit will be redistributed back to our members anyway. At time of writing that margin is usually around 15%, though you can view our up to date pricing on our ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "kc",
+                  "text": " website ",
+                  "marks": [
+                    "kb"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "kd",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kg",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kf",
+                  "text": "Long term, we believe our unique business structure will allow us to self-fund R&D so we can become a products company. With a steady income stream, our long term hope is to provide a sustainable income for our members so that we can explore the bleeding edge of tech and product spaces.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kl",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "ki",
+                  "_type": "link",
+                  "href": "https://508.dev"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kh",
+                  "text": "If you're interested in learning more about our services, feel free to check out our ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "kj",
+                  "text": "website",
+                  "marks": [
+                    "ki"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "kk",
+                  "text": ", or shoot an email to hello@508.dev!",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": [
+            "non-technical"
+          ],
+          "tag": [
+            "business",
+            "co-op"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "byline-caleb-rogers"
+          }
+        ]
+      },
+      {
+        "id": "post-508-devkit",
+        "slug": "508-devkit",
+        "status": "published",
+        "data": {
+          "title": "Introducing 508 Devkit",
+          "excerpt": "508 Devkit is a collection of opinionated project defaults for repos that expect AI coding agents to contribute from day one. It captures the conventions we want in place before a new project grows around accidental omissions.",
+          "original_date": "2026-06-08T16:00:00.000Z",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "kq",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "kn",
+                  "_type": "link",
+                  "href": "https://github.com/508-dev/508-devkit"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "km",
+                  "text": "We started a new project: ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "ko",
+                  "text": "508 Devkit",
+                  "marks": [
+                    "kn"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "kp",
+                  "text": ", a collection of opinionated project defaults for repos. It is intentionally not an application framework.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kv",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "ks",
+                  "_type": "link",
+                  "href": "https://github.com/508-dev/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kr",
+                  "text": "At 508.dev, we have been working on a number of open source projects under the ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "kt",
+                  "text": "508.dev GitHub organization",
+                  "marks": [
+                    "ks"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "ku",
+                  "text": ", and one thing that keeps coming up is how much the first few hours of a repo shape everything that follows. Before there is much product code, the project has already made a lot of decisions: which package manager it expects, how local services should run, where environment files live, whether Docker is for infrastructure or the whole development loop, what CI should care about, and what instructions future contributors and agents are supposed to follow.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kx",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "kw",
+                  "text": "If those decisions are not written down, they still happen. They just happen by accident.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "kz",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "ky",
+                  "text": "That matters more now because coding agents are part of our workflow. They are useful, but they are also happy to fill in blanks with something that looks reasonable in the moment. One agent might assume npm in a repo where we want Bun first. Another might add pnpm support in a slightly different way. A third might produce a Docker-first setup when the project is supposed to run app services on the host and use Docker Compose only for databases, queues, or caches. Each individual choice is easy to fix, but after a while the repo starts accumulating little inconsistencies that make it harder for both humans and agents to understand what \"normal\" looks like.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k10",
+                  "text": "508 Devkit is our attempt to write those defaults down before the project has a chance to drift.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k12",
+                  "text": "Defaults Are Part of the Project",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k14",
+                  "text": "This is not meant to be a universal template where every repo gets the same stack. We do not want that, and most real projects would outgrow it quickly. The goal is narrower: give a new project a clear starting shape, especially when we already know agents will be reading and modifying the codebase.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k19",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k16",
+                  "text": "For JavaScript, that means treating Bun and pnpm as first-class examples. For Python, it means documenting optional ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k17",
+                  "text": "uv",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k18",
+                  "text": " workspace conventions instead of leaving every service to rediscover them. Across ecosystems, it means including dependency cooldowns when supported to improve security posture.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1f",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1a",
+                  "text": "The same idea applies to local development. We keep wanting host-run development services, Docker Compose examples for local infrastructure, deterministic ports for worktrees, ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1b",
+                  "text": ".worktreeinclude",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1c",
+                  "text": " for copying local-only environment files into sibling worktrees, and a ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1d",
+                  "text": ".dockerignore",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1e",
+                  "text": " that keeps Docker build contexts small and avoids sweeping secrets into images. None of these things are exciting, but they are sane defaults that set up future development.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1h",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1g",
+                  "text": "Instructions for Agents, Not Just Humans",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1j",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1i",
+                  "text": "Most project setup still assumes the reader is a human with enough context to fill in gaps. That assumption is weaker now. If Codex, Claude Code, Cursor, and whatever comes next are going to work in a repo, they need instructions written for the way they actually operate.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1n",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1k",
+                  "text": "That means telling them where local context belongs, which files are workspace-only, which commands are preferred, how worktrees should pick ports, and what conventions should not be overwritten just because a generated patch would be simpler without them. Agent instructions do not need to be long, but they do need to be specific. \"Write good code\" is not useful guidance. \"Use Bun first, keep ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1l",
+                  "text": ".context/",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1m",
+                  "text": " gitignored, prefer host-run app services, and use Docker Compose for local infrastructure\" is much harder to misinterpret.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1r",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1o",
+                  "text": "508 Devkit includes agent-native instructions for Codex, Claude Code, Cursor, and future agents, along with ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1p",
+                  "text": ".context/",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1q",
+                  "text": " conventions for agent orchestrator workflows. The point is not to add process for its own sake; it is to give agents enough local knowledge that they stop inventing project policy from nearby files.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1t",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1s",
+                  "text": "The Boring Files Carry a Lot of Weight",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1x",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1u",
+                  "text": "The files people skip past during setup often matter more than they get credit for. A clear ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1v",
+                  "text": ".dockerignore",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1w",
+                  "text": " protects build contexts from becoming enormous or accidentally secret-filled. GitHub issue, PR, and CI hygiene makes agent-generated work easier to review because reviewers can tell what kind of evidence, tests, and description the project expects.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1z",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1y",
+                  "text": "508 Devkit also includes examples for the stacks we commonly use. On the Python side, that includes Pydantic settings and schemas, Alembic migrations, Ruff, MyPy, and Pytest. On the TypeScript side, it includes Drizzle ORM, Biome, and Vitest. There are also optional examples for SOPS if you want to use it for secrets management.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k21",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k20",
+                  "text": "A Better Starting Point",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k23",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k22",
+                  "text": "The bet behind 508 Devkit is that setup is a communication layer. Humans read it, agents read it, CI reads it, and future contributors read it months later when nobody remembers why a convention exists. The more a repo can explain itself early, the less coordination it needs later.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k25",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k24",
+                  "text": "We expect the kit to evolve as we use it across more projects. For now, it is a collection of the defaults we keep wanting whenever we start something new: agent instructions, local context conventions, package manager examples, dependency safety, worktree ergonomics, infrastructure examples, Docker hygiene, CI hygiene, and practical backend/frontend tooling.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k27",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k26",
+                  "text": "Quickstart",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k29",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k28",
+                  "text": "There are two straightforward ways to use it.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2f",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k2c",
+                  "_type": "link",
+                  "href": "https://github.com/508-dev/508-devkit"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2a",
+                  "text": "Use the repo directly.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2b",
+                  "text": " Point your agent at ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2d",
+                  "text": "github.com/508-dev/508-devkit",
+                  "marks": [
+                    "k2c"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2e",
+                  "text": ", or at a local checkout of it, as the project bootstrap reference. Have it inspect your target repo, ask any necessary questions, and then apply the relevant conventions rather than copying everything blindly.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2r",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k2i",
+                  "_type": "link",
+                  "href": "https://raw.githubusercontent.com/508-dev/508-devkit/main/skills/508-devkit/SKILL.md"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2g",
+                  "text": "Or install the bundled agent skill.",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2h",
+                  "text": " Install the skill from ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2j",
+                  "text": "skills/508-devkit/SKILL.md",
+                  "marks": [
+                    "k2i"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2k",
+                  "text": " in the repo, or from ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2l",
+                  "text": "skills/508-devkit/SKILL.md",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2m",
+                  "text": " in a local checkout. Run it as ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2n",
+                  "text": "/508-devkit",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2o",
+                  "text": ", ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2p",
+                  "text": "/bootstrap-project",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2q",
+                  "text": ", or whatever command name your agent client assigns.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2t",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2s",
+                  "text": "Either way, treat the kit like untrusted code: read what it proposes, understand the changes, and apply only what fits your project.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k2v",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2u",
+                  "text": "If you are starting a project where AI agents are going to be part of the development workflow, 508 Devkit is meant to give both the humans and the agents a better starting point.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k30",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k2x",
+                  "_type": "link",
+                  "href": "https://github.com/508-dev/508-devkit"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k2w",
+                  "text": "You can check it out here: ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2y",
+                  "text": "github.com/508-dev/508-devkit",
+                  "marks": [
+                    "k2x"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k2z",
+                  "text": " 🙂",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": [
+            "technical"
+          ],
+          "tag": [
+            "ai",
+            "tooling",
+            "developer-experience",
+            "open-source"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "byline-michael-wu"
+          }
+        ]
+      },
+      {
+        "id": "post-paseo-visual-agent-orchestration",
+        "slug": "paseo-visual-agent-orchestration",
+        "status": "published",
+        "data": {
+          "title": "Why I Switched to Paseo to Orchestrate Coding Agents",
+          "excerpt": "I recently switched from Conductor to Paseo for my multi-device agentic development environment. Conductor still has the best UI and flow in my view, but Paseo better fits my setup because it is fully open source, has Linux and Windows apps, mobile apps, and can itself be orchestrated through a CLI.",
+          "original_date": "2026-07-24T15:00:00.000Z",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k35",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k32",
+                  "_type": "link",
+                  "href": "https://paseo.sh/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k31",
+                  "text": "If you are looking for an agentic development environment (ADE), I would check out ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k33",
+                  "text": "Paseo",
+                  "marks": [
+                    "k32"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k34",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k37",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k36",
+                  "text": "There has been an explosion of tools in this category. I have been looking at a small mix of GUI-based and terminal-first options. This is not a feature matrix or a ranking—just the short list I considered and the details that stood out to me while I was deciding what to use.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k39",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k38",
+                  "text": "Other Tools I Looked At",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3b",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3a",
+                  "text": "GUI-Based",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3f",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k3c",
+                  "_type": "link",
+                  "href": "https://www.agentastic.dev/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3d",
+                  "text": "Agentastic",
+                  "marks": [
+                    "k3c"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3e",
+                  "text": ": not open source yet.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3j",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k3g",
+                  "_type": "link",
+                  "href": "https://agentsroom.dev/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3h",
+                  "text": "Agents Room",
+                  "marks": [
+                    "k3g"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3i",
+                  "text": ": supports remote use, but is not open source.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3n",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k3k",
+                  "_type": "link",
+                  "href": "https://www.conductor.build/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3l",
+                  "text": "Conductor",
+                  "marks": [
+                    "k3k"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3m",
+                  "text": ": what I was using previously.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3r",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k3o",
+                  "_type": "link",
+                  "href": "https://www.onorca.dev/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3p",
+                  "text": "Orca",
+                  "marks": [
+                    "k3o"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3q",
+                  "text": ": supports remote use, is open source, and has a mobile app.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3v",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k3s",
+                  "_type": "link",
+                  "href": "https://emdash.ai/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3t",
+                  "text": "Emdash",
+                  "marks": [
+                    "k3s"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k3u",
+                  "text": ": open source and appears to support remote use.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k3x",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3w",
+                  "text": "Terminal-First",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k40",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k3y",
+                  "_type": "link",
+                  "href": "https://cmux.com/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k3z",
+                  "text": "cmux",
+                  "marks": [
+                    "k3y"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k43",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k41",
+                  "_type": "link",
+                  "href": "https://herdr.dev/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k42",
+                  "text": "Herdr",
+                  "marks": [
+                    "k41"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k48",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k45",
+                  "_type": "link",
+                  "href": "https://rywalker.com/research/mac-coding-agent-apps"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k44",
+                  "text": "For a broader overview, see Ryan Walker’s ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k46",
+                  "text": "comparison of Mac coding-agent apps",
+                  "marks": [
+                    "k45"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k47",
+                  "text": ". I encourage people to try out various tools to see how they work for you!",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4d",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k4a",
+                  "_type": "link",
+                  "href": "https://www.conductor.build/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k49",
+                  "text": "I had previously recommended ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4b",
+                  "text": "Conductor",
+                  "marks": [
+                    "k4a"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k4c",
+                  "text": ", and I still think it has the best UI and flow for making development more automatic. It is a genuinely polished experience, and that matters when the goal is to make agent work easier to follow and manage.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4f",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4e",
+                  "text": "Paseo is the better fit for me right now because I am optimizing for something slightly different: control over the devices I already run, the ability to work across them, and the option to bring agent orchestration into my own command-line workflows.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4h",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4g",
+                  "text": "What I Am Optimizing For",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4j",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4i",
+                  "text": "This is not a claim that one tool is better at everything. Conductor’s interface and workflow are still the bar for me when I think about how this kind of environment should feel to use.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4l",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4k",
+                  "text": "The deciding constraint in my own setup is remote control. At the time I made this decision, Remote was available only through paid Conductor Cloud, which means I could not use it to remotely control my own devices in the way I wanted. That is a mismatch with my setup, not a dismissal of Conductor.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4n",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4m",
+                  "text": "For Paseo, the practical checklist is straightforward:",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4p",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4o",
+                  "text": "It is fully open source.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4r",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4q",
+                  "text": "It has Linux and Windows apps.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4t",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4s",
+                  "text": "It has mobile apps.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4v",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4u",
+                  "text": "It can itself be orchestrated through a CLI.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4x",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4w",
+                  "text": "Those are the things I need from an ADE more than a broad feature-by-feature comparison. The CLI point is especially important to me: I do not want the visual layer to be isolated from the rest of my workflow. I want the option to include agent orchestration itself in the way I automate and coordinate work.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k4z",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k4y",
+                  "text": "The ADE I Actually Need",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k51",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k50",
+                  "text": "I have Paseo instances running on both my MacBook and a mini PC at home. I can control them through my Hermes agent or the mobile app.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k58",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k53",
+                  "_type": "link",
+                  "href": "https://github.com/508-dev/paseo-agent-orchestration"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k52",
+                  "text": "To give an agent the same access, I wrote ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k54",
+                  "text": "Paseo Agent Orchestration",
+                  "marks": [
+                    "k53"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k55",
+                  "text": ", an Agent Skills-compatible package for safely coordinating trusted coding agents through Paseo. Install its ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k56",
+                  "text": "skills/paseo-agent-orchestration",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k57",
+                  "text": " directory using your client’s Agent Skills mechanism, then point the client at the Paseo daemon it will manage. Keep the endpoint and authentication details in the client’s deployment configuration, separate from an untracked, read-only repository alias map that identifies the repositories the skill may target. Those aliases identify targets, not what the skill can do; it can still use its permitted Paseo tools to create and manage work. On the same machine, that can be the local daemon the desktop app has already started; for a remote host, the client needs a secure route to the relevant daemon’s MCP endpoint. I use it with Hermes, but I intentionally kept the core skill agent-neutral, so it can also be used with OpenClaw or another compatible client.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "image",
+              "_key": "k59",
+              "alt": "Paseo mobile app showing MacBook and home mini PC remote hosts",
+              "asset": {
+                "url": "/images/paseo-mobile-remote-control.png"
+              }
+            },
+            {
+              "_type": "block",
+              "_key": "k5b",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5a",
+                  "text": "That is the difference that makes Paseo practical for me. I am not choosing an ADE only by how it feels on one machine at one desk. I want it to fit the way I already split work across my MacBook and a machine at home, while still being reachable when I am away from either one.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5d",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5c",
+                  "text": "The visual interface still matters, of course. But in my setup, the requirement that changes the decision is being able to operate my own devices.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5f",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5e",
+                  "text": "Why Open Source Changes How I Use It",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5h",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5g",
+                  "text": "The maintainer is also serious about keeping Paseo open source. As he has described it, the plan is to keep everything open source—including the relay—while fully supporting self-hosting and offering paid hosted services for people who want that option. That combination matters to me: it keeps self-hosting as a first-class option without taking away the convenience of a hosted service.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5l",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5i",
+                  "text": "I am actively making improvements to Paseo and seeing whether they will get merged. These are things like support for ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5j",
+                  "text": ".worktreeinclude",
+                  "marks": [
+                    "code"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5k",
+                  "text": ", importing sessions from other ADEs, and more automatic development. That is another meaningful part of the appeal for me: I can participate in improving the tool I use instead of treating it as a fixed service.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5n",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5m",
+                  "text": "The maintainer has been responsive in my experience. That does not guarantee that every contribution will be accepted, but it makes experimentation and upstream collaboration feel worthwhile.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5p",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5o",
+                  "text": "Bottom Line",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5u",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k5r",
+                  "_type": "link",
+                  "href": "https://www.conductor.build/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5q",
+                  "text": "If polished UI and flow are your first priority, I still think ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5s",
+                  "text": "Conductor",
+                  "marks": [
+                    "k5r"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5t",
+                  "text": " is worth a close look. It remains my reference point for making development feel more automatic.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k5z",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k5w",
+                  "_type": "link",
+                  "href": "https://paseo.sh/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k5v",
+                  "text": "If you share my priorities—an ADE for coordinating coding agents across your own devices, access through Hermes or a mobile app, an open source project, and orchestration that can fit into CLI-based workflows—",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5x",
+                  "text": "Paseo",
+                  "marks": [
+                    "k5w"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k5y",
+                  "text": " is worth trying.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k61",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k60",
+                  "text": "For me, it is not about declaring a universal winner. It is about choosing the ADE that fits the way I actually work.",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": [
+            "technical"
+          ],
+          "tag": [
+            "ai",
+            "tooling",
+            "developer-experience",
+            "open-source"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "byline-michael-wu"
+          }
+        ]
+      }
+    ]
+  }
+}
