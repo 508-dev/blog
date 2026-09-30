@@ -8,10 +8,16 @@ export const GET: APIRoute = async ({ site, url }) => {
 	const siteUrl = site ?? new URL(url.origin);
 	const { siteTitle, siteTagline } = resolveBlogSiteIdentity(await getSiteSettings());
 
-	const { entries: posts } = await getEmDashCollection("posts", {
+	const { entries: posts, error } = await getEmDashCollection("posts", {
 		orderBy: { published_at: "desc" },
 		limit: 20,
 	});
+	if (error) {
+		return new Response("Feed temporarily unavailable", {
+			status: 503,
+			headers: { "Cache-Control": "no-store" },
+		});
+	}
 
 	const items = posts
 		.map((post) => {

@@ -34,10 +34,10 @@ const hasMorePosts = posts.length > POSTS_PER_PAGE;
 const featuredPost = visiblePosts.find((p) => p.data.featured_image);
 const featuredIndex = featuredPost ? visiblePosts.indexOf(featuredPost) : -1;
 
-// Get remaining posts (exclude featured if found, limit to 6 for grid)
+// Show all seven when there is no featured post; otherwise one hero and six cards.
 const gridPosts = visiblePosts
 	.filter((_, i) => i !== featuredIndex)
-	.slice(0, 6);
+	.slice(0, featuredPost ? POSTS_PER_PAGE - 1 : POSTS_PER_PAGE);
 
 // Single batched query for tags across the featured post + grid posts.
 // Avoids the N+1 pattern of calling getEntryTerms() per entry.
@@ -432,6 +432,7 @@ function formatDate(date: Date | null | undefined) {
 		}
 
 		.featured-image-link {
+			grid-column: auto;
 			margin-left: 0;
 		}
 

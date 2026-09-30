@@ -17,13 +17,17 @@ import { publicationDate } from "../../utils/publication-date";
 const slug = decodeSlug(Astro.params.slug);
 
 if (!slug) {
-	return Astro.redirect("/404");
+	return Astro.rewrite("/404");
 }
 
-const { entry: post, cacheHint } = await getEmDashEntry("posts", slug);
+const { entry: post, error, cacheHint } = await getEmDashEntry("posts", slug);
+
+if (error) {
+	return new Response("Unable to load post", { status: 500 });
+}
 
 if (!post) {
-	return Astro.redirect("/404");
+	return Astro.rewrite("/404");
 }
 
 if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
@@ -227,7 +231,7 @@ const publishDate =
 					}
 				</header>
 
-				<div class="article-content">
+				<div class="article-content" {...post.edit.content}>
 					<PortableText value={post.data.content} />
 				</div>
 
