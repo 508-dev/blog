@@ -1,0 +1,36 @@
+/*
+  theme.css -- your theme overrides. This is the file to edit to
+  retheme the site.
+
+  Every design token lives in src/styles/tokens.css (colors, type
+  scale, spacing, layout, shadows) with its default value. Override any
+  of them here: declarations in this file are unlayered, so they always
+  beat the @layer base defaults in tokens.css.
+
+  Colors are defined with light-dark(). Overriding with a plain color
+  changes light and dark mode at once; use light-dark(<light>, <dark>)
+  to set different values per mode.
+
+  This prototype uses system fonts so its Docker build does not depend
+  on a remote font service.
+
+  Example:
+
+  :root {
+    --color-brand: light-dark(#0f766e, #2dd4bf);
+    --font-heading: "Iowan Old Style", Georgia, serif;
+    --radius: 8px;
+  }
+*/
+
+:root {
+}
+
+/* Keep the signed-in Admin link separated from the primary navigation. */
+.nav-admin {
+	margin-inline-start: var(--spacing-5);
+}
+:root {
+	--font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

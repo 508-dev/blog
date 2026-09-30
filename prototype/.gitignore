@@ -1,0 +1,8 @@
+node_modules/
+.astro/
+.emdash/
+dist/
+.env
+data.db*
+uploads/
+public

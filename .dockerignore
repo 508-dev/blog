@@ -1,0 +1,15 @@
+.git
+.env
+.github
+.agents
+.codex
+.context
+prototype/node_modules
+prototype/.astro
+prototype/dist
+prototype/.env
+prototype/data.db*
+prototype/uploads
+prototype/public
+public
+resources
