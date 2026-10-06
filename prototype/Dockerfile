@@ -11,6 +11,9 @@ RUN pnpm build
 
 FROM node:24-bookworm-slim
 WORKDIR /app/prototype
+# Coolify's HTTP health check runs curl or wget inside the container.
+RUN apt-get update && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
 ENV NODE_ENV=production HOST=0.0.0.0 PORT=4321 \
     DATABASE_PATH=/data/data.db MEDIA_DIRECTORY=/data/uploads
 COPY --from=build /app/prototype/dist ./dist
