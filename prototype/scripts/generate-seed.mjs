@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
@@ -6,11 +6,8 @@ import { markdownToPortableText } from "emdash/client";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
-const filenames = [
-  "why-coop.md",
-  "508-devkit.md",
-  "paseo-visual-agent-orchestration.md",
-];
+const filenames = readdirSync(resolve(root, "content/posts"))
+  .filter((name) => name.endsWith(".md"));
 
 function readPost(filename) {
   const source = readFileSync(resolve(root, "content/posts", filename), "utf8");
@@ -18,11 +15,75 @@ function readPost(filename) {
   if (!match) throw new Error(`Missing YAML front matter: ${filename}`);
   const meta = parseYaml(match[1]);
   const author = typeof meta.author === "string" ? meta.author : meta.author?.name;
-  if (!meta.title || !meta.slug || !author) throw new Error(`Missing title, slug, or author: ${filename}`);
-  return { meta, author, body: match[2] };
+  if (!meta.title || !meta.slug || !author || !meta.date) {
+    throw new Error(`Missing title, slug, author, or date: ${filename}`);
+  }
+  return { filename, meta, author, body: match[2] };
 }
 
-const posts = filenames.map(readPost);
+const posts = filenames.map(readPost).sort((a, b) =>
+  new Date(a.meta.date).getTime() - new Date(b.meta.date).getTime()
+);
+const slugs = posts.map(({ meta }) => meta.slug);
+if (new Set(slugs).size !== slugs.length) throw new Error("Duplicate post slugs");
+
+function plainBlockText(block) {
+  if (block?._type !== "block" || block.style !== "normal" ||
+      block.markDefs?.length || block.children?.length !== 1 ||
+      block.children[0]?._type !== "span" || block.children[0].marks?.length) return null;
+  return block.children[0].text;
+}
+
+function tableCells(line) {
+  if (typeof line !== "string" || !/^\|.*\|$/.test(line.trim())) return null;
+  return line.trim().slice(1, -1).split("|").map((cell) => cell.trim());
+}
+
+function convertBody(body, filename) {
+  const blocks = markdownToPortableText(body);
+  const result = [];
+  for (let i = 0; i < blocks.length; i++) {
+    const block = blocks[i];
+    const text = plainBlockText(block);
+    if (typeof text === "string" && /^<a id="[a-z0-9-]+"><\/a>$/.test(text)) {
+      result.push({ _type: "htmlBlock", _key: block._key, html: text });
+      continue;
+    }
+    const header = tableCells(text);
+    const separator = tableCells(plainBlockText(blocks[i + 1]));
+    if (header && separator && header.length === separator.length &&
+        separator.every((cell) => /^:?-{3,}:?$/.test(cell))) {
+      const rows = [header];
+      i++;
+      while (i + 1 < blocks.length) {
+        const cells = tableCells(plainBlockText(blocks[i + 1]));
+        if (!cells || cells.length !== header.length) break;
+        rows.push(cells);
+        i++;
+      }
+      result.push({
+        _type: "table", _key: block._key, hasHeaderRow: true,
+        rows: rows.map((cells, rowIndex) => ({
+          _type: "tableRow", _key: `${block._key}-r${rowIndex}`,
+          cells: cells.map((cell, cellIndex) => ({
+            _type: "tableCell", _key: `${block._key}-r${rowIndex}-c${cellIndex}`,
+            isHeader: rowIndex === 0,
+            content: [{ _type: "span", _key: `${block._key}-r${rowIndex}-c${cellIndex}-s`, text: cell, marks: [] }],
+          })),
+        })),
+      });
+      continue;
+    }
+    result.push(block);
+  }
+  for (const block of result) {
+    if (block._type !== "image" || !block.asset?.url?.startsWith("/")) continue;
+    if (!existsSync(resolve(root, "static", block.asset.url.slice(1)))) {
+      throw new Error(`Missing image ${block.asset.url} in ${filename}`);
+    }
+  }
+  return result;
+}
 const termSlug = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const taxonomy = (name, values) => ({
   name,
@@ -75,15 +136,15 @@ const seed = {
     ],
   }],
   content: {
-    posts: posts.map(({ meta, author, body }) => ({
+    posts: posts.map(({ filename, meta, author, body }) => ({
       id: `post-${meta.slug}`,
       slug: meta.slug,
-      status: "published",
+      status: meta.draft ? "draft" : "published",
       data: {
         title: meta.title,
         excerpt: meta.summary || meta.description || "",
         original_date: new Date(meta.date).toISOString(),
-        content: markdownToPortableText(body),
+        content: convertBody(body, filename),
       },
       taxonomies: {
         category: (meta.categories || []).map(termSlug),

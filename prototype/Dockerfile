@@ -20,6 +20,7 @@ COPY --from=build /app/prototype/dist ./dist
 COPY --from=build /app/prototype/node_modules ./node_modules
 COPY --from=build /app/prototype/package.json ./package.json
 COPY --from=build /app/prototype/seed ./seed
+COPY --from=build /app/prototype/scripts ./scripts
 COPY prototype/docker-entrypoint.sh ./docker-entrypoint.sh
 EXPOSE 4321
 CMD ["sh", "docker-entrypoint.sh"]

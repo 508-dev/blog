@@ -1,6 +1,6 @@
 # 508.dev EmDash preview
 
-This is an isolated CMS prototype for the 508.dev blog. The current Hugo site and GitHub Pages deployment remain active. The preview contains three representative posts, including their original slugs, author credits, tags, categories, publication dates, and referenced static images. It uses EmDash 1.0.1 on Astro, with drafts, revisions, scheduling, search, and RSS.
+This is an isolated CMS prototype for the 508.dev blog. The current Hugo site and GitHub Pages deployment remain active. The preview contains all 15 Hugo posts, including their original slugs, author credits, tags, categories, publication dates, and referenced static images. It uses EmDash 1.0.1 on Astro, with drafts, revisions, scheduling, search, and RSS.
 
 ## Local development
 
@@ -14,7 +14,7 @@ corepack pnpm exec emdash seed seed/seed.json --database ./data.db
 ASTRO_TELEMETRY_DISABLED=1 corepack pnpm dev
 ```
 
-Open `http://localhost:4321/_emdash/admin` to create the first administrator. The local database, uploads, and `.env` are ignored by Git. `corepack pnpm seed:generate` regenerates the preview seed from three Hugo posts in `../content/posts/`.
+Open `http://localhost:4321/_emdash/admin` to create the first administrator. The local database, uploads, and `.env` are ignored by Git. `corepack pnpm seed:generate` regenerates the bootstrap seed from every Markdown post in `../content/posts/`. The one-time import script extracts only the content, authors, and taxonomy terms from that seed.
 
 ## Coolify preview
 
@@ -22,4 +22,4 @@ Create a Dockerfile application from this repository's `main` branch, with the r
 
 Before starting a public deployment, restrict the preview hostname with Cloudflare Access, proxy authentication, or an IP allowlist. The first visitor to `/_emdash/admin` can create the initial administrator, and the email used for passkey setup is not verified. Keep the restriction active until you have created and tested the administrator account. Reapply it before restoring a database without an administrator. Do not expose the Coolify preview while initial setup is open.
 
-The three imported posts use an `original_date` field to preserve the displayed date and RSS date. EmDash records the preview import time as its internal publication timestamp, so database sorting of these initial posts reflects import order. The full migration still needs a checked conversion of every Markdown post, richer Markdown constructs such as tables and raw HTML, and a URL comparison before switching `blog.508.dev`.
+For an existing preview database, run `node scripts/import-remaining-posts.mjs` once inside the deployed container after updating its image. The script makes a consistent SQLite backup under `/data/backups`, applies only posts, bylines, and taxonomy terms with `--on-conflict skip`, aligns the imported posts' internal publication timestamps with their original dates, and writes `/data/.all-posts-imported-v1` only after successful verification. It leaves the administrator, existing post content, site settings, and navigation in place. Back up `/data/backups` with the rest of `/data` until the import is verified. The full migration still needs a URL comparison before switching `blog.508.dev`.
