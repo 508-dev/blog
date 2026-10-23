@@ -142,6 +142,6 @@ If you would like to explore the slides or dive into the code from my talk:
 
 [508.dev](https://508.dev) is a worker-owned software co-op that helps small teams ship web and mobile products. If you are weighing a mobile app for your Rails product, here is how to start:
 
-- **Free 30-minute assessment:** Walk us through your app and we will tell you honestly whether Hotwire Native fits, what should stay native, and what it would take to ship.
+- **[Book a free 30-minute assessment](https://cal.com/nebiyuelias1/508.dev):** Walk us through your app and we will tell you honestly whether Hotwire Native fits, what should stay native, and what it would take to ship.
 - **Rails to App Store checklist:** Email [nebiyu@508.dev](mailto:nebiyu@508.dev) and we will send the checklist we use to take a Rails app from local development to both stores.
 - **Build with us:** Learn more at [508.dev](https://508.dev).
