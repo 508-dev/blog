@@ -39,7 +39,7 @@ repost:
 
 Most teams with a Rails app eventually ask the same question: how do we get onto our users' home screens without doubling, or tripling, our engineering effort?
 
-I explored one answer at [COSCUP](https://coscup.org/) (Conference for Open Source Coders, Users, and Promoters) in September. Speaking in the Ruby Taiwan track, I shared a topic close to my heart: **Building Native Mobile Apps Using Rails** with [Hotwire Native](https://native.hotwired.dev/) and [Strada](https://strada.hotwired.dev/). This article walks through the three routes most teams consider, what each actually costs in codebases and maintenance, and why Hotwire Native is the pragmatic option for Rails teams.
+I explored one answer at [COSCUP](https://coscup.org/) (Conference for Open Source Coders, Users, and Promoters) in August. Speaking in the Ruby Taiwan track, I shared a topic close to my heart: **Building Native Mobile Apps Using Rails** with [Hotwire Native](https://native.hotwired.dev/) and [Strada](https://strada.hotwired.dev/). This article walks through the three routes most teams consider, what each actually costs in codebases and maintenance, and why Hotwire Native is the pragmatic option for Rails teams.
 
 {{< youtube GGojT82JL-k >}}
 
