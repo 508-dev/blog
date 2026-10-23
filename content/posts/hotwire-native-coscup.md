@@ -127,7 +127,8 @@ Presenting at COSCUP was a fantastic experience. The Ruby Taiwan community is vi
 
 During the Q&A and hallway discussions, several great questions came up:
 
-- **What about offline support?** Turbo Native provides snapshot caching out of the box, showing the last-rendered state of a screen immediately while revalidating in the background. For richer offline flows, Service Workers or local SQLite databases can be integrated via bridge components.
+- **What about offline support?** Hotwire Native caches screenshots for back navigation. Offline workflows require explicit web or native storage and synchronization; bridge components can connect that storage to the web UI.
+
 - **When is Hotwire Native NOT the right tool?** If you are building a graphic-intensive game, a video editor with frame-by-frame canvas manipulation, or an app whose core value is 100% offline-first utility, pure native or specialized engines are better fits. But for 90% of business applications, SaaS dashboards, e-commerce, and community platforms, Hotwire Native is more than sufficient; it is superior in iteration speed.
 
 ## Slides and Resources
