@@ -88,6 +88,17 @@ enableEmoji = true
     weight = 3
     [menu.main.params]
       icon = "fa-solid fa-tags"
+  [[menu.main]]
+    identifier = "work-with-us"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Work with us"
+    url = "https://508.dev"
+    title = ""
+    weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-briefcase"
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
