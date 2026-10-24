@@ -67,6 +67,21 @@ function tableCells(block) {
 
 function convertBody(body, filename) {
   const blocks = markdownToPortableText(body);
+  // The converter leaves links nested inside bold Markdown as literal text.
+  for (const block of blocks) {
+    if (block._type !== "block" || !Array.isArray(block.children)) continue;
+    block.children = block.children.flatMap((child) => {
+      const link = child._type === "span" && child.marks?.includes("strong") &&
+        child.text?.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)(:?)$/);
+      if (!link) return [child];
+      const key = `${child._key}-link`;
+      block.markDefs.push({ _key: key, _type: "link", href: link[2] });
+      return [
+        { ...child, text: link[1], marks: [...child.marks, key] },
+        ...(link[3] ? [{ _type: "span", _key: `${child._key}-colon`, text: link[3], marks: child.marks }] : []),
+      ];
+    });
+  }
   const result = [];
   for (let i = 0; i < blocks.length; i++) {
     const block = blocks[i];

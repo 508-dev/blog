@@ -14031,7 +14031,13 @@
               "_type": "block",
               "_key": "k1ac",
               "style": "normal",
-              "markDefs": [],
+              "markDefs": [
+                {
+                  "_key": "k1a8-link",
+                  "_type": "link",
+                  "href": "https://clawpatch.ai/"
+                }
+              ],
               "children": [
                 {
                   "_type": "span",
@@ -14042,9 +14048,10 @@
                 {
                   "_type": "span",
                   "_key": "k1a8",
-                  "text": "[clawpatch](https://clawpatch.ai/)",
+                  "text": "clawpatch",
                   "marks": [
-                    "strong"
+                    "strong",
+                    "k1a8-link"
                   ]
                 },
                 {
@@ -17609,12 +17616,27 @@
               "style": "normal",
               "listItem": "bullet",
               "level": 1,
-              "markDefs": [],
+              "markDefs": [
+                {
+                  "_key": "k1mn-link",
+                  "_type": "link",
+                  "href": "https://cal.com/nebiyuelias1/508.dev"
+                }
+              ],
               "children": [
                 {
                   "_type": "span",
                   "_key": "k1mn",
-                  "text": "[Book a free 30-minute assessment](https://cal.com/nebiyuelias1/508.dev):",
+                  "text": "Book a free 30-minute assessment",
+                  "marks": [
+                    "strong",
+                    "k1mn-link"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mn-colon",
+                  "text": ":",
                   "marks": [
                     "strong"
                   ]
