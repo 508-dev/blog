@@ -3125,7 +3125,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r0-c0-s",
+                          "_key": "ka9-r0-c0-s0",
                           "text": "Layer",
                           "marks": []
                         }
@@ -3138,7 +3138,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r0-c1-s",
+                          "_key": "ka9-r0-c1-s0",
                           "text": "Responsibility",
                           "marks": []
                         }
@@ -3151,7 +3151,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r0-c2-s",
+                          "_key": "ka9-r0-c2-s0",
                           "text": "Why It Exists",
                           "marks": []
                         }
@@ -3170,7 +3170,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r1-c0-s",
+                          "_key": "ka9-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -3183,7 +3183,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r1-c1-s",
+                          "_key": "ka9-r1-c1-s0",
                           "text": "Prediction, classification, extraction",
                           "marks": []
                         }
@@ -3196,7 +3196,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r1-c2-s",
+                          "_key": "ka9-r1-c2-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -3215,7 +3215,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r2-c0-s",
+                          "_key": "ka9-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -3228,7 +3228,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r2-c1-s",
+                          "_key": "ka9-r2-c1-s0",
                           "text": "Immutability, ordering, verification",
                           "marks": []
                         }
@@ -3241,7 +3241,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r2-c2-s",
+                          "_key": "ka9-r2-c2-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -3260,7 +3260,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r3-c0-s",
+                          "_key": "ka9-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -3273,7 +3273,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r3-c1-s",
+                          "_key": "ka9-r3-c1-s0",
                           "text": "Compute, storage, orchestration",
                           "marks": []
                         }
@@ -3286,7 +3286,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r3-c2-s",
+                          "_key": "ka9-r3-c2-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -3955,7 +3955,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r0-c0-s",
+                          "_key": "kd0-r0-c0-s0",
                           "text": "Constraint",
                           "marks": []
                         }
@@ -3968,7 +3968,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r0-c1-s",
+                          "_key": "kd0-r0-c1-s0",
                           "text": "Why It Breaks DeAI",
                           "marks": []
                         }
@@ -3987,7 +3987,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r1-c0-s",
+                          "_key": "kd0-r1-c0-s0",
                           "text": "GPUs",
                           "marks": []
                         }
@@ -4000,7 +4000,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r1-c1-s",
+                          "_key": "kd0-r1-c1-s0",
                           "text": "Scarce, expensive, centralized",
                           "marks": []
                         }
@@ -4019,7 +4019,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r2-c0-s",
+                          "_key": "kd0-r2-c0-s0",
                           "text": "Latency",
                           "marks": []
                         }
@@ -4032,7 +4032,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r2-c1-s",
+                          "_key": "kd0-r2-c1-s0",
                           "text": "On-chain is not real-time",
                           "marks": []
                         }
@@ -4051,7 +4051,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r3-c0-s",
+                          "_key": "kd0-r3-c0-s0",
                           "text": "Cost",
                           "marks": []
                         }
@@ -4064,7 +4064,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r3-c1-s",
+                          "_key": "kd0-r3-c1-s0",
                           "text": "Inference at scale is costly",
                           "marks": []
                         }
@@ -4083,7 +4083,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r4-c0-s",
+                          "_key": "kd0-r4-c0-s0",
                           "text": "Tooling",
                           "marks": []
                         }
@@ -4096,7 +4096,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r4-c1-s",
+                          "_key": "kd0-r4-c1-s0",
                           "text": "ML stacks assume cloud",
                           "marks": []
                         }
@@ -4450,7 +4450,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r0-c0-s",
+                          "_key": "kek-r0-c0-s0",
                           "text": "Model",
                           "marks": []
                         }
@@ -4463,7 +4463,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r0-c1-s",
+                          "_key": "kek-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -4476,7 +4476,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r0-c2-s",
+                          "_key": "kek-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -4495,7 +4495,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r1-c0-s",
+                          "_key": "kek-r1-c0-s0",
                           "text": "Centralized",
                           "marks": []
                         }
@@ -4508,7 +4508,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r1-c1-s",
+                          "_key": "kek-r1-c1-s0",
                           "text": "Reliable",
                           "marks": []
                         }
@@ -4521,7 +4521,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r1-c2-s",
+                          "_key": "kek-r1-c2-s0",
                           "text": "Trust needed",
                           "marks": []
                         }
@@ -4540,7 +4540,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r2-c0-s",
+                          "_key": "kek-r2-c0-s0",
                           "text": "Fully DeAI",
                           "marks": []
                         }
@@ -4553,7 +4553,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r2-c1-s",
+                          "_key": "kek-r2-c1-s0",
                           "text": "Ideologically pure",
                           "marks": []
                         }
@@ -4566,7 +4566,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r2-c2-s",
+                          "_key": "kek-r2-c2-s0",
                           "text": "Unstable",
                           "marks": []
                         }
@@ -4585,7 +4585,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r3-c0-s",
+                          "_key": "kek-r3-c0-s0",
                           "text": "Hybrid",
                           "marks": []
                         }
@@ -4598,7 +4598,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r3-c1-s",
+                          "_key": "kek-r3-c1-s0",
                           "text": "Practical",
                           "marks": []
                         }
@@ -4611,7 +4611,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r3-c2-s",
+                          "_key": "kek-r3-c2-s0",
                           "text": "Slightly complex",
                           "marks": []
                         }
@@ -5531,7 +5531,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r0-c0-s",
+                          "_key": "ki9-r0-c0-s0",
                           "text": "Feature",
                           "marks": []
                         }
@@ -5544,7 +5544,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r0-c1-s",
+                          "_key": "ki9-r0-c1-s0",
                           "text": "Signal",
                           "marks": []
                         }
@@ -5563,7 +5563,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r1-c0-s",
+                          "_key": "ki9-r1-c0-s0",
                           "text": "tx_rate",
                           "marks": []
                         }
@@ -5576,7 +5576,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r1-c1-s",
+                          "_key": "ki9-r1-c1-s0",
                           "text": "Automation",
                           "marks": []
                         }
@@ -5595,7 +5595,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r2-c0-s",
+                          "_key": "ki9-r2-c0-s0",
                           "text": "counterparty_entropy",
                           "marks": []
                         }
@@ -5608,7 +5608,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r2-c1-s",
+                          "_key": "ki9-r2-c1-s0",
                           "text": "Wallet diversity",
                           "marks": []
                         }
@@ -5627,7 +5627,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r3-c0-s",
+                          "_key": "ki9-r3-c0-s0",
                           "text": "value_variance",
                           "marks": []
                         }
@@ -5640,7 +5640,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r3-c1-s",
+                          "_key": "ki9-r3-c1-s0",
                           "text": "Manipulation",
                           "marks": []
                         }
@@ -6293,7 +6293,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r0-c0-s",
+                          "_key": "kl0-r0-c0-s0",
                           "text": "Failure mode",
                           "marks": []
                         }
@@ -6306,7 +6306,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r0-c1-s",
+                          "_key": "kl0-r0-c1-s0",
                           "text": "Mitigation",
                           "marks": []
                         }
@@ -6325,7 +6325,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r1-c0-s",
+                          "_key": "kl0-r1-c0-s0",
                           "text": "Malicious/incorrect agent output",
                           "marks": []
                         }
@@ -6338,7 +6338,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r1-c1-s",
+                          "_key": "kl0-r1-c1-s0",
                           "text": "caps, allowlists, staged rollout",
                           "marks": []
                         }
@@ -6357,7 +6357,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r2-c0-s",
+                          "_key": "kl0-r2-c0-s0",
                           "text": "Oracle compromise",
                           "marks": []
                         }
@@ -6370,7 +6370,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r2-c1-s",
+                          "_key": "kl0-r2-c1-s0",
                           "text": "multiple oracles, medianization, bounds checks",
                           "marks": []
                         }
@@ -6389,7 +6389,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r3-c0-s",
+                          "_key": "kl0-r3-c0-s0",
                           "text": "Front-running / MEV",
                           "marks": []
                         }
@@ -6402,7 +6402,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r3-c1-s",
+                          "_key": "kl0-r3-c1-s0",
                           "text": "TWAP, slippage caps, commit-reveal",
                           "marks": []
                         }
@@ -6421,7 +6421,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r4-c0-s",
+                          "_key": "kl0-r4-c0-s0",
                           "text": "Reorgs / finality",
                           "marks": []
                         }
@@ -6434,7 +6434,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r4-c1-s",
+                          "_key": "kl0-r4-c1-s0",
                           "text": "confirm-finality thresholds, idempotent ops",
                           "marks": []
                         }
@@ -6453,7 +6453,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r5-c0-s",
+                          "_key": "kl0-r5-c0-s0",
                           "text": "Replay attacks",
                           "marks": []
                         }
@@ -6466,7 +6466,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r5-c1-s",
+                          "_key": "kl0-r5-c1-s0",
                           "text": "nonce + expiry + domain separation",
                           "marks": []
                         }
@@ -6718,7 +6718,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r0-c0-s",
+                          "_key": "km8-r0-c0-s0",
                           "text": "Design",
                           "marks": []
                         }
@@ -6731,7 +6731,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r0-c1-s",
+                          "_key": "km8-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -6744,7 +6744,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r0-c2-s",
+                          "_key": "km8-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -6763,7 +6763,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r1-c0-s",
+                          "_key": "km8-r1-c0-s0",
                           "text": "Fully autonomous",
                           "marks": []
                         }
@@ -6776,7 +6776,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r1-c1-s",
+                          "_key": "km8-r1-c1-s0",
                           "text": "fast",
                           "marks": []
                         }
@@ -6789,7 +6789,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r1-c2-s",
+                          "_key": "km8-r1-c2-s0",
                           "text": "risky without strong guardrails",
                           "marks": []
                         }
@@ -6808,7 +6808,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r2-c0-s",
+                          "_key": "km8-r2-c0-s0",
                           "text": "Human approvals",
                           "marks": []
                         }
@@ -6821,7 +6821,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r2-c1-s",
+                          "_key": "km8-r2-c1-s0",
                           "text": "safer",
                           "marks": []
                         }
@@ -6834,7 +6834,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r2-c2-s",
+                          "_key": "km8-r2-c2-s0",
                           "text": "slower",
                           "marks": []
                         }
@@ -6853,7 +6853,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r3-c0-s",
+                          "_key": "km8-r3-c0-s0",
                           "text": "Hybrid (recommended)",
                           "marks": []
                         }
@@ -6866,7 +6866,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r3-c1-s",
+                          "_key": "km8-r3-c1-s0",
                           "text": "practical",
                           "marks": []
                         }
@@ -6879,7 +6879,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r3-c2-s",
+                          "_key": "km8-r3-c2-s0",
                           "text": "more moving parts",
                           "marks": []
                         }
@@ -7446,7 +7446,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r0-c0-s",
+                          "_key": "kok-r0-c0-s0",
                           "text": "Technology",
                           "marks": []
                         }
@@ -7459,7 +7459,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r0-c1-s",
+                          "_key": "kok-r0-c1-s0",
                           "text": "Role",
                           "marks": []
                         }
@@ -7478,7 +7478,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r1-c0-s",
+                          "_key": "kok-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -7491,7 +7491,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r1-c1-s",
+                          "_key": "kok-r1-c1-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -7510,7 +7510,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r2-c0-s",
+                          "_key": "kok-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -7523,7 +7523,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r2-c1-s",
+                          "_key": "kok-r2-c1-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -7542,7 +7542,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r3-c0-s",
+                          "_key": "kok-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -7555,7 +7555,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r3-c1-s",
+                          "_key": "kok-r3-c1-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -7700,7 +7700,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r0-c0-s",
+                          "_key": "kp7-r0-c0-s0",
                           "text": "Layer",
                           "marks": []
                         }
@@ -7713,7 +7713,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r0-c1-s",
+                          "_key": "kp7-r0-c1-s0",
                           "text": "Responsibility",
                           "marks": []
                         }
@@ -7726,7 +7726,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r0-c2-s",
+                          "_key": "kp7-r0-c2-s0",
                           "text": "Why It Exists",
                           "marks": []
                         }
@@ -7745,7 +7745,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r1-c0-s",
+                          "_key": "kp7-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -7758,7 +7758,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r1-c1-s",
+                          "_key": "kp7-r1-c1-s0",
                           "text": "Prediction, classification, extraction",
                           "marks": []
                         }
@@ -7771,7 +7771,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r1-c2-s",
+                          "_key": "kp7-r1-c2-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -7790,7 +7790,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r2-c0-s",
+                          "_key": "kp7-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -7803,7 +7803,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r2-c1-s",
+                          "_key": "kp7-r2-c1-s0",
                           "text": "Immutability, ordering, verification",
                           "marks": []
                         }
@@ -7816,7 +7816,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r2-c2-s",
+                          "_key": "kp7-r2-c2-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -7835,7 +7835,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r3-c0-s",
+                          "_key": "kp7-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -7848,7 +7848,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r3-c1-s",
+                          "_key": "kp7-r3-c1-s0",
                           "text": "Compute, storage, orchestration",
                           "marks": []
                         }
@@ -7861,7 +7861,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r3-c2-s",
+                          "_key": "kp7-r3-c2-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -8728,7 +8728,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r0-c0-s",
+                          "_key": "ksl-r0-c0-s0",
                           "text": "Constraint",
                           "marks": []
                         }
@@ -8741,7 +8741,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r0-c1-s",
+                          "_key": "ksl-r0-c1-s0",
                           "text": "Why It Breaks DeAI",
                           "marks": []
                         }
@@ -8760,7 +8760,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r1-c0-s",
+                          "_key": "ksl-r1-c0-s0",
                           "text": "GPUs",
                           "marks": []
                         }
@@ -8773,7 +8773,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r1-c1-s",
+                          "_key": "ksl-r1-c1-s0",
                           "text": "Scarce, expensive, centralized",
                           "marks": []
                         }
@@ -8792,7 +8792,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r2-c0-s",
+                          "_key": "ksl-r2-c0-s0",
                           "text": "Latency",
                           "marks": []
                         }
@@ -8805,7 +8805,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r2-c1-s",
+                          "_key": "ksl-r2-c1-s0",
                           "text": "On-chain is not real-time",
                           "marks": []
                         }
@@ -8824,7 +8824,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r3-c0-s",
+                          "_key": "ksl-r3-c0-s0",
                           "text": "Cost",
                           "marks": []
                         }
@@ -8837,7 +8837,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r3-c1-s",
+                          "_key": "ksl-r3-c1-s0",
                           "text": "Inference at scale is costly",
                           "marks": []
                         }
@@ -8856,7 +8856,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r4-c0-s",
+                          "_key": "ksl-r4-c0-s0",
                           "text": "Tooling",
                           "marks": []
                         }
@@ -8869,7 +8869,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r4-c1-s",
+                          "_key": "ksl-r4-c1-s0",
                           "text": "ML stacks assume cloud",
                           "marks": []
                         }
@@ -9223,7 +9223,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r0-c0-s",
+                          "_key": "ku5-r0-c0-s0",
                           "text": "Model",
                           "marks": []
                         }
@@ -9236,7 +9236,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r0-c1-s",
+                          "_key": "ku5-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -9249,7 +9249,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r0-c2-s",
+                          "_key": "ku5-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -9268,7 +9268,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r1-c0-s",
+                          "_key": "ku5-r1-c0-s0",
                           "text": "Centralized",
                           "marks": []
                         }
@@ -9281,7 +9281,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r1-c1-s",
+                          "_key": "ku5-r1-c1-s0",
                           "text": "Reliable",
                           "marks": []
                         }
@@ -9294,7 +9294,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r1-c2-s",
+                          "_key": "ku5-r1-c2-s0",
                           "text": "Trust needed",
                           "marks": []
                         }
@@ -9313,7 +9313,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r2-c0-s",
+                          "_key": "ku5-r2-c0-s0",
                           "text": "Fully DeAI",
                           "marks": []
                         }
@@ -9326,7 +9326,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r2-c1-s",
+                          "_key": "ku5-r2-c1-s0",
                           "text": "Ideologically pure",
                           "marks": []
                         }
@@ -9339,7 +9339,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r2-c2-s",
+                          "_key": "ku5-r2-c2-s0",
                           "text": "Unstable",
                           "marks": []
                         }
@@ -9358,7 +9358,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r3-c0-s",
+                          "_key": "ku5-r3-c0-s0",
                           "text": "Hybrid",
                           "marks": []
                         }
@@ -9371,7 +9371,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r3-c1-s",
+                          "_key": "ku5-r3-c1-s0",
                           "text": "Practical",
                           "marks": []
                         }
@@ -9384,7 +9384,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r3-c2-s",
+                          "_key": "ku5-r3-c2-s0",
                           "text": "Slightly complex",
                           "marks": []
                         }
@@ -10714,7 +10714,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r0-c0-s",
+                          "_key": "kz6-r0-c0-s0",
                           "text": "Feature",
                           "marks": []
                         }
@@ -10727,7 +10727,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r0-c1-s",
+                          "_key": "kz6-r0-c1-s0",
                           "text": "Signal",
                           "marks": []
                         }
@@ -10746,7 +10746,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r1-c0-s",
+                          "_key": "kz6-r1-c0-s0",
                           "text": "tx_rate",
                           "marks": []
                         }
@@ -10759,7 +10759,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r1-c1-s",
+                          "_key": "kz6-r1-c1-s0",
                           "text": "Automation",
                           "marks": []
                         }
@@ -10778,7 +10778,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r2-c0-s",
+                          "_key": "kz6-r2-c0-s0",
                           "text": "counterparty_entropy",
                           "marks": []
                         }
@@ -10791,7 +10791,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r2-c1-s",
+                          "_key": "kz6-r2-c1-s0",
                           "text": "Wallet diversity",
                           "marks": []
                         }
@@ -10810,7 +10810,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r3-c0-s",
+                          "_key": "kz6-r3-c0-s0",
                           "text": "value_variance",
                           "marks": []
                         }
@@ -10823,7 +10823,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r3-c1-s",
+                          "_key": "kz6-r3-c1-s0",
                           "text": "Manipulation",
                           "marks": []
                         }
@@ -11674,7 +11674,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r0-c0-s",
+                          "_key": "k12k-r0-c0-s0",
                           "text": "Failure mode",
                           "marks": []
                         }
@@ -11687,7 +11687,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r0-c1-s",
+                          "_key": "k12k-r0-c1-s0",
                           "text": "Mitigation",
                           "marks": []
                         }
@@ -11706,7 +11706,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r1-c0-s",
+                          "_key": "k12k-r1-c0-s0",
                           "text": "Malicious/incorrect agent output",
                           "marks": []
                         }
@@ -11719,7 +11719,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r1-c1-s",
+                          "_key": "k12k-r1-c1-s0",
                           "text": "caps, allowlists, staged rollout",
                           "marks": []
                         }
@@ -11738,7 +11738,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r2-c0-s",
+                          "_key": "k12k-r2-c0-s0",
                           "text": "Oracle compromise",
                           "marks": []
                         }
@@ -11751,7 +11751,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r2-c1-s",
+                          "_key": "k12k-r2-c1-s0",
                           "text": "multiple oracles, medianization, bounds checks",
                           "marks": []
                         }
@@ -11770,7 +11770,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r3-c0-s",
+                          "_key": "k12k-r3-c0-s0",
                           "text": "Front-running / MEV",
                           "marks": []
                         }
@@ -11783,7 +11783,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r3-c1-s",
+                          "_key": "k12k-r3-c1-s0",
                           "text": "TWAP, slippage caps, commit-reveal",
                           "marks": []
                         }
@@ -11802,7 +11802,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r4-c0-s",
+                          "_key": "k12k-r4-c0-s0",
                           "text": "Reorgs / finality",
                           "marks": []
                         }
@@ -11815,7 +11815,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r4-c1-s",
+                          "_key": "k12k-r4-c1-s0",
                           "text": "confirm-finality thresholds, idempotent ops",
                           "marks": []
                         }
@@ -11834,7 +11834,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r5-c0-s",
+                          "_key": "k12k-r5-c0-s0",
                           "text": "Replay attacks",
                           "marks": []
                         }
@@ -11847,7 +11847,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r5-c1-s",
+                          "_key": "k12k-r5-c1-s0",
                           "text": "nonce + expiry + domain separation",
                           "marks": []
                         }
@@ -12099,7 +12099,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r0-c0-s",
+                          "_key": "k13s-r0-c0-s0",
                           "text": "Design",
                           "marks": []
                         }
@@ -12112,7 +12112,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r0-c1-s",
+                          "_key": "k13s-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -12125,7 +12125,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r0-c2-s",
+                          "_key": "k13s-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -12144,7 +12144,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r1-c0-s",
+                          "_key": "k13s-r1-c0-s0",
                           "text": "Fully autonomous",
                           "marks": []
                         }
@@ -12157,7 +12157,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r1-c1-s",
+                          "_key": "k13s-r1-c1-s0",
                           "text": "fast",
                           "marks": []
                         }
@@ -12170,7 +12170,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r1-c2-s",
+                          "_key": "k13s-r1-c2-s0",
                           "text": "risky without strong guardrails",
                           "marks": []
                         }
@@ -12189,7 +12189,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r2-c0-s",
+                          "_key": "k13s-r2-c0-s0",
                           "text": "Human approvals",
                           "marks": []
                         }
@@ -12202,7 +12202,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r2-c1-s",
+                          "_key": "k13s-r2-c1-s0",
                           "text": "safer",
                           "marks": []
                         }
@@ -12215,7 +12215,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r2-c2-s",
+                          "_key": "k13s-r2-c2-s0",
                           "text": "slower",
                           "marks": []
                         }
@@ -12234,7 +12234,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r3-c0-s",
+                          "_key": "k13s-r3-c0-s0",
                           "text": "Hybrid (recommended)",
                           "marks": []
                         }
@@ -12247,7 +12247,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r3-c1-s",
+                          "_key": "k13s-r3-c1-s0",
                           "text": "practical",
                           "marks": []
                         }
@@ -12260,7 +12260,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r3-c2-s",
+                          "_key": "k13s-r3-c2-s0",
                           "text": "more moving parts",
                           "marks": []
                         }
@@ -13025,7 +13025,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r0-c0-s",
+                          "_key": "k16r-r0-c0-s0",
                           "text": "Technology",
                           "marks": []
                         }
@@ -13038,7 +13038,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r0-c1-s",
+                          "_key": "k16r-r0-c1-s0",
                           "text": "Role",
                           "marks": []
                         }
@@ -13057,7 +13057,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r1-c0-s",
+                          "_key": "k16r-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -13070,7 +13070,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r1-c1-s",
+                          "_key": "k16r-r1-c1-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -13089,7 +13089,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r2-c0-s",
+                          "_key": "k16r-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -13102,7 +13102,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r2-c1-s",
+                          "_key": "k16r-r2-c1-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -13121,7 +13121,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r3-c0-s",
+                          "_key": "k16r-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -13134,7 +13134,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r3-c1-s",
+                          "_key": "k16r-r3-c1-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -16239,7 +16239,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k1iq-r0-c0-s",
+                          "_key": "k1iq-r0-c0-s0",
                           "text": "",
                           "marks": []
                         }
@@ -16252,7 +16252,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k1iq-r0-c1-s",
+                          "_key": "k1iq-r0-c1-s0",
                           "text": "PWA",
                           "marks": []
                         }
@@ -16265,7 +16265,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k1iq-r0-c2-s",
+                          "_key": "k1iq-r0-c2-s0",
                           "text": "Pure Native (Swift/Kotlin)",
                           "marks": []
                         }
@@ -16278,293 +16278,613 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k1iq-r0-c3-s",
+                          "_key": "k1iq-r0-c3-s0",
                           "text": "Cross-Platform (React Native/Flutter)",
                           "marks": []
                         }
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1iw",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1it",
-                  "text": "| ",
-                  "marks": []
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1iu",
-                  "text": "Codebases to maintain",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r1",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c0-s0",
+                          "text": "Codebases to maintain",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c1-s0",
+                          "text": "1 (your web app)",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c2-s0",
+                          "text": "3 (web + iOS + Android)",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c3-s0",
+                          "text": "2 (web + mobile)",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1iv",
-                  "text": "   | 1 (your web app)                       | 3 (web + iOS + Android)                               | 2 (web + mobile)                                            |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1j0",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1ix",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1iy",
-                  "text": "App Store / Play Store",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r2",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c0-s0",
+                          "text": "App Store / Play Store",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c1-s0",
+                          "text": "Not listed",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c2-s0",
+                          "text": "Yes",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c3-s0",
+                          "text": "Yes",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1iz",
-                  "text": "  | Not listed                             | Yes                                                   | Yes                                                         |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1j4",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1j1",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1j2",
-                  "text": "Performance & animation",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r3",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c0-s0",
+                          "text": "Performance & animation",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c1-s0",
+                          "text": "Good for content, limited for heavy UI",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c2-s0",
+                          "text": "Gold standard",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c3-s0",
+                          "text": "Near-native, some overhead",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1j3",
-                  "text": " | Good for content, limited for heavy UI | Gold standard                                         | Near-native, some overhead                                  |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1j8",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1j5",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1j6",
-                  "text": "Platform integration",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r4",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c0-s0",
+                          "text": "Platform integration",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c1-s0",
+                          "text": "Limited (especially iOS)",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c2-s0",
+                          "text": "Full access",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c3-s0",
+                          "text": "Good, via native modules",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1j7",
-                  "text": "    | Limited (especially iOS)               | Full access                                           | Good, via native modules                                    |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1jc",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1j9",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1ja",
-                  "text": "Push notifications",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r5",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c0-s0",
+                          "text": "Push notifications",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c1-s0",
+                          "text": "Limited on iOS",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c2-s0",
+                          "text": "Full",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c3-s0",
+                          "text": "Full",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1jb",
-                  "text": "      | Limited on iOS                         | Full                                                  | Full                                                        |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1jg",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1jd",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1je",
-                  "text": "Offline support",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r6",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c0-s0",
+                          "text": "Offline support",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c1-s0",
+                          "text": "Service workers",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c2-s0",
+                          "text": "Full control",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c3-s0",
+                          "text": "Full control",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1jf",
-                  "text": "         | Service workers                        | Full control                                          | Full control                                                |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1jk",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1jh",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1ji",
-                  "text": "Time to first release",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r7",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c0-s0",
+                          "text": "Time to first release",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c1-s0",
+                          "text": "Fastest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c2-s0",
+                          "text": "Slowest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c3-s0",
+                          "text": "Moderate",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1jj",
-                  "text": "   | Fastest                                | Slowest                                               | Moderate                                                    |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1jo",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1jl",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1jm",
-                  "text": "Ongoing maintenance",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r8",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c0-s0",
+                          "text": "Ongoing maintenance",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c1-s0",
+                          "text": "Lowest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c2-s0",
+                          "text": "Highest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c3-s0",
+                          "text": "Moderate to high",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1jn",
-                  "text": "     | Lowest                                 | Highest                                               | Moderate to high                                            |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1js",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1jp",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1jq",
-                  "text": "Feature parity with web",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r9",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c0-s0",
+                          "text": "Feature parity with web",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c1-s0",
+                          "text": "Automatic",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c2-s0",
+                          "text": "Manual, per platform",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c3-s0",
+                          "text": "Manual, plus API work",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
-                  "_type": "span",
-                  "_key": "k1jr",
-                  "text": " | Automatic                              | Manual, per platform                                  | Manual, plus API work                                       |",
-                  "marks": []
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "_key": "k1jw",
-              "style": "normal",
-              "markDefs": [],
-              "children": [
-                {
-                  "_type": "span",
-                  "_key": "k1jt",
-                  "text": "| ",
-                  "marks": []
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1ju",
-                  "text": "Best fit",
-                  "marks": [
-                    "strong"
+                  "_type": "tableRow",
+                  "_key": "k1iq-r10",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c0-s0",
+                          "text": "Best fit",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c1-s0",
+                          "text": "Content sites, simple utilities",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c2-s0",
+                          "text": "Graphics-heavy, offline-first, deeply integrated apps",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c3-s0",
+                          "text": "Teams that need one mobile codebase but accept an API layer",
+                          "marks": []
+                        }
+                      ]
+                    }
                   ]
-                },
-                {
-                  "_type": "span",
-                  "_key": "k1jv",
-                  "text": "                | Content sites, simple utilities        | Graphics-heavy, offline-first, deeply integrated apps | Teams that need one mobile codebase but accept an API layer |",
-                  "marks": []
                 }
               ]
             },
