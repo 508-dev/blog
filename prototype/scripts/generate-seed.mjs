@@ -45,6 +45,11 @@ function convertBody(body, filename) {
   for (let i = 0; i < blocks.length; i++) {
     const block = blocks[i];
     const text = plainBlockText(block);
+    const youtube = typeof text === "string" && text.match(/^\{\{< youtube ([a-zA-Z0-9_-]{11}) >\}\}$/);
+    if (youtube) {
+      result.push({ _type: "embed", _key: block._key, url: `https://www.youtube.com/watch?v=${youtube[1]}` });
+      continue;
+    }
     if (typeof text === "string" && /^<a id="[a-z0-9-]+"><\/a>$/.test(text)) {
       result.push({ _type: "htmlBlock", _key: block._key, html: text });
       continue;
@@ -85,14 +90,21 @@ function convertBody(body, filename) {
   return result;
 }
 const termSlug = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-const taxonomy = (name, values) => ({
-  name,
-  label: name === "tag" ? "Tags" : "Categories",
-  labelSingular: name === "tag" ? "Tag" : "Category",
-  hierarchical: name === "category",
-  collections: ["posts"],
-  terms: [...new Set(values)].map((label) => ({ slug: termSlug(label), label })),
-});
+const taxonomy = (name, values) => {
+  const terms = new Map();
+  for (const label of values) {
+    const slug = termSlug(label);
+    if (!terms.has(slug)) terms.set(slug, { slug, label });
+  }
+  return {
+    name,
+    label: name === "tag" ? "Tags" : "Categories",
+    labelSingular: name === "tag" ? "Tag" : "Category",
+    hierarchical: name === "category",
+    collections: ["posts"],
+    terms: [...terms.values()],
+  };
+};
 
 const seed = {
   version: "1",
