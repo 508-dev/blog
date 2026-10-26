@@ -14,7 +14,7 @@ const pendingPath = join(dirname(databasePath), ".all-posts-import-pending-v1");
 if (!existsSync(databasePath)) throw new Error(`Database does not exist: ${databasePath}`);
 
 const seed = JSON.parse(readFileSync(seedPath, "utf8"));
-const posts = seed.content?.posts;
+const posts = seed.content?.posts?.filter((post) => post.slug !== "hotwire-native-coscup");
 if (!Array.isArray(posts) || posts.length !== 15) {
   throw new Error("Expected the reviewed 15-post seed before importing");
 }
@@ -52,8 +52,17 @@ writeFileSync(pendingPath, `${backupPath}\n`, { mode: 0o600 });
 
 const scratchDir = mkdtempSync(join(tmpdir(), "emdash-post-import-"));
 const contentSeedPath = join(scratchDir, "content.json");
+const termSlugs = new Map(seed.taxonomies.map((taxonomy) => [taxonomy.name, new Set(
+  posts.flatMap((post) => post.taxonomies?.[taxonomy.name] || []),
+)]));
+const taxonomies = seed.taxonomies.map((taxonomy) => ({
+  ...taxonomy,
+  terms: taxonomy.terms.filter((term) => termSlugs.get(taxonomy.name).has(term.slug)),
+}));
+const bylineIds = new Set(posts.flatMap((post) => post.bylines?.map((item) => item.byline) || []));
+const bylines = seed.bylines.filter((byline) => bylineIds.has(byline.id));
 writeFileSync(contentSeedPath, JSON.stringify({
-  version: "1", taxonomies: seed.taxonomies, bylines: seed.bylines, content: seed.content,
+  version: "1", taxonomies, bylines, content: { posts },
 }), { mode: 0o600 });
 let seedResult;
 try {

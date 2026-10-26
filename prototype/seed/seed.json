@@ -224,6 +224,26 @@
         {
           "slug": "vibecoding",
           "label": "vibecoding"
+        },
+        {
+          "slug": "ruby-on-rails",
+          "label": "Ruby on Rails"
+        },
+        {
+          "slug": "hotwire",
+          "label": "Hotwire"
+        },
+        {
+          "slug": "hotwire-native",
+          "label": "Hotwire Native"
+        },
+        {
+          "slug": "mobile-development",
+          "label": "Mobile Development"
+        },
+        {
+          "slug": "coscup",
+          "label": "COSCUP"
         }
       ]
     }
@@ -263,6 +283,11 @@
       "id": "byline-emilio-haataja",
       "slug": "emilio-haataja",
       "displayName": "Emilio Haataja"
+    },
+    {
+      "id": "byline-neba",
+      "slug": "neba",
+      "displayName": "Neba"
     }
   ],
   "menus": [
@@ -3100,7 +3125,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r0-c0-s",
+                          "_key": "ka9-r0-c0-s0",
                           "text": "Layer",
                           "marks": []
                         }
@@ -3113,7 +3138,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r0-c1-s",
+                          "_key": "ka9-r0-c1-s0",
                           "text": "Responsibility",
                           "marks": []
                         }
@@ -3126,7 +3151,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r0-c2-s",
+                          "_key": "ka9-r0-c2-s0",
                           "text": "Why It Exists",
                           "marks": []
                         }
@@ -3145,7 +3170,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r1-c0-s",
+                          "_key": "ka9-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -3158,7 +3183,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r1-c1-s",
+                          "_key": "ka9-r1-c1-s0",
                           "text": "Prediction, classification, extraction",
                           "marks": []
                         }
@@ -3171,7 +3196,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r1-c2-s",
+                          "_key": "ka9-r1-c2-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -3190,7 +3215,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r2-c0-s",
+                          "_key": "ka9-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -3203,7 +3228,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r2-c1-s",
+                          "_key": "ka9-r2-c1-s0",
                           "text": "Immutability, ordering, verification",
                           "marks": []
                         }
@@ -3216,7 +3241,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r2-c2-s",
+                          "_key": "ka9-r2-c2-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -3235,7 +3260,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r3-c0-s",
+                          "_key": "ka9-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -3248,7 +3273,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r3-c1-s",
+                          "_key": "ka9-r3-c1-s0",
                           "text": "Compute, storage, orchestration",
                           "marks": []
                         }
@@ -3261,7 +3286,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ka9-r3-c2-s",
+                          "_key": "ka9-r3-c2-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -3930,7 +3955,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r0-c0-s",
+                          "_key": "kd0-r0-c0-s0",
                           "text": "Constraint",
                           "marks": []
                         }
@@ -3943,7 +3968,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r0-c1-s",
+                          "_key": "kd0-r0-c1-s0",
                           "text": "Why It Breaks DeAI",
                           "marks": []
                         }
@@ -3962,7 +3987,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r1-c0-s",
+                          "_key": "kd0-r1-c0-s0",
                           "text": "GPUs",
                           "marks": []
                         }
@@ -3975,7 +4000,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r1-c1-s",
+                          "_key": "kd0-r1-c1-s0",
                           "text": "Scarce, expensive, centralized",
                           "marks": []
                         }
@@ -3994,7 +4019,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r2-c0-s",
+                          "_key": "kd0-r2-c0-s0",
                           "text": "Latency",
                           "marks": []
                         }
@@ -4007,7 +4032,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r2-c1-s",
+                          "_key": "kd0-r2-c1-s0",
                           "text": "On-chain is not real-time",
                           "marks": []
                         }
@@ -4026,7 +4051,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r3-c0-s",
+                          "_key": "kd0-r3-c0-s0",
                           "text": "Cost",
                           "marks": []
                         }
@@ -4039,7 +4064,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r3-c1-s",
+                          "_key": "kd0-r3-c1-s0",
                           "text": "Inference at scale is costly",
                           "marks": []
                         }
@@ -4058,7 +4083,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r4-c0-s",
+                          "_key": "kd0-r4-c0-s0",
                           "text": "Tooling",
                           "marks": []
                         }
@@ -4071,7 +4096,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kd0-r4-c1-s",
+                          "_key": "kd0-r4-c1-s0",
                           "text": "ML stacks assume cloud",
                           "marks": []
                         }
@@ -4425,7 +4450,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r0-c0-s",
+                          "_key": "kek-r0-c0-s0",
                           "text": "Model",
                           "marks": []
                         }
@@ -4438,7 +4463,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r0-c1-s",
+                          "_key": "kek-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -4451,7 +4476,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r0-c2-s",
+                          "_key": "kek-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -4470,7 +4495,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r1-c0-s",
+                          "_key": "kek-r1-c0-s0",
                           "text": "Centralized",
                           "marks": []
                         }
@@ -4483,7 +4508,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r1-c1-s",
+                          "_key": "kek-r1-c1-s0",
                           "text": "Reliable",
                           "marks": []
                         }
@@ -4496,7 +4521,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r1-c2-s",
+                          "_key": "kek-r1-c2-s0",
                           "text": "Trust needed",
                           "marks": []
                         }
@@ -4515,7 +4540,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r2-c0-s",
+                          "_key": "kek-r2-c0-s0",
                           "text": "Fully DeAI",
                           "marks": []
                         }
@@ -4528,7 +4553,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r2-c1-s",
+                          "_key": "kek-r2-c1-s0",
                           "text": "Ideologically pure",
                           "marks": []
                         }
@@ -4541,7 +4566,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r2-c2-s",
+                          "_key": "kek-r2-c2-s0",
                           "text": "Unstable",
                           "marks": []
                         }
@@ -4560,7 +4585,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r3-c0-s",
+                          "_key": "kek-r3-c0-s0",
                           "text": "Hybrid",
                           "marks": []
                         }
@@ -4573,7 +4598,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r3-c1-s",
+                          "_key": "kek-r3-c1-s0",
                           "text": "Practical",
                           "marks": []
                         }
@@ -4586,7 +4611,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kek-r3-c2-s",
+                          "_key": "kek-r3-c2-s0",
                           "text": "Slightly complex",
                           "marks": []
                         }
@@ -5506,7 +5531,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r0-c0-s",
+                          "_key": "ki9-r0-c0-s0",
                           "text": "Feature",
                           "marks": []
                         }
@@ -5519,7 +5544,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r0-c1-s",
+                          "_key": "ki9-r0-c1-s0",
                           "text": "Signal",
                           "marks": []
                         }
@@ -5538,7 +5563,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r1-c0-s",
+                          "_key": "ki9-r1-c0-s0",
                           "text": "tx_rate",
                           "marks": []
                         }
@@ -5551,7 +5576,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r1-c1-s",
+                          "_key": "ki9-r1-c1-s0",
                           "text": "Automation",
                           "marks": []
                         }
@@ -5570,7 +5595,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r2-c0-s",
+                          "_key": "ki9-r2-c0-s0",
                           "text": "counterparty_entropy",
                           "marks": []
                         }
@@ -5583,7 +5608,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r2-c1-s",
+                          "_key": "ki9-r2-c1-s0",
                           "text": "Wallet diversity",
                           "marks": []
                         }
@@ -5602,7 +5627,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r3-c0-s",
+                          "_key": "ki9-r3-c0-s0",
                           "text": "value_variance",
                           "marks": []
                         }
@@ -5615,7 +5640,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ki9-r3-c1-s",
+                          "_key": "ki9-r3-c1-s0",
                           "text": "Manipulation",
                           "marks": []
                         }
@@ -6268,7 +6293,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r0-c0-s",
+                          "_key": "kl0-r0-c0-s0",
                           "text": "Failure mode",
                           "marks": []
                         }
@@ -6281,7 +6306,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r0-c1-s",
+                          "_key": "kl0-r0-c1-s0",
                           "text": "Mitigation",
                           "marks": []
                         }
@@ -6300,7 +6325,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r1-c0-s",
+                          "_key": "kl0-r1-c0-s0",
                           "text": "Malicious/incorrect agent output",
                           "marks": []
                         }
@@ -6313,7 +6338,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r1-c1-s",
+                          "_key": "kl0-r1-c1-s0",
                           "text": "caps, allowlists, staged rollout",
                           "marks": []
                         }
@@ -6332,7 +6357,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r2-c0-s",
+                          "_key": "kl0-r2-c0-s0",
                           "text": "Oracle compromise",
                           "marks": []
                         }
@@ -6345,7 +6370,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r2-c1-s",
+                          "_key": "kl0-r2-c1-s0",
                           "text": "multiple oracles, medianization, bounds checks",
                           "marks": []
                         }
@@ -6364,7 +6389,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r3-c0-s",
+                          "_key": "kl0-r3-c0-s0",
                           "text": "Front-running / MEV",
                           "marks": []
                         }
@@ -6377,7 +6402,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r3-c1-s",
+                          "_key": "kl0-r3-c1-s0",
                           "text": "TWAP, slippage caps, commit-reveal",
                           "marks": []
                         }
@@ -6396,7 +6421,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r4-c0-s",
+                          "_key": "kl0-r4-c0-s0",
                           "text": "Reorgs / finality",
                           "marks": []
                         }
@@ -6409,7 +6434,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r4-c1-s",
+                          "_key": "kl0-r4-c1-s0",
                           "text": "confirm-finality thresholds, idempotent ops",
                           "marks": []
                         }
@@ -6428,7 +6453,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r5-c0-s",
+                          "_key": "kl0-r5-c0-s0",
                           "text": "Replay attacks",
                           "marks": []
                         }
@@ -6441,7 +6466,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kl0-r5-c1-s",
+                          "_key": "kl0-r5-c1-s0",
                           "text": "nonce + expiry + domain separation",
                           "marks": []
                         }
@@ -6693,7 +6718,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r0-c0-s",
+                          "_key": "km8-r0-c0-s0",
                           "text": "Design",
                           "marks": []
                         }
@@ -6706,7 +6731,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r0-c1-s",
+                          "_key": "km8-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -6719,7 +6744,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r0-c2-s",
+                          "_key": "km8-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -6738,7 +6763,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r1-c0-s",
+                          "_key": "km8-r1-c0-s0",
                           "text": "Fully autonomous",
                           "marks": []
                         }
@@ -6751,7 +6776,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r1-c1-s",
+                          "_key": "km8-r1-c1-s0",
                           "text": "fast",
                           "marks": []
                         }
@@ -6764,7 +6789,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r1-c2-s",
+                          "_key": "km8-r1-c2-s0",
                           "text": "risky without strong guardrails",
                           "marks": []
                         }
@@ -6783,7 +6808,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r2-c0-s",
+                          "_key": "km8-r2-c0-s0",
                           "text": "Human approvals",
                           "marks": []
                         }
@@ -6796,7 +6821,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r2-c1-s",
+                          "_key": "km8-r2-c1-s0",
                           "text": "safer",
                           "marks": []
                         }
@@ -6809,7 +6834,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r2-c2-s",
+                          "_key": "km8-r2-c2-s0",
                           "text": "slower",
                           "marks": []
                         }
@@ -6828,7 +6853,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r3-c0-s",
+                          "_key": "km8-r3-c0-s0",
                           "text": "Hybrid (recommended)",
                           "marks": []
                         }
@@ -6841,7 +6866,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r3-c1-s",
+                          "_key": "km8-r3-c1-s0",
                           "text": "practical",
                           "marks": []
                         }
@@ -6854,7 +6879,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "km8-r3-c2-s",
+                          "_key": "km8-r3-c2-s0",
                           "text": "more moving parts",
                           "marks": []
                         }
@@ -7421,7 +7446,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r0-c0-s",
+                          "_key": "kok-r0-c0-s0",
                           "text": "Technology",
                           "marks": []
                         }
@@ -7434,7 +7459,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r0-c1-s",
+                          "_key": "kok-r0-c1-s0",
                           "text": "Role",
                           "marks": []
                         }
@@ -7453,7 +7478,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r1-c0-s",
+                          "_key": "kok-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -7466,7 +7491,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r1-c1-s",
+                          "_key": "kok-r1-c1-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -7485,7 +7510,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r2-c0-s",
+                          "_key": "kok-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -7498,7 +7523,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r2-c1-s",
+                          "_key": "kok-r2-c1-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -7517,7 +7542,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r3-c0-s",
+                          "_key": "kok-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -7530,7 +7555,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kok-r3-c1-s",
+                          "_key": "kok-r3-c1-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -7675,7 +7700,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r0-c0-s",
+                          "_key": "kp7-r0-c0-s0",
                           "text": "Layer",
                           "marks": []
                         }
@@ -7688,7 +7713,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r0-c1-s",
+                          "_key": "kp7-r0-c1-s0",
                           "text": "Responsibility",
                           "marks": []
                         }
@@ -7701,7 +7726,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r0-c2-s",
+                          "_key": "kp7-r0-c2-s0",
                           "text": "Why It Exists",
                           "marks": []
                         }
@@ -7720,7 +7745,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r1-c0-s",
+                          "_key": "kp7-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -7733,7 +7758,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r1-c1-s",
+                          "_key": "kp7-r1-c1-s0",
                           "text": "Prediction, classification, extraction",
                           "marks": []
                         }
@@ -7746,7 +7771,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r1-c2-s",
+                          "_key": "kp7-r1-c2-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -7765,7 +7790,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r2-c0-s",
+                          "_key": "kp7-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -7778,7 +7803,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r2-c1-s",
+                          "_key": "kp7-r2-c1-s0",
                           "text": "Immutability, ordering, verification",
                           "marks": []
                         }
@@ -7791,7 +7816,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r2-c2-s",
+                          "_key": "kp7-r2-c2-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -7810,7 +7835,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r3-c0-s",
+                          "_key": "kp7-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -7823,7 +7848,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r3-c1-s",
+                          "_key": "kp7-r3-c1-s0",
                           "text": "Compute, storage, orchestration",
                           "marks": []
                         }
@@ -7836,7 +7861,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kp7-r3-c2-s",
+                          "_key": "kp7-r3-c2-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -8703,7 +8728,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r0-c0-s",
+                          "_key": "ksl-r0-c0-s0",
                           "text": "Constraint",
                           "marks": []
                         }
@@ -8716,7 +8741,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r0-c1-s",
+                          "_key": "ksl-r0-c1-s0",
                           "text": "Why It Breaks DeAI",
                           "marks": []
                         }
@@ -8735,7 +8760,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r1-c0-s",
+                          "_key": "ksl-r1-c0-s0",
                           "text": "GPUs",
                           "marks": []
                         }
@@ -8748,7 +8773,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r1-c1-s",
+                          "_key": "ksl-r1-c1-s0",
                           "text": "Scarce, expensive, centralized",
                           "marks": []
                         }
@@ -8767,7 +8792,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r2-c0-s",
+                          "_key": "ksl-r2-c0-s0",
                           "text": "Latency",
                           "marks": []
                         }
@@ -8780,7 +8805,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r2-c1-s",
+                          "_key": "ksl-r2-c1-s0",
                           "text": "On-chain is not real-time",
                           "marks": []
                         }
@@ -8799,7 +8824,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r3-c0-s",
+                          "_key": "ksl-r3-c0-s0",
                           "text": "Cost",
                           "marks": []
                         }
@@ -8812,7 +8837,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r3-c1-s",
+                          "_key": "ksl-r3-c1-s0",
                           "text": "Inference at scale is costly",
                           "marks": []
                         }
@@ -8831,7 +8856,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r4-c0-s",
+                          "_key": "ksl-r4-c0-s0",
                           "text": "Tooling",
                           "marks": []
                         }
@@ -8844,7 +8869,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ksl-r4-c1-s",
+                          "_key": "ksl-r4-c1-s0",
                           "text": "ML stacks assume cloud",
                           "marks": []
                         }
@@ -9198,7 +9223,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r0-c0-s",
+                          "_key": "ku5-r0-c0-s0",
                           "text": "Model",
                           "marks": []
                         }
@@ -9211,7 +9236,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r0-c1-s",
+                          "_key": "ku5-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -9224,7 +9249,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r0-c2-s",
+                          "_key": "ku5-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -9243,7 +9268,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r1-c0-s",
+                          "_key": "ku5-r1-c0-s0",
                           "text": "Centralized",
                           "marks": []
                         }
@@ -9256,7 +9281,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r1-c1-s",
+                          "_key": "ku5-r1-c1-s0",
                           "text": "Reliable",
                           "marks": []
                         }
@@ -9269,7 +9294,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r1-c2-s",
+                          "_key": "ku5-r1-c2-s0",
                           "text": "Trust needed",
                           "marks": []
                         }
@@ -9288,7 +9313,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r2-c0-s",
+                          "_key": "ku5-r2-c0-s0",
                           "text": "Fully DeAI",
                           "marks": []
                         }
@@ -9301,7 +9326,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r2-c1-s",
+                          "_key": "ku5-r2-c1-s0",
                           "text": "Ideologically pure",
                           "marks": []
                         }
@@ -9314,7 +9339,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r2-c2-s",
+                          "_key": "ku5-r2-c2-s0",
                           "text": "Unstable",
                           "marks": []
                         }
@@ -9333,7 +9358,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r3-c0-s",
+                          "_key": "ku5-r3-c0-s0",
                           "text": "Hybrid",
                           "marks": []
                         }
@@ -9346,7 +9371,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r3-c1-s",
+                          "_key": "ku5-r3-c1-s0",
                           "text": "Practical",
                           "marks": []
                         }
@@ -9359,7 +9384,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "ku5-r3-c2-s",
+                          "_key": "ku5-r3-c2-s0",
                           "text": "Slightly complex",
                           "marks": []
                         }
@@ -10689,7 +10714,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r0-c0-s",
+                          "_key": "kz6-r0-c0-s0",
                           "text": "Feature",
                           "marks": []
                         }
@@ -10702,7 +10727,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r0-c1-s",
+                          "_key": "kz6-r0-c1-s0",
                           "text": "Signal",
                           "marks": []
                         }
@@ -10721,7 +10746,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r1-c0-s",
+                          "_key": "kz6-r1-c0-s0",
                           "text": "tx_rate",
                           "marks": []
                         }
@@ -10734,7 +10759,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r1-c1-s",
+                          "_key": "kz6-r1-c1-s0",
                           "text": "Automation",
                           "marks": []
                         }
@@ -10753,7 +10778,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r2-c0-s",
+                          "_key": "kz6-r2-c0-s0",
                           "text": "counterparty_entropy",
                           "marks": []
                         }
@@ -10766,7 +10791,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r2-c1-s",
+                          "_key": "kz6-r2-c1-s0",
                           "text": "Wallet diversity",
                           "marks": []
                         }
@@ -10785,7 +10810,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r3-c0-s",
+                          "_key": "kz6-r3-c0-s0",
                           "text": "value_variance",
                           "marks": []
                         }
@@ -10798,7 +10823,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "kz6-r3-c1-s",
+                          "_key": "kz6-r3-c1-s0",
                           "text": "Manipulation",
                           "marks": []
                         }
@@ -11649,7 +11674,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r0-c0-s",
+                          "_key": "k12k-r0-c0-s0",
                           "text": "Failure mode",
                           "marks": []
                         }
@@ -11662,7 +11687,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r0-c1-s",
+                          "_key": "k12k-r0-c1-s0",
                           "text": "Mitigation",
                           "marks": []
                         }
@@ -11681,7 +11706,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r1-c0-s",
+                          "_key": "k12k-r1-c0-s0",
                           "text": "Malicious/incorrect agent output",
                           "marks": []
                         }
@@ -11694,7 +11719,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r1-c1-s",
+                          "_key": "k12k-r1-c1-s0",
                           "text": "caps, allowlists, staged rollout",
                           "marks": []
                         }
@@ -11713,7 +11738,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r2-c0-s",
+                          "_key": "k12k-r2-c0-s0",
                           "text": "Oracle compromise",
                           "marks": []
                         }
@@ -11726,7 +11751,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r2-c1-s",
+                          "_key": "k12k-r2-c1-s0",
                           "text": "multiple oracles, medianization, bounds checks",
                           "marks": []
                         }
@@ -11745,7 +11770,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r3-c0-s",
+                          "_key": "k12k-r3-c0-s0",
                           "text": "Front-running / MEV",
                           "marks": []
                         }
@@ -11758,7 +11783,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r3-c1-s",
+                          "_key": "k12k-r3-c1-s0",
                           "text": "TWAP, slippage caps, commit-reveal",
                           "marks": []
                         }
@@ -11777,7 +11802,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r4-c0-s",
+                          "_key": "k12k-r4-c0-s0",
                           "text": "Reorgs / finality",
                           "marks": []
                         }
@@ -11790,7 +11815,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r4-c1-s",
+                          "_key": "k12k-r4-c1-s0",
                           "text": "confirm-finality thresholds, idempotent ops",
                           "marks": []
                         }
@@ -11809,7 +11834,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r5-c0-s",
+                          "_key": "k12k-r5-c0-s0",
                           "text": "Replay attacks",
                           "marks": []
                         }
@@ -11822,7 +11847,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k12k-r5-c1-s",
+                          "_key": "k12k-r5-c1-s0",
                           "text": "nonce + expiry + domain separation",
                           "marks": []
                         }
@@ -12074,7 +12099,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r0-c0-s",
+                          "_key": "k13s-r0-c0-s0",
                           "text": "Design",
                           "marks": []
                         }
@@ -12087,7 +12112,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r0-c1-s",
+                          "_key": "k13s-r0-c1-s0",
                           "text": "Pros",
                           "marks": []
                         }
@@ -12100,7 +12125,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r0-c2-s",
+                          "_key": "k13s-r0-c2-s0",
                           "text": "Cons",
                           "marks": []
                         }
@@ -12119,7 +12144,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r1-c0-s",
+                          "_key": "k13s-r1-c0-s0",
                           "text": "Fully autonomous",
                           "marks": []
                         }
@@ -12132,7 +12157,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r1-c1-s",
+                          "_key": "k13s-r1-c1-s0",
                           "text": "fast",
                           "marks": []
                         }
@@ -12145,7 +12170,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r1-c2-s",
+                          "_key": "k13s-r1-c2-s0",
                           "text": "risky without strong guardrails",
                           "marks": []
                         }
@@ -12164,7 +12189,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r2-c0-s",
+                          "_key": "k13s-r2-c0-s0",
                           "text": "Human approvals",
                           "marks": []
                         }
@@ -12177,7 +12202,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r2-c1-s",
+                          "_key": "k13s-r2-c1-s0",
                           "text": "safer",
                           "marks": []
                         }
@@ -12190,7 +12215,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r2-c2-s",
+                          "_key": "k13s-r2-c2-s0",
                           "text": "slower",
                           "marks": []
                         }
@@ -12209,7 +12234,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r3-c0-s",
+                          "_key": "k13s-r3-c0-s0",
                           "text": "Hybrid (recommended)",
                           "marks": []
                         }
@@ -12222,7 +12247,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r3-c1-s",
+                          "_key": "k13s-r3-c1-s0",
                           "text": "practical",
                           "marks": []
                         }
@@ -12235,7 +12260,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k13s-r3-c2-s",
+                          "_key": "k13s-r3-c2-s0",
                           "text": "more moving parts",
                           "marks": []
                         }
@@ -13000,7 +13025,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r0-c0-s",
+                          "_key": "k16r-r0-c0-s0",
                           "text": "Technology",
                           "marks": []
                         }
@@ -13013,7 +13038,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r0-c1-s",
+                          "_key": "k16r-r0-c1-s0",
                           "text": "Role",
                           "marks": []
                         }
@@ -13032,7 +13057,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r1-c0-s",
+                          "_key": "k16r-r1-c0-s0",
                           "text": "AI",
                           "marks": []
                         }
@@ -13045,7 +13070,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r1-c1-s",
+                          "_key": "k16r-r1-c1-s0",
                           "text": "Intelligence",
                           "marks": []
                         }
@@ -13064,7 +13089,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r2-c0-s",
+                          "_key": "k16r-r2-c0-s0",
                           "text": "Blockchain",
                           "marks": []
                         }
@@ -13077,7 +13102,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r2-c1-s",
+                          "_key": "k16r-r2-c1-s0",
                           "text": "Trust",
                           "marks": []
                         }
@@ -13096,7 +13121,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r3-c0-s",
+                          "_key": "k16r-r3-c0-s0",
                           "text": "Cloud",
                           "marks": []
                         }
@@ -13109,7 +13134,7 @@
                       "content": [
                         {
                           "_type": "span",
-                          "_key": "k16r-r3-c1-s",
+                          "_key": "k16r-r3-c1-s0",
                           "text": "Scale",
                           "marks": []
                         }
@@ -14006,7 +14031,13 @@
               "_type": "block",
               "_key": "k1ac",
               "style": "normal",
-              "markDefs": [],
+              "markDefs": [
+                {
+                  "_key": "k1a8-link",
+                  "_type": "link",
+                  "href": "https://clawpatch.ai/"
+                }
+              ],
               "children": [
                 {
                   "_type": "span",
@@ -14017,9 +14048,10 @@
                 {
                   "_type": "span",
                   "_key": "k1a8",
-                  "text": "[clawpatch](https://clawpatch.ai/)",
+                  "text": "clawpatch",
                   "marks": [
-                    "strong"
+                    "strong",
+                    "k1a8-link"
                   ]
                 },
                 {
@@ -15885,6 +15917,1845 @@
         "bylines": [
           {
             "byline": "byline-michael-wu"
+          }
+        ]
+      },
+      {
+        "id": "post-hotwire-native-coscup",
+        "slug": "hotwire-native-coscup",
+        "status": "published",
+        "data": {
+          "title": "Ship mobile apps faster using Rails",
+          "excerpt": "At COSCUP, I gave a talk on \"Building Native Mobile Apps Using Rails\" in the Ruby Taiwan track. Here is a breakdown of why Hotwire Native and Strada are game-changers for solo developers and lean teams who want high-fidelity iOS and Android apps without maintaining separate codebases.",
+          "original_date": "2026-10-23T02:00:00.000Z",
+          "content": [
+            {
+              "_type": "block",
+              "_key": "k1hh",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1hg",
+                  "text": "Most teams with a Rails app eventually ask the same question: how do we get onto our users' home screens without doubling, or tripling, our engineering effort?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1hu",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k1hj",
+                  "_type": "link",
+                  "href": "https://coscup.org/"
+                },
+                {
+                  "_key": "k1ho",
+                  "_type": "link",
+                  "href": "https://native.hotwired.dev/"
+                },
+                {
+                  "_key": "k1hr",
+                  "_type": "link",
+                  "href": "https://strada.hotwired.dev/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1hi",
+                  "text": "I explored one answer at ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1hk",
+                  "text": "COSCUP",
+                  "marks": [
+                    "k1hj"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1hl",
+                  "text": " (Conference for Open Source Coders, Users, and Promoters) in August. Speaking in the Ruby Taiwan track, I shared a topic close to my heart: ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1hm",
+                  "text": "Building Native Mobile Apps Using Rails",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1hn",
+                  "text": " with ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1hp",
+                  "text": "Hotwire Native",
+                  "marks": [
+                    "k1ho"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1hq",
+                  "text": " and ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1hs",
+                  "text": "Strada",
+                  "marks": [
+                    "k1hr"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1ht",
+                  "text": ". This article walks through the three routes most teams consider, what each actually costs in codebases and maintenance, and why Hotwire Native is the pragmatic option for Rails teams.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "embed",
+              "_key": "k1hw",
+              "url": "https://www.youtube.com/watch?v=GGojT82JL-k"
+            },
+            {
+              "_type": "block",
+              "_key": "k1hy",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1hx",
+                  "text": "Would you believe me if I told you that Ruby on Rails (Rails) could also be used to build native mobile apps? You read that right: you can turn an existing Rails web application into a functional mobile app. If you have built with Rails and are looking to expand into mobile, this article is for you.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1i0",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1hz",
+                  "text": "Most internet traffic now comes from mobile devices, and users are accustomed to launching products from their home screen. Whatever platform you choose, you cannot ignore mobile.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1i2",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1i1",
+                  "text": "The Dilemma of Mobile Development",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1i4",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1i3",
+                  "text": "Once you have decided you need a mobile app, there are three routes most teams consider. Each one trades effort in a different place.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1i6",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1i5",
+                  "text": "1. The Progressive Web App (PWA) Route",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1i8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1i7",
+                  "text": "This is the easiest path from an existing web app: add a manifest file, and whenever users visit your app in their browser they can install it to their home screen.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ia",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1i9",
+                  "text": "The trade-off is discoverability. Your app is not listed on the App Store or Play Store, which is the biggest drawback. Push notification support is also limited on iOS.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ic",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ib",
+                  "text": "2. The Pure Native Route (Swift/SwiftUI + Kotlin/Jetpack Compose)",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ie",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1id",
+                  "text": "Going fully native delivers the gold standard for performance, animation, and platform integration. But it means maintaining three separate codebases: your backend/web application, an iOS app, and an Android app.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ig",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1if",
+                  "text": "Even with AI assistance this is cumbersome. You still split your attention across disparate languages, ecosystems, and toolchains, and every validation rule, business logic change, and UI tweak has to be implemented three times.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ii",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ih",
+                  "text": "3. Cross-Platform Route (React Native, Flutter)",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ik",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ij",
+                  "text": "Cross-platform frameworks solve the duplication between iOS and Android, which is a step forward. But they still duplicate everything with your web backend.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1im",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1il",
+                  "text": "You still need to build and maintain an API surface, re-implement state management, duplicate validation logic on both client and server, handle token refresh lifecycles, and rebuild entire screens from scratch. Keeping web and mobile at feature parity remains an ongoing coordination tax.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1io",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1in",
+                  "text": "Comparing the three routes",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "table",
+              "_key": "k1iq",
+              "hasHeaderRow": true,
+              "rows": [
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r0",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r0-c0",
+                      "isHeader": true,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r0-c0-s0",
+                          "text": "",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r0-c1",
+                      "isHeader": true,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r0-c1-s0",
+                          "text": "PWA",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r0-c2",
+                      "isHeader": true,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r0-c2-s0",
+                          "text": "Pure Native (Swift/Kotlin)",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r0-c3",
+                      "isHeader": true,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r0-c3-s0",
+                          "text": "Cross-Platform (React Native/Flutter)",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r1",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c0-s0",
+                          "text": "Codebases to maintain",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c1-s0",
+                          "text": "1 (your web app)",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c2-s0",
+                          "text": "3 (web + iOS + Android)",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r1-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r1-c3-s0",
+                          "text": "2 (web + mobile)",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r2",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c0-s0",
+                          "text": "App Store / Play Store",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c1-s0",
+                          "text": "Not listed",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c2-s0",
+                          "text": "Yes",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r2-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r2-c3-s0",
+                          "text": "Yes",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r3",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c0-s0",
+                          "text": "Performance & animation",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c1-s0",
+                          "text": "Good for content, limited for heavy UI",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c2-s0",
+                          "text": "Gold standard",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r3-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r3-c3-s0",
+                          "text": "Near-native, some overhead",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r4",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c0-s0",
+                          "text": "Platform integration",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c1-s0",
+                          "text": "Limited (especially iOS)",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c2-s0",
+                          "text": "Full access",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r4-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r4-c3-s0",
+                          "text": "Good, via native modules",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r5",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c0-s0",
+                          "text": "Push notifications",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c1-s0",
+                          "text": "Limited on iOS",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c2-s0",
+                          "text": "Full",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r5-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r5-c3-s0",
+                          "text": "Full",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r6",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c0-s0",
+                          "text": "Offline support",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c1-s0",
+                          "text": "Service workers",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c2-s0",
+                          "text": "Full control",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r6-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r6-c3-s0",
+                          "text": "Full control",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r7",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c0-s0",
+                          "text": "Time to first release",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c1-s0",
+                          "text": "Fastest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c2-s0",
+                          "text": "Slowest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r7-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r7-c3-s0",
+                          "text": "Moderate",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r8",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c0-s0",
+                          "text": "Ongoing maintenance",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c1-s0",
+                          "text": "Lowest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c2-s0",
+                          "text": "Highest",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r8-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r8-c3-s0",
+                          "text": "Moderate to high",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r9",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c0-s0",
+                          "text": "Feature parity with web",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c1-s0",
+                          "text": "Automatic",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c2-s0",
+                          "text": "Manual, per platform",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r9-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r9-c3-s0",
+                          "text": "Manual, plus API work",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_type": "tableRow",
+                  "_key": "k1iq-r10",
+                  "cells": [
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c0",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c0-s0",
+                          "text": "Best fit",
+                          "marks": [
+                            "strong"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c1",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c1-s0",
+                          "text": "Content sites, simple utilities",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c2",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c2-s0",
+                          "text": "Graphics-heavy, offline-first, deeply integrated apps",
+                          "marks": []
+                        }
+                      ]
+                    },
+                    {
+                      "_type": "tableCell",
+                      "_key": "k1iq-r10-c3",
+                      "isHeader": false,
+                      "content": [
+                        {
+                          "_type": "span",
+                          "_key": "k1iq-r10-c3-s0",
+                          "text": "Teams that need one mobile codebase but accept an API layer",
+                          "marks": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1jy",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1jx",
+                  "text": "Enter Hotwire Native: The Best of Both Worlds",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1k2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1jz",
+                  "text": "If you are a solo founder or part of a lean team, the decision has to be pragmatic. Hotwire Native is a counter-intuitive but entirely practical option. It changes the game by asking a simple question: ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1k0",
+                  "text": "what if your mobile app were powered directly by your existing Rails server-rendered views?",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1k1",
+                  "text": " You reuse the HTML that already works on the web and keep most of the logic on the server, with very little duplication.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1k4",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1k3",
+                  "text": "It combines native navigation with server-rendered web content:",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1k7",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1k5",
+                  "text": "Native where it counts:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1k6",
+                  "text": " The navigation container, navigation bar, back gestures, tab bars, drawer menus, modal sheet presentations, and screen transitions are 100% native iOS (Swift) and Android (Kotlin) components.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ka",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1k8",
+                  "text": "Web where it matters:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1k9",
+                  "text": " The inner content of each screen is your standard Rails view, rendered server-side and delivered as fast HTML over the wire via Turbo.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1kc",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1kb",
+                  "text": "When a user taps a link inside the web view, Hotwire Native intercepts the navigation event, pushes a new native view controller or fragment onto the navigation stack, and fetches the Rails page. To the user, screen transitions feel completely native: swiping back slides the screen away with hardware-accelerated platform physics.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ke",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1kd",
+                  "text": "Success Stories of Hotwire Native",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1kg",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1kf",
+                  "text": "Hotwire Native is a battle-tested approach to building mobile apps. It was built by the team at 37signals, who use it for the HEY and Basecamp mobile apps. That is your guarantee that you could also use it to build an app with over a million downloads.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ki",
+              "style": "h3",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1kh",
+                  "text": "Case study: Divoora Rider",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1kt",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k1kk",
+                  "_type": "link",
+                  "href": "https://divoora.ch"
+                },
+                {
+                  "_key": "k1kn",
+                  "_type": "link",
+                  "href": "https://play.google.com/store/apps/details?id=com.divoora.rider&pcampaignid=web_share"
+                },
+                {
+                  "_key": "k1kq",
+                  "_type": "link",
+                  "href": "https://apps.apple.com/ch/app/divoora-rider/id6736853007?l=en-GB"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1kj",
+                  "text": "I have also personally built a greenfield project using this approach. ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1kl",
+                  "text": "Divoora",
+                  "marks": [
+                    "k1kk"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1km",
+                  "text": " is a food delivery and logistics company based in Switzerland, and they needed a mobile app for their riders. I built it on Rails with Hotwire Native and shipped it to both the ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1ko",
+                  "text": "Play Store",
+                  "marks": [
+                    "k1kn"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1kp",
+                  "text": " and the ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1kr",
+                  "text": "App Store",
+                  "marks": [
+                    "k1kq"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1ks",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1kv",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ku",
+                  "text": "What made it fast:",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1kx",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1kw",
+                  "text": "The rider-facing screens were standard Rails views, so web and mobile shared one codebase and one set of validations.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1kz",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ky",
+                  "text": "Native navigation, tab bars, and gestures came from the Hotwire Native wrappers rather than custom mobile UI work.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1l1",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1l0",
+                  "text": "Fixes and feature changes shipped from the Rails server without waiting on App Store review.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1l3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1l2",
+                  "text": "I am also currently building an app for book clubs using Hotwire Native. I started with the Rails backend, and after onboarding the first book club I began the iOS and Android apps. It is currently in testing on the Play Store.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1l5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1l4",
+                  "text": "I hope by now I have convinced you that Hotwire Native can be used to build successful production mobile apps.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1l7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1l6",
+                  "text": "Why This Matters for Velocity",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1l9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1l8",
+                  "text": "In practice, the operational benefits of Hotwire Native are massive:",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lc",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1la",
+                  "text": "Instant Updates & Zero App Review Friction:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1lb",
+                  "text": " When you fix a typo, update business logic, or launch a new feature in a Rails controller or template, you deploy it to your web server and it is live in your mobile apps instantly. You only need to submit an App Store update when you modify native Swift/Kotlin wrapper code or add new native bridge components.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lf",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ld",
+                  "text": "Single Source of Truth:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1le",
+                  "text": " Your routes, models, authorization policies, and validations exist in one place. No drifting REST or GraphQL API contracts.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1li",
+              "style": "normal",
+              "listItem": "number",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1lg",
+                  "text": "Hyper-Lean Team Size:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1lh",
+                  "text": " A single developer or a two-person team can comfortably build, ship, and maintain desktop web, mobile web, iOS, and Android applications simultaneously without burning out.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lk",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1lj",
+                  "text": "Reflections from COSCUP and Q&A",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lm",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ll",
+                  "text": "Presenting at COSCUP was a fantastic experience. The Ruby Taiwan community is vibrant, welcoming, and deeply interested in practical engineering solutions that increase developer happiness and efficiency.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lo",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ln",
+                  "text": "During the Q&A and hallway discussions, several great questions came up:",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lr",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1lp",
+                  "text": "What about offline support?",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1lq",
+                  "text": " Hotwire Native caches screenshots for back navigation. Offline workflows require explicit web or native storage and synchronization; bridge components can connect that storage to the web UI.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lu",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1ls",
+                  "text": "When is Hotwire Native NOT the right tool?",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1lt",
+                  "text": " If you are building a graphic-intensive game, a video editor with frame-by-frame canvas manipulation, or an app whose core value is 100% offline-first utility, pure native or specialized engines are better fits. But for 90% of business applications, SaaS dashboards, e-commerce, and community platforms, Hotwire Native is more than sufficient; it is superior in iteration speed.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1lw",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1lv",
+                  "text": "Slides and Resources",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1ly",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1lx",
+                  "text": "If you would like to explore the slides or dive into the code from my talk:",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1m3",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k1m1",
+                  "_type": "link",
+                  "href": "https://nebiyuelias1.github.io/coscup-2026-talk/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1lz",
+                  "text": "Slides:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1m0",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1m2",
+                  "text": "Building Native Mobile Apps Using Rails",
+                  "marks": [
+                    "k1m1"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1m8",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k1m6",
+                  "_type": "link",
+                  "href": "https://coscup.org/2026/track/516?session=BKCVJK"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1m4",
+                  "text": "COSCUP Session Details:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1m5",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1m7",
+                  "text": "Ruby Taiwan Track @ COSCUP",
+                  "marks": [
+                    "k1m6"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1mg",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k1mb",
+                  "_type": "link",
+                  "href": "https://native.hotwired.dev/"
+                },
+                {
+                  "_key": "k1me",
+                  "_type": "link",
+                  "href": "https://strada.hotwired.dev/"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1m9",
+                  "text": "Official Documentation:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1ma",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mc",
+                  "text": "Hotwire Native",
+                  "marks": [
+                    "k1mb"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1md",
+                  "text": " & ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mf",
+                  "text": "Strada",
+                  "marks": [
+                    "k1me"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1mi",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1mh",
+                  "text": "Work with 508.dev",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1mm",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_key": "k1mj",
+                  "_type": "link",
+                  "href": "https://508.dev"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1mk",
+                  "text": "508.dev",
+                  "marks": [
+                    "k1mj"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1ml",
+                  "text": " is a worker-owned software co-op that helps small teams ship web and mobile products. If you are weighing a mobile app for your Rails product, here is how to start:",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1mp",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k1mn-link",
+                  "_type": "link",
+                  "href": "https://cal.com/nebiyuelias1/508.dev"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1mn",
+                  "text": "Book a free 30-minute assessment",
+                  "marks": [
+                    "strong",
+                    "k1mn-link"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mn-colon",
+                  "text": ":",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mo",
+                  "text": " Walk us through your app and we will tell you honestly whether Hotwire Native fits, what should stay native, and what it would take to ship.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1mv",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k1ms",
+                  "_type": "link",
+                  "href": "mailto:nebiyu@508.dev"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1mq",
+                  "text": "Rails to App Store checklist:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mr",
+                  "text": " Email ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mt",
+                  "text": "nebiyu@508.dev",
+                  "marks": [
+                    "k1ms"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mu",
+                  "text": " and we will send the checklist we use to take a Rails app from local development to both stores.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "k1n1",
+              "style": "normal",
+              "listItem": "bullet",
+              "level": 1,
+              "markDefs": [
+                {
+                  "_key": "k1my",
+                  "_type": "link",
+                  "href": "https://508.dev"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "k1mw",
+                  "text": "Build with us:",
+                  "marks": [
+                    "strong"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mx",
+                  "text": " Learn more at ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1mz",
+                  "text": "508.dev",
+                  "marks": [
+                    "k1my"
+                  ]
+                },
+                {
+                  "_type": "span",
+                  "_key": "k1n0",
+                  "text": ".",
+                  "marks": []
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": [
+            "technical",
+            "programming"
+          ],
+          "tag": [
+            "ruby-on-rails",
+            "hotwire",
+            "hotwire-native",
+            "mobile-development",
+            "coscup",
+            "open-source"
+          ]
+        },
+        "bylines": [
+          {
+            "byline": "byline-neba"
           }
         ]
       }
