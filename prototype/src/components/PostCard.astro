@@ -35,15 +35,13 @@ const formattedDate = date
 	: null;
 ---
 
-<article class="post-card">
+<article class:list={["post-card", { "post-card--text": !featuredImage }]}>
 	<a href={href} class="card-link">
 		{
-			featuredImage ? (
+			featuredImage && (
 				<div class="card-image" {...edit?.featured_image}>
 					<Image image={featuredImage} />
 				</div>
-			) : (
-				<div class="card-placeholder" />
 			)
 		}
 		<div class="card-body">
@@ -139,11 +137,9 @@ const formattedDate = date
 		transform: scale(1.03);
 	}
 
-	.card-placeholder {
-		aspect-ratio: 16 / 10;
-		border-radius: var(--radius-lg);
-		background: var(--color-surface);
-		margin-bottom: var(--spacing-4);
+	.post-card--text {
+		border-top: 1px solid var(--color-border);
+		padding-top: var(--spacing-4);
 	}
 
 	.card-body {
@@ -194,6 +190,10 @@ const formattedDate = date
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+	}
+
+	.post-card--text .card-excerpt {
+		-webkit-line-clamp: 3;
 	}
 
 	.card-tags {
