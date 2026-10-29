@@ -27,4 +27,6 @@ if [ ! -e "$DATABASE_PATH" ]; then
   ./node_modules/.bin/emdash seed seed/seed.json --database "$DATABASE_PATH"
 fi
 
+node scripts/sync-canonical-site-url.mjs
+
 exec node dist/server/entry.mjs

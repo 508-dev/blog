@@ -5,8 +5,9 @@ import { resolveBlogSiteIdentity } from "../utils/site-identity";
 import { publicationDate } from "../utils/publication-date";
 
 export const GET: APIRoute = async ({ site, url }) => {
-	const siteUrl = site ?? new URL(url.origin);
-	const { siteTitle, siteTagline } = resolveBlogSiteIdentity(await getSiteSettings());
+	const settings = await getSiteSettings();
+	const siteUrl = new URL(settings.url || site?.href || url.origin);
+	const { siteTitle, siteTagline } = resolveBlogSiteIdentity(settings);
 
 	const { entries: posts, error } = await getEmDashCollection("posts", {
 		orderBy: { published_at: "desc" },
