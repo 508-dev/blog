@@ -26,10 +26,11 @@ if (!page) {
 }
 
 if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
-const { siteTitle } = resolveBlogSiteIdentity(await getSiteSettings());
+const settings = await getSiteSettings();
+const { siteTitle } = resolveBlogSiteIdentity(settings);
 const seo = getSeoMeta(page, {
 	siteTitle,
-	siteUrl: Astro.url.origin,
+	siteUrl: settings.url || Astro.url.origin,
 	path: Astro.url.pathname.replace(/\/$/, ""),
 });
 ---

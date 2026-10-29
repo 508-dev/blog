@@ -52,6 +52,8 @@ if (Astro.cache?.enabled) {
 const { siteTitle, siteTagline, siteLogo } = resolveBlogSiteIdentity(
 	settingsResult.data,
 );
+const siteUrl = settingsResult.data.url || Astro.url.origin;
+const publicUrl = new URL(Astro.url.pathname + Astro.url.search, siteUrl);
 const titleIncludesSiteName =
 	title === siteTitle ||
 	title.endsWith(` | ${siteTitle}`) ||
@@ -63,7 +65,9 @@ const menu = menuResult.data;
 // Build public page context for plugin contributions
 // SEO data is passed here and rendered securely by EmDashHead
 const pageCtx = createPublicPageContext({
-	Astro,
+	url: publicUrl,
+	locale: Astro.currentLocale,
+	siteUrl,
 	kind: content ? "content" : "custom",
 	pageType: type,
 	title: fullTitle,

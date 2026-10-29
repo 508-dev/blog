@@ -31,6 +31,8 @@ if (!post) {
 }
 
 if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+const settings = await getSiteSettings();
+const siteUrl = settings.url || Astro.url.origin;
 
 // Get featured image URL for OG fallback
 // The image may have src (external) or meta.storageKey (local)
@@ -41,7 +43,7 @@ function getImageUrl(img: unknown): string | undefined {
 	if (typeof image.src === "string" && image.src) {
 		return image.src.startsWith("http")
 			? image.src
-			: `${Astro.url.origin}${image.src}`;
+			: `${siteUrl}${image.src}`;
 	}
 	// Build from storageKey for local images
 	const meta = image.meta as Record<string, unknown> | undefined;
@@ -49,17 +51,17 @@ function getImageUrl(img: unknown): string | undefined {
 		(typeof meta?.storageKey === "string" ? meta.storageKey : undefined) ||
 		(typeof image.id === "string" ? image.id : undefined);
 	if (storageKey) {
-		return `${Astro.url.origin}/_emdash/api/media/file/${storageKey}`;
+		return `${siteUrl}/_emdash/api/media/file/${storageKey}`;
 	}
 	return undefined;
 }
 const featuredImageUrl = getImageUrl(post.data.featured_image);
-const { siteTitle } = resolveBlogSiteIdentity(await getSiteSettings());
+const { siteTitle } = resolveBlogSiteIdentity(settings);
 
 // Generate SEO meta from content
 const seo = getSeoMeta(post, {
 	siteTitle,
-	siteUrl: Astro.url.origin,
+	siteUrl,
 	path: Astro.url.pathname.replace(/\/$/, ""),
 	defaultOgImage: featuredImageUrl,
 });
