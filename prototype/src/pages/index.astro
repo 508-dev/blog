@@ -170,7 +170,7 @@ function formatDate(date: Date | null | undefined) {
 								</a>
 							)}
 						</header>
-						<div class="posts-grid">
+						<div class:list={["posts-grid", { "posts-grid--text": !featuredPost }]}>
 							{gridPostsWithTags.map(({ post, tags, bylines }) => (
 								<PostCard
 									title={post.data.title ?? "Untitled"}
@@ -386,6 +386,10 @@ function formatDate(date: Date | null | undefined) {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--spacing-12) var(--spacing-8);
+	}
+
+	.posts-grid--text {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	/* Empty State */
