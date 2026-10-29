@@ -94,6 +94,13 @@ const formattedDate = date
 		</div>
 	</a>
 	{
+		!featuredImage && edit && (
+			<button type="button" class="card-image-edit" {...edit.featured_image}>
+				Add featured image
+			</button>
+		)
+	}
+	{
 		tags && tags.length > 0 && (
 			<div class="card-tags">
 				{tags.slice(0, 2).map((tag) => (
@@ -194,6 +201,22 @@ const formattedDate = date
 
 	.post-card--text .card-excerpt {
 		-webkit-line-clamp: 3;
+	}
+
+	.card-image-edit {
+		display: none;
+	}
+
+	:global(body:has(#emdash-toolbar[data-edit-mode="true"])) .card-image-edit {
+		display: inline-block;
+		align-self: flex-start;
+		margin-top: var(--spacing-3);
+		padding: 0;
+		border: 0;
+		background: none;
+		color: var(--color-brand);
+		font: inherit;
+		cursor: pointer;
 	}
 
 	.card-tags {

@@ -22,5 +22,8 @@ export const onRequest = defineMiddleware((context, next) => {
 	}
 
 	if (!destination) return next();
-	return Response.redirect(new URL(destination + search, context.url), 301);
+	return new Response(null, {
+		status: 301,
+		headers: { Location: destination + search },
+	});
 });
