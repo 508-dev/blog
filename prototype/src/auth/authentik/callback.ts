@@ -22,7 +22,7 @@ function validTransaction(value: unknown): value is LoginTransaction {
 
 export const GET: APIRoute = async ({ request, locals, session, redirect }) => {
 	if (!locals.emdash?.db || !session) return new Response("Login unavailable", { status: 503 });
-	const transaction: unknown = session.get("authentik-login");
+	const transaction = await session.get("authentik-login");
 	session.delete("authentik-login");
 	if (!validTransaction(transaction)) {
 		return redirect("/_emdash/admin/login?error=authentik_state");
@@ -52,6 +52,7 @@ export const GET: APIRoute = async ({ request, locals, session, redirect }) => {
 
 		const adapter = createKyselyAdapter(locals.emdash.db);
 		const user = await resolveAccount(adapter, identity, role);
+		await session.regenerate();
 		session.set("user", { id: user.id });
 		return redirect("/_emdash/admin");
 	} catch (error) {
