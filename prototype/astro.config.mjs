@@ -3,6 +3,7 @@ import react from "@astrojs/react";
 import { defineConfig } from "astro/config";
 import emdash, { local } from "emdash/astro";
 import { sqlite } from "emdash/db";
+import { authentik } from "./src/auth/authentik/provider.mjs";
 
 export default defineConfig({
 	output: "server",
@@ -17,6 +18,7 @@ export default defineConfig({
 		react(),
 		emdash({
 			fonts: false,
+			authProviders: [authentik()],
 			database: sqlite({ url: `file:${process.env.DATABASE_PATH || "./data.db"}` }),
 			storage: local({
 				directory: process.env.MEDIA_DIRECTORY || "./uploads",
