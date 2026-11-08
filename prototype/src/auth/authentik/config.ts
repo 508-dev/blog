@@ -7,10 +7,10 @@ export function getAuthentikSettings() {
 	const issuer = process.env.EMDASH_AUTHENTIK_ISSUER;
 	const clientId = process.env.EMDASH_AUTHENTIK_CLIENT_ID;
 	const clientSecret = process.env.EMDASH_AUTHENTIK_CLIENT_SECRET;
-	const adminGroup = process.env.EMDASH_AUTHENTIK_ADMIN_GROUP;
-	const memberGroup = process.env.EMDASH_AUTHENTIK_MEMBER_GROUP;
+	const adminGroup = process.env.EMDASH_AUTHENTIK_ADMIN_GROUP || "authentik Admins";
+	const memberGroup = process.env.EMDASH_AUTHENTIK_MEMBER_GROUP || "508 Blog Members";
 	const siteUrl = process.env.EMDASH_SITE_URL;
-	if (!issuer || !clientId || !clientSecret || !adminGroup || !memberGroup || !siteUrl) {
+	if (!issuer || !clientId || !clientSecret || !siteUrl) {
 		throw new Error("Authentik SSO is not configured");
 	}
 	const issuerUrl = new URL(issuer);

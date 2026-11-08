@@ -3,7 +3,7 @@ import test from "node:test";
 import { Role, type AuthAdapter, type RoleLevel, type User } from "@emdash-cms/auth";
 import { resolveAccount } from "./account.ts";
 
-const identity = { id: "authentik-123", email: "editor@508.dev", name: "Editor", groups: ["508-members"] };
+const identity = { id: "authentik-123", email: "editor@508.dev", emailVerified: false, name: "Editor", groups: ["508 Blog Members"] };
 
 function fakeAdapter(initial?: User) {
 	const users = new Map<string, User>();
@@ -17,6 +17,11 @@ function fakeAdapter(initial?: User) {
 		async getOAuthAccount(provider: string, subject: string) {
 			const userId = links.get(`${provider}:${subject}`);
 			return userId ? { provider, providerAccountId: subject, userId, createdAt: new Date() } : null;
+		},
+		async getOAuthAccountsByUserId(userId: string) {
+			return [...links.entries()]
+				.filter(([, linkedUserId]) => linkedUserId === userId)
+				.map(([key]) => ({ provider: key.split(":")[0], providerAccountId: key.split(":")[1], userId, createdAt: new Date() }));
 		},
 		async createOAuthAccount({ provider, providerAccountId, userId }: { provider: string; providerAccountId: string; userId: string }) {
 			links.set(`${provider}:${providerAccountId}`, userId);
@@ -38,7 +43,7 @@ function fakeAdapter(initial?: User) {
 	return { adapter, users, links };
 }
 
-test("verified Authentik identity links an existing email and applies the member role", async () => {
+test("trusted 508.dev Authentik identity links an existing email and applies the member role", async () => {
 	const prior: User = {
 		id: "existing-admin", email: identity.email, name: null, avatarUrl: null,
 		role: Role.ADMIN, emailVerified: false, disabled: false, data: null,
@@ -57,6 +62,7 @@ test("admin group provisions a new admin and reuses its stable subject on later 
 	const second = await resolveAccount(adapter, identity, Role.ADMIN);
 	assert.equal(first.id, second.id);
 	assert.equal(first.role, Role.ADMIN);
+	assert.equal(first.emailVerified, false);
 	assert.equal(users.size, 1);
 });
 
@@ -69,4 +75,11 @@ test("disabled EmDash accounts cannot sign in or acquire a new link", async () =
 	const { adapter, links } = fakeAdapter(prior);
 	await assert.rejects(resolveAccount(adapter, identity, Role.ADMIN));
 	assert.equal(links.size, 0);
+});
+
+test("a second Authentik subject cannot claim the same EmDash email", async () => {
+	const { adapter, links } = fakeAdapter();
+	await resolveAccount(adapter, identity, Role.SUBSCRIBER);
+	await assert.rejects(resolveAccount(adapter, { ...identity, id: "another-subject" }, Role.SUBSCRIBER));
+	assert.equal(links.size, 1);
 });

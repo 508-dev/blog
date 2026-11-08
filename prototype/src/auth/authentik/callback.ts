@@ -42,7 +42,7 @@ export const GET: APIRoute = async ({ request, locals, session, redirect }) => {
 		if (!subject) throw new Error("Missing verified subject");
 		const claims = await oidc.fetchUserInfo(config, tokens.access_token, subject);
 		const identity = identityFromClaims(claims);
-		if (!identity) throw new Error("Verified email or groups claim missing");
+		if (!identity) throw new Error("508.dev email or groups claim missing");
 		const role = roleForGroups(identity.groups, settings.adminGroup, settings.memberGroup);
 		if (!role) throw new Error("Authentik user is not in an allowed group");
 
