@@ -1,13 +1,13 @@
 import type { APIRoute } from "astro";
-import { findOrCreateOAuthUser, Role } from "@emdash-cms/auth";
 import { createKyselyAdapter } from "@emdash-cms/auth/adapters/kysely";
 import { OptionsRepository } from "emdash/api/route-utils";
+import { GitHubLinkRequiredError, resolveGitHubAdminAccount } from "./account";
 import { getGitHubSettings } from "./config";
 import { loadGitHubAdminIdentity } from "./github-api";
 
 export const prerender = false;
 
-type LoginTransaction = { state: string; codeVerifier: string; startedAt: number };
+type LoginTransaction = { state: string; codeVerifier: string; startedAt: number; linkUserId?: string };
 
 function validTransaction(value: unknown): value is LoginTransaction {
 	return !!value && typeof value === "object" &&
@@ -56,27 +56,21 @@ export const GET: APIRoute = async ({ request, locals, session, redirect }) => {
 		if (setup !== true && setup !== "true") throw new Error("EmDash setup is incomplete");
 
 		const adapter = createKyselyAdapter(locals.emdash.db);
-		const existing = await adapter.getUserByEmail(identity.email);
-		if (existing?.disabled) throw new Error("EmDash account disabled");
-		if (existing) {
-			const links = await adapter.getOAuthAccountsByUserId(existing.id);
-			if (links.some((link) => link.provider === "github-admin" && link.providerAccountId !== identity.id)) {
-				throw new Error("EmDash account is linked to another GitHub user");
-			}
-		}
-		const user = await findOrCreateOAuthUser(
+		const current = transaction.linkUserId ? await session.get("user") : undefined;
+		const user = await resolveGitHubAdminAccount(
 			adapter,
-			"github-admin",
-			{ id: identity.id, email: identity.email, name: identity.name, avatarUrl: identity.avatarUrl, emailVerified: true },
-			async () => ({ allowed: true, role: Role.ADMIN }),
-			{ requireVerifiedEmail: true },
+			identity,
+			transaction.linkUserId,
+			current && typeof current.id === "string" ? current.id : undefined,
 		);
-		if (user.disabled) throw new Error("EmDash account disabled");
-		if (user.role !== Role.ADMIN) await adapter.updateUser(user.id, { role: Role.ADMIN });
 		await session.regenerate();
 		session.set("user", { id: user.id });
 		return redirect("/_emdash/admin");
 	} catch (error) {
+		if (error instanceof GitHubLinkRequiredError) {
+			const message = "Sign in with your existing EmDash Admin account, then open /_emdash/api/auth/github-admin/login?link=1 to connect GitHub.";
+			return redirect(`/_emdash/admin/login?error=github_admin_link_required&message=${encodeURIComponent(message)}`);
+		}
 		console.warn("GitHub Admin callback failed", error instanceof Error ? error.name : "UnknownError");
 		return redirect("/_emdash/admin/login?error=github_admin_failed");
 	}

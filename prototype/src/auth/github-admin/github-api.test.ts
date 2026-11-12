@@ -30,6 +30,13 @@ test("active Admins membership permits a verified 508.dev email", async () => {
 	assert.ok(requests[1].endsWith("/orgs/508-dev/teams/admins/memberships/blog-admin"));
 });
 
+test("Admin team members do not need a 508.dev address on GitHub", async () => {
+	const { fetcher } = githubResponses({ state: "active" }, [
+		{ email: "admin@personal.example", primary: true, verified: true },
+	]);
+	assert.equal((await loadGitHubAdminIdentity("test-token", fetcher))?.email, "admin@personal.example");
+});
+
 test("pending and absent team memberships deny login before reading email", async () => {
 	for (const membership of [{ state: "pending" }, null]) {
 		const { fetcher, requests } = githubResponses(membership);
