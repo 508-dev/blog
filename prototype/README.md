@@ -1,6 +1,6 @@
 # 508.dev EmDash preview
 
-This is an isolated CMS prototype for the 508.dev blog. The current Hugo site and GitHub Pages deployment remain active. The preview contains all 16 Hugo posts, including their original slugs, author credits, tags, categories, publication dates, and referenced static images. It uses EmDash 1.0.1 on Astro, with drafts, revisions, scheduling, search, and RSS.
+This is an isolated CMS prototype for the 508.dev blog. The current Hugo site and GitHub Pages deployment remain active. The preview contains all 16 Hugo posts, including their original slugs, author credits, tags, categories, publication dates, and referenced static images. It uses EmDash 1.1.0 on Astro, with drafts, revisions, scheduling, search, and RSS.
 
 ## Local development
 
@@ -15,6 +15,22 @@ ASTRO_TELEMETRY_DISABLED=1 corepack pnpm dev
 ```
 
 Open `http://localhost:4321/_emdash/admin` to create the first administrator. The local database, uploads, and `.env` are ignored by Git. `corepack pnpm seed:generate` regenerates the bootstrap seed from every Markdown post in `../content/posts/`. The one-time import script extracts only the content, authors, and taxonomy terms from that seed.
+
+## 508 SSO through Authentik
+
+The EmDash admin has an additive Authentik OIDC login provider. Passkey login remains available. Create an OAuth2/OIDC application in Authentik with the exact redirect URI `https://emdash.508.dev/_emdash/api/auth/authentik/callback` and a signing key. Give the provider `openid`, `email`, and `profile` scope mappings. The `profile` mapping must return group names in the `groups` claim at the UserInfo endpoint. The `email` mapping must return the user's current `@508.dev` address. See [Authentik's scope mapping guide](https://docs.goauthentik.io/add-secure-apps/providers/property-mappings/). Ensure EmDash can reach Authentik's discovery, JWKS, token, and UserInfo endpoints without an interactive Cloudflare challenge.
+
+Set these runtime environment variables in the destination's secret manager, then restart the app:
+
+| Variable | Value |
+| --- | --- |
+| `EMDASH_AUTHENTIK_ISSUER` | Authentik provider issuer, e.g. `https://<authentik-host>/application/o/<application-slug>/` |
+| `EMDASH_AUTHENTIK_CLIENT_ID` | OAuth2/OIDC client ID |
+| `EMDASH_AUTHENTIK_CLIENT_SECRET` | OAuth2/OIDC client secret |
+| `EMDASH_AUTHENTIK_ADMIN_GROUP` | Optional override; defaults to `authentik Admins`, whose members become EmDash Admins |
+| `EMDASH_AUTHENTIK_MEMBER_GROUP` | Optional override; defaults to `508 Blog Members`, whose members become EmDash Subscribers |
+
+Create a dedicated `508 Blog Members` group in Authentik for regular readers, add its intended members, and leave it without Authentik admin roles or superuser status. Keep `EMDASH_SITE_URL=https://emdash.508.dev` as the admin origin. Authentik login is unavailable until the issuer and client credentials are set. The first EmDash administrator must already have completed setup with a passkey; SSO cannot claim an uninitialized site. On each successful SSO login, a `@508.dev` email links to an existing EmDash account, otherwise a new account is created. This deployment trusts Authentik's control of those addresses and does not require its `email_verified` claim; ensure Authentik users cannot set their address to someone else's. New EmDash accounts retain the actual `email_verified` value. Group membership sets the EmDash role at each SSO login. Users outside both configured groups are denied; Admin wins when a user belongs to both. Subscriber is read-only; use a different role mapping in code if members should edit posts. Removing a user from an Authentik group takes effect on their next SSO login. Existing EmDash sessions and passkeys remain independent, so revoke those separately when removing access.
 
 ## Coolify preview
 
