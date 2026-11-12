@@ -4,6 +4,7 @@ import { defineConfig } from "astro/config";
 import emdash, { local } from "emdash/astro";
 import { sqlite } from "emdash/db";
 import { authentik } from "./src/auth/authentik/provider.mjs";
+import { githubAdmins } from "./src/auth/github-admin/provider.mjs";
 
 export default defineConfig({
 	output: "server",
@@ -18,7 +19,7 @@ export default defineConfig({
 		react(),
 		emdash({
 			fonts: false,
-			authProviders: [authentik()],
+			authProviders: [authentik(), githubAdmins()],
 			database: sqlite({ url: `file:${process.env.DATABASE_PATH || "./data.db"}` }),
 			storage: local({
 				directory: process.env.MEDIA_DIRECTORY || "./uploads",
