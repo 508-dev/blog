@@ -45,12 +45,19 @@ export async function loadGitHubAdminIdentity(
 	if (!membership || typeof membership !== "object" || !("state" in membership) || membership.state !== "active") {
 		return null;
 	}
-	const addresses = await getJson("https://api.github.com/user/emails?per_page=100", token, fetcher);
-	if (!Array.isArray(addresses)) throw new Error("GitHub email list is invalid");
+	const addresses: unknown[] = [];
+	for (let page = 1; page <= 10; page++) {
+		const batch = await getJson(`https://api.github.com/user/emails?per_page=100&page=${page}`, token, fetcher);
+		if (!Array.isArray(batch)) throw new Error("GitHub email list is invalid");
+		addresses.push(...batch);
+		if (batch.length < 100) break;
+		if (page === 10) throw new Error("GitHub email list exceeds supported pagination");
+	}
 	const verified = addresses.filter(
 		(item): item is { email: string; verified: true; primary?: boolean } =>
-			!!item && typeof item === "object" && typeof item.email === "string" &&
-			item.verified === true && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(item.email),
+			!!item && typeof item === "object" && "email" in item && "verified" in item &&
+			typeof item.email === "string" && item.verified === true &&
+			/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(item.email),
 	);
 	const selected = verified.find((item) => item.email.toLowerCase().endsWith("@508.dev")) ??
 		verified.find((item) => item.primary === true) ?? verified[0];
