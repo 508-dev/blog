@@ -33,6 +33,6 @@ Other services we use:
 - [DocuSeal](http://docuseal.com/), replacing DocuSign
 - [Coolify](https://coolify.io/), replacing Heroku / AWS / Google Cloud / Vercel / Netlify / Cloudflare Workers
 
-At ~100 engineers in our co-op, it would cost us something like $9,000/month to maintain seats for everyone in all of our SaaS, if we didn't self-host. As it stands, we currently pay ~$100/month for various VPSes and managed hosting providers, and that will probably go down when we switch entirely to self-managed VPSes.
+At about 100 engineers in our co-op, it would cost us something like $9,000/month to maintain seats for everyone in all of our SaaS, if we didn't self-host. As it stands, we currently pay about 100/month for various VPSes and managed hosting providers, and that will probably go down when we switch entirely to self-managed VPSes.
 
 In a survey of 320 companies, [32% said they were moving to on-prem](https://blog.451alliance.com/data-sovereignty-and-egress-charges-reshape-migration-strategies-2). If you're considering it too or have made the jump yourself, I'd love to chat and trade notes! Email me at caleb at this domain.

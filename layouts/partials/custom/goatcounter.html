@@ -1,0 +1,6 @@
+{{- /* GoatCounter analytics. Only rendered in production builds so local `hugo server` visits aren't counted. */ -}}
+{{- if hugo.IsProduction -}}
+  {{- with .Site.Params.goatcounter.code -}}
+    <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  {{- end -}}
+{{- end -}}

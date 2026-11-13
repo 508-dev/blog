@@ -762,6 +762,16 @@ enableEmoji = true
       # server url for your tracker if you're self hosting
       server = ""
 
+  # GoatCounter analytics (FixIt has no built-in support; rendered by
+  # layouts/partials/custom/goatcounter.html via customPartials.head below).
+  # Dashboard: https://508blog.goatcounter.com
+  [params.goatcounter]
+    code = "508blog"
+
+  # Custom partials injected by the FixIt theme (paths relative to layouts/partials/)
+  [params.customPartials]
+    head = ["custom/goatcounter.html"]
+
   # Cookie consent config
   [params.cookieconsent]
     enable = false
