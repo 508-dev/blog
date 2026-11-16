@@ -91,6 +91,12 @@ const isLoggedIn = !!Astro.locals.user;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{fullTitle}</title>
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title={siteTitle}
+			href={new URL("/rss.xml", siteUrl).href}
+		/>
 		<EmDashHead page={pageCtx} />
 		<script is:inline>
 			// Apply an explicit theme choice immediately to prevent flash.

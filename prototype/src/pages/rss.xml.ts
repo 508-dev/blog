@@ -1,58 +1,52 @@
+import { getRssString, type RSSFeedItem } from "@astrojs/rss";
 import type { APIRoute } from "astro";
-import { getEmDashCollection, getSiteSettings } from "emdash";
+import { getEmDashCollection, getSiteSettingsWithCacheHint } from "emdash";
 
+import { escapeMarkup } from "../utils/feed/escape-markup";
+import { postToFeedItem } from "../utils/feed/feed-item";
 import { resolveBlogSiteIdentity } from "../utils/site-identity";
-import { publicationDate } from "../utils/publication-date";
 
-export const GET: APIRoute = async ({ site, url }) => {
-	const settings = await getSiteSettings();
-	const siteUrl = new URL(settings.url || site?.href || url.origin);
-	const { siteTitle, siteTagline } = resolveBlogSiteIdentity(settings);
-
-	const { entries: posts, error } = await getEmDashCollection("posts", {
-		orderBy: { published_at: "desc" },
-		limit: 20,
-	});
-	if (error) {
+export const GET: APIRoute = async ({ cache, site, url }) => {
+	const [settingsResult, postsResult] = await Promise.all([
+		getSiteSettingsWithCacheHint(),
+		getEmDashCollection("posts", {
+			orderBy: { published_at: "desc" },
+			limit: 20,
+		}),
+	]);
+	if (postsResult.error) {
 		return new Response("Feed temporarily unavailable", {
 			status: 503,
 			headers: { "Cache-Control": "no-store" },
 		});
 	}
+	if (cache.enabled) {
+		cache.set(settingsResult.cacheHint);
+		cache.set(postsResult.cacheHint);
+	}
 
-	const items = posts
-		.map((post) => {
-			const date = publicationDate(post.data);
-			if (!date) return null;
-			const pubDate = date.toUTCString();
+	const settings = settingsResult.data;
+	const siteUrl = new URL(settings.url || site?.href || url.origin);
+	const { siteTitle, siteTagline } = resolveBlogSiteIdentity(settings);
 
-			const postUrl = new URL(`/posts/${post.id}`, siteUrl).href;
-			const title = escapeXml(post.data.title || "Untitled");
-			const description = escapeXml(post.data.excerpt || "");
+	const items: RSSFeedItem[] = [];
+	for (const post of postsResult.entries) {
+		const item = postToFeedItem(post, siteUrl);
+		if (item) items.push(item);
+	}
 
-			return `    <item>
-      <title>${title}</title>
-      <link>${postUrl}</link>
-      <guid isPermaLink="true">${postUrl}</guid>
-      <pubDate>${pubDate}</pubDate>
-      <description>${description}</description>
-    </item>`;
-		})
-		.filter(Boolean)
-		.join("\n");
-
-	const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>${escapeXml(siteTitle)}</title>
-    <description>${escapeXml(siteTagline)}</description>
-	<link>${siteUrl.href}</link>
-	<atom:link href="${new URL("/rss.xml", siteUrl).href}" rel="self" type="application/rss+xml"/>
-    <language>en-us</language>
-    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-${items}
-  </channel>
-</rss>`;
+	const rss = await getRssString({
+		title: siteTitle,
+		description: siteTagline,
+		site: siteUrl,
+		trailingSlash: false,
+		customData: `<language>en-us</language><atom:link href="${escapeMarkup(new URL("/rss.xml", siteUrl).href)}" rel="self" type="application/rss+xml"/>`,
+		xmlns: {
+			atom: "http://www.w3.org/2005/Atom",
+			dc: "http://purl.org/dc/elements/1.1/",
+		},
+		items,
+	});
 
 	return new Response(rss, {
 		headers: {
@@ -61,19 +55,3 @@ ${items}
 		},
 	});
 };
-
-const XML_ESCAPE_PATTERNS = [
-	[/&/g, "&amp;"],
-	[/</g, "&lt;"],
-	[/>/g, "&gt;"],
-	[/"/g, "&quot;"],
-	[/'/g, "&apos;"],
-] as const;
-
-function escapeXml(str: string): string {
-	let result = str;
-	for (const [pattern, replacement] of XML_ESCAPE_PATTERNS) {
-		result = result.replace(pattern, replacement);
-	}
-	return result;
-}
