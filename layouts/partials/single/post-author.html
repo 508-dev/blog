@@ -1,0 +1,13 @@
+{{- /* Override of FixIt's post-author: bigger avatar, initials fallback, data/authors.toml lookup. */ -}}
+{{- $author := partial "custom/author.html" .Params.author -}}
+{{- .Store.Set "author" $author -}}
+{{- $name := $author.name | default "Anonymous" -}}
+{{- $avatar := partial "custom/avatar.html" (dict "author" $author "size" 28) -}}
+<span class="post-author">
+  {{- if $author.link -}}
+    <a href="{{ $author.link }}" title="{{ T "single.author" }}" target="_blank" rel="external nofollow noopener noreferrer author" class="author">{{ $avatar }}<span class="author-name">{{ $name }}</span></a>
+  {{- else -}}
+    <span class="author">{{ $avatar }}<span class="author-name">{{ $name }}</span></span>
+  {{- end -}}
+</span>
+{{- /* EOF */ -}}

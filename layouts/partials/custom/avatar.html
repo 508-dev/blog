@@ -1,0 +1,20 @@
+{{- /*
+  Round author avatar. Falls back to colored initials when no photo is set.
+  @param {Map} .author resolved author map (see custom/author.html)
+  @param {Int} .size   pixel size (default 32)
+*/ -}}
+{{- $a := .author -}}
+{{- $size := .size | default 32 -}}
+{{- $name := $a.name | default "508.dev" -}}
+{{- with $a.avatar -}}
+  <img class="b-avatar" src="{{ . | relURL }}" alt="" width="{{ $size }}" height="{{ $size }}" loading="lazy" decoding="async">
+{{- else -}}
+  {{- $parts := split (trim $name " ") " " -}}
+  {{- $initials := substr (index $parts 0) 0 1 -}}
+  {{- if gt (len $parts) 1 -}}
+    {{- $initials = printf "%s%s" $initials (substr (index $parts (sub (len $parts) 1)) 0 1) -}}
+  {{- end -}}
+  {{- $palette := slice "#772418" "#a8432b" "#9a5b0e" "#1c6670" "#5b3a6b" "#4f6b2e" -}}
+  {{- $bg := index $palette (mod (hash.FNV32a $name) (len $palette)) -}}
+  <span class="b-avatar b-avatar-initials" style="--b-avatar-bg: {{ $bg | safeCSS }}; --b-avatar-size: {{ $size }}px" aria-hidden="true">{{ upper $initials }}</span>
+{{- end -}}

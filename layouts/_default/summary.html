@@ -1,0 +1,66 @@
+{{- /*
+  Post card for the home page and list pages.
+  Override of FixIt's summary.html: title, readable summary, then a byline with
+  the author's face, date and reading time, plus a few tag pills.
+*/ -}}
+{{- $params := .Params | merge .Site.Params.page -}}
+{{- $author := partial "custom/author.html" .Params.author -}}
+
+<article class="single summary" itemscope itemtype="http://schema.org/Article">
+  {{- /* Featured image (kept from FixIt) */ -}}
+  {{- $image := $params.featuredimagepreview | default $params.featuredimage -}}
+  {{- with dict "Path" $image "Resources" .Resources | partial "function/resource.html" }}
+    {{- $image = .RelPermalink }}
+  {{- end }}
+  {{- with .Resources.GetMatch "featured-image" -}}
+    {{- $image = .RelPermalink -}}
+  {{- end -}}
+  {{- with .Resources.GetMatch "featured-image-preview" -}}
+    {{- $image = .RelPermalink -}}
+  {{- end -}}
+  {{- with $image -}}
+    <div class="featured-image-preview">
+      <a href="{{ $.RelPermalink }}" aria-label="{{ $.Title }}" tabindex="-1">
+        {{- $optim := slice
+          (dict "Process" "fill 800x240 Center webp q75" "descriptor" "800w")
+          (dict "Process" "fill 1200x360 Center webp q75" "descriptor" "1200w")
+          (dict "Process" "fill 1600x480 Center webp q75" "descriptor" "1600w")
+        -}}
+        {{- dict "Src" . "Title" $.Title "Resources" $.Resources "Loading" "lazy" "Width" "800" "Height" "240" "Sizes" "(max-width: 680px) 100vw, 800px" "OptimConfig" $optim "Alt" (printf "Featured image for %v" $.Title) | partial "plugin/image.html" -}}
+      </a>
+    </div>
+  {{- end -}}
+
+  <h2 class="single-title" itemprop="name headline">
+    {{- with $params.weight -}}
+      <span title="{{ T "single.pin" }}" class="icon-pin">{{- dict "Class" "fa-solid fa-thumbtack fa-fw" | partial "plugin/icon.html" -}}</span>
+    {{- end -}}
+    <a href="{{ .RelPermalink }}">{{ cond (.Param "capitalizeTitles") (title .Title) .Title }}</a>
+  </h2>
+
+  {{- $summary := .Summary | plainify | htmlUnescape | strings.TrimSpace -}}
+  {{- if not $summary }}{{ $summary = .Description }}{{ end -}}
+  {{- with $summary -}}
+    <p class="content">{{ . | truncate 280 }}</p>
+  {{- end -}}
+
+  <div class="post-footer">
+    <div class="b-byline">
+      {{- partial "custom/avatar.html" (dict "author" $author "size" 36) -}}
+      <span class="b-byline-text">
+        <span class="b-byline-name">{{ $author.name | default "508.dev" }}</span>
+        <span class="b-byline-meta">
+          <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate | time.Format ":date_medium" }}</time>
+          <span aria-hidden="true"> · </span>{{ .ReadingTime }} min read
+        </span>
+      </span>
+    </div>
+    {{- with first 3 (.GetTerms "tags") -}}
+      <div class="post-tags">
+        {{- range . -}}
+          <a href="{{ .RelPermalink }}" class="post-tag">{{ .LinkTitle }}</a>
+        {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+</article>
