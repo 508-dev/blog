@@ -1,0 +1,35 @@
+name: Check Markdown submissions
+
+on:
+  pull_request:
+    paths:
+      - 'submissions/**'
+      - 'prototype/scripts/**'
+      - 'prototype/package.json'
+      - 'prototype/pnpm-lock.yaml'
+      - 'prototype/pnpm-workspace.yaml'
+      - 'static/images/**'
+      - '.github/workflows/submissions.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: prototype
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: corepack enable
+      - run: corepack pnpm install --frozen-lockfile
+      - run: corepack pnpm submission:check
+      - run: corepack pnpm submission:test
