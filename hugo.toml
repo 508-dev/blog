@@ -339,7 +339,7 @@ enableEmoji = true
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
   # NEW date format
-  dateFormat = "2006-01-02"
+  dateFormat = "Jan 2, 2006"
   # website images for Open Graph and Twitter Cards
   images = ["508logo.png"]
   # FixIt 0.2.12 | NEW enable PWA
@@ -390,8 +390,8 @@ enableEmoji = true
     tileColor = "#da532c"
     # FixIt 0.2.12 | CHANGED Android browser theme color
     [params.app.themeColor]
-      light = "#f8f8f8"
-      dark = "#252627"
+      light = "#fbf7f2"
+      dark = "#1a1311"
 
   # Search config
   [params.search]
@@ -770,7 +770,8 @@ enableEmoji = true
 
   # Custom partials injected by the FixIt theme (paths relative to layouts/partials/)
   [params.customPartials]
-    head = ["custom/goatcounter.html"]
+    head = ["custom/goatcounter.html", "custom/fonts.html"]
+    footer = ["custom/footer.html"]
 
   # Cookie consent config
   [params.cookieconsent]
@@ -897,7 +898,7 @@ enableEmoji = true
     # FixIt 0.2.17 | NEW whether to enable wordCount
     wordCount = false
     # FixIt 0.2.17 | NEW whether to enable readingTime
-    readingTime = false
+    readingTime = true
     # FixIt 0.2.17 | NEW end of post flag
     endFlag = ""
     # FixIt 0.2.18 | NEW whether to enable instant.page

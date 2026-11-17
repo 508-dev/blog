@@ -1,0 +1,7 @@
+# Author registry. If a post's front matter only gives `author: "Name"` (or
+# leaves avatar/link empty), these values fill the gaps. Front matter wins.
+# Avatars: square, ~192px, under static/avatars/.
+
+["Caleb Rogers"]
+  link = "https://calebjay.com"
+  avatar = "/avatars/caleb-rogers.jpg"

@@ -1,0 +1,16 @@
+{{- /*
+  Resolve a post's author, then fill in a missing avatar/link from data/authors.toml.
+  This lets a post just say `author: "Name"` and still show that person's face.
+  @param {String|Map} . the front matter author value
+  @returns {Map}
+*/ -}}
+{{- $author := partial "function/get-author-map.html" . -}}
+{{- with index (site.Data.authors | default dict) $author.name -}}
+  {{- if and (not $author.avatar) .avatar -}}
+    {{- $author = merge $author (dict "avatar" .avatar) -}}
+  {{- end -}}
+  {{- if and (not $author.link) .link -}}
+    {{- $author = merge $author (dict "link" .link) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $author -}}

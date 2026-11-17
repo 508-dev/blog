@@ -1,0 +1,68 @@
+// ==============================
+// 508.dev "warm paper" palette
+// Overrides FixIt's SCSS variables. Structural styling lives in _custom.scss.
+// Colors are derived from 508.dev (oxblood #772418, blush #EEE5E9, teal #92DCE5).
+// All text colors below meet WCAG AA (4.5:1) against their background.
+// ==============================
+
+// Type
+$global-font-size: 16px;
+$global-line-height: 1.6rem;
+$global-border-radius: 8px;
+$header-title-font-family: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+$code-font-family: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace;
+
+// Surfaces & ink
+$global-background-color: #fbf7f2;
+$global-background-color-dark: #1a1311;
+$global-font-color: #241815;
+$global-font-color-dark: #eadfd7;
+$global-font-secondary-color: #6e5b54;
+$global-font-secondary-color-dark: #a8968d;
+$global-border-color: #ebe1d7;
+$global-border-color-dark: #33271f;
+
+// Links (UI chrome vs. in-article)
+$global-link-color: #241815;
+$global-link-color-dark: #eadfd7;
+$global-link-hover-color: #9a2f1f;
+$global-link-hover-color-dark: #f2937a;
+$single-link-color: #9a2f1f;
+$single-link-color-dark: #f2937a;
+$single-link-hover-color: #b5442a;
+$single-link-hover-color-dark: #ffb59e;
+
+// Header & menu
+$header-background-color: #fbf7f2;
+$header-background-color-dark: #1a1311;
+$menu-active-color: #9a2f1f;
+$menu-active-color-dark: #f2937a;
+$menu-border-color: #e6dace;
+$menu-border-color-dark: #33271f;
+
+// Misc chrome
+$selection-color: rgba(146, 220, 229, 0.5);
+$selection-color-dark: rgba(146, 220, 229, 0.3);
+$scrollbar-color: #cdbcb0;
+$scrollbar-hover-color: #9c887d;
+$pagination-link-color: #6e5b54;
+$pagination-link-color-dark: #a8968d;
+$pagination-link-hover-color: #9a2f1f;
+$pagination-link-hover-color-dark: #f2937a;
+$blockquote-color: #54433d;
+$blockquote-color-dark: #cdbdb4;
+$table-background-color: #fffdfa;
+$table-background-color-dark: #201814;
+$table-thead-color: #f3ebe2;
+$table-thead-color-dark: #2a201b;
+
+// Code
+$code-color: #2e211c;
+$code-color-dark: #e3d6ce;
+$code-background-color: #f4ece4;
+$code-background-color-dark: #241b17;
+$code-hightlight-color: #fcefc7;
+$code-info-color: #8a766e;
+$code-info-color-dark: #a8968d;
+
+$theme-colors: map-merge($theme-colors, ('primary': #9a2f1f));
