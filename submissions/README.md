@@ -13,13 +13,17 @@ available for manual import; it does not publish or import it automatically.
    will have the public URL `/posts/hello-508` when published. Use at most 63
    lowercase letters, digits, and single hyphens. Keep the slug stable.
 3. Write standard Markdown. Headings, paragraphs, emphasis, links, lists, quotes,
-   fenced code, simple pipe tables, and images on their own lines are supported. HTML, MDX, and Hugo shortcodes
+   fenced code, simple pipe tables, and images on their own lines are supported.
+   Links can use HTTP(S), `mailto:`, `/site-path`, or `#anchor` targets.
+   HTML, MDX, and Hugo shortcodes
    are outside this prototype's supported format. No date or publication-status
    field is accepted; the CMS controls publication and its date.
 4. Optionally add images under `static/images/submissions/<slug>/`, and use
    `![Description](/images/submissions/<slug>/image.png)`. HTTPS image URLs also
    work, but remain dependent on that external host. Images are not downloaded
-   into the CMS media library. Keep committed image files when archiving an
+   into the CMS media library. Local files must be PNG, JPEG, GIF, or WebP with
+   matching file headers; SVG is outside this prototype's supported formats.
+   Keep committed image files when archiving an
    imported submission so its published links remain working.
 5. Open a PR containing the post and its images. The submission check validates
    the format; a maintainer reviews the content and attribution before merging.

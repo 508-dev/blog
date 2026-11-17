@@ -19,7 +19,9 @@ let sequence = 0;
 
 before(async () => {
   mkdirSync(join(staticDirectory, "images"), { recursive: true });
-  writeFileSync(join(staticDirectory, "images/diagram.png"), "test image");
+  writeFileSync(join(staticDirectory, "images/diagram.png"), Buffer.from(
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/ZioAAAAASUVORK5CYII=", "base64",
+  ));
   const db = new Kysely({ dialect: createDialect({ url: `file:${baseline}` }) });
   try {
     await runMigrations(db);
@@ -80,6 +82,26 @@ test("local and HTTPS images are supported without downloading or accepting file
   assert.throws(() => submission(`${template}\n![Relative](../diagram.png)\n`));
   symlinkSync(baseline, join(staticDirectory, "images/escape.png"));
   assert.throws(() => submission(`${template}\n![Escape](/images/escape.png)\n`), /outside static/);
+  copyFileSync(join(staticDirectory, "images/diagram.png"), join(staticDirectory, "outside.png"));
+  assert.throws(() => submission(`${template}\n![Traversal](/images/../outside.png)\n`), /outside static\/images/);
+  symlinkSync(join(staticDirectory, "outside.png"), join(staticDirectory, "images/inside-static.png"));
+  assert.throws(() => submission(`${template}\n![Symlink](/images/inside-static.png)\n`), /outside static\/images/);
+  writeFileSync(join(staticDirectory, "images/fake.png"), "text disguised as an image");
+  assert.throws(() => submission(`${template}\n![Fake](/images/fake.png)\n`), /file header/);
+  writeFileSync(join(staticDirectory, "images/diagram.svg"), '<svg xmlns="http://www.w3.org/2000/svg"/>');
+  assert.throws(() => submission(`${template}\n![SVG](/images/diagram.svg)\n`), /PNG, JPEG, GIF, or WebP/);
+});
+
+test("supported link targets pass and unsafe schemes fail before draft creation", () => {
+  for (const href of ["https://508.dev", "http://example.com", "mailto:hello@508.dev", "/posts/hello", "#a-section"]) {
+    const blocks = submission(`${template}\n[Link](${href})\n`).seed.content.posts[0].data.content;
+    assert.ok(blocks.at(-1).markDefs.some((mark) => mark.href === href));
+  }
+  for (const href of ["javascript:alert", "JaVaScRiPt:alert", "data:text/html,test", "vbscript:test", "//example.com", "/\\example.com", "java\tscript:alert"]) {
+    assert.throws(() => submission(`${template}\n[Link](${href})\n`), /link target/i);
+  }
+  const nestedBlock = { _type: "table", rows: [{ cells: [{ markDefs: [{ _type: "link", href: "javascript:alert" }] }] }] };
+  assert.throws(() => submission(`${template}\n<!--ec:block ${JSON.stringify(nestedBlock)} -->\n`), /Unsupported link target/);
 });
 
 test("Markdown tables, code and emphasis survive the shared conversion", () => {
@@ -132,6 +154,30 @@ test("an existing CMS slug is refused without overwriting it", async () => {
   const path = database();
   await assert.rejects(importSubmission(submission(template.replaceAll("your-post-slug", "existing-cms-post"), "existing-cms-post"), path, { apply: true }), /already exists/);
   assert.equal(query(path, (db) => db.prepare("SELECT title FROM ec_posts").get().title), "CMS only");
+});
+
+test("existing byline and terms are reused without replacing CMS names or labels", async () => {
+  const path = database();
+  const source = submission();
+  const db = new Kysely({ dialect: createDialect({ url: `file:${path}` }) });
+  try {
+    await applySeed(db, {
+      version: "1", bylines: source.seed.bylines, taxonomies: source.seed.taxonomies,
+    }, { includeContent: true });
+  } finally { await db.destroy(); }
+  const before = query(path, (db) => {
+    db.exec("UPDATE _emdash_bylines SET display_name = 'Name maintained in CMS'; UPDATE taxonomies SET label = 'Label maintained in CMS'");
+    return { bylines: db.prepare("SELECT * FROM _emdash_bylines ORDER BY id").all(), terms: db.prepare("SELECT * FROM taxonomies ORDER BY id").all() };
+  });
+  const result = await importSubmission(source, path, { apply: true });
+  query(path, (db) => {
+    assert.deepEqual(db.prepare("SELECT * FROM _emdash_bylines ORDER BY id").all(), before.bylines);
+    assert.deepEqual(db.prepare("SELECT * FROM taxonomies ORDER BY id").all(), before.terms);
+    assert.equal(db.prepare("SELECT byline_id FROM _emdash_content_bylines WHERE content_id = ?").get(result.id).byline_id, before.bylines[0].id);
+    const post = db.prepare("SELECT translation_group FROM ec_posts WHERE id = ?").get(result.id);
+    const links = db.prepare("SELECT taxonomy_id FROM content_taxonomies WHERE entry_id = ? ORDER BY taxonomy_id").all(post.translation_group);
+    assert.deepEqual(links.map((link) => link.taxonomy_id).sort(), before.terms.map((term) => term.translation_group).sort());
+  });
 });
 
 test("an import failure rolls back its post, byline, taxonomy terms and receipt", async () => {
