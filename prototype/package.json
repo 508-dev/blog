@@ -8,6 +8,9 @@
   },
   "scripts": {
     "seed:generate": "node scripts/generate-seed.mjs",
+    "submission:check": "node scripts/import-submission.mjs --check",
+    "submission:import": "node scripts/import-submission.mjs",
+    "submission:test": "node --test scripts/submission.test.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -20,6 +23,7 @@
     "@emdash-cms/auth": "1.1.0",
     "astro": "^7.3.2",
     "emdash": "1.1.0",
+    "kysely": "0.29.6",
     "openid-client": "6.8.8",
     "react": "19.2.4",
     "react-dom": "19.2.4"
