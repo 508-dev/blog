@@ -1,6 +1,7 @@
 # Submit a post through GitHub
 
-Occasional contributors can submit Markdown through a pull request without an
+Add posts as `submissions/<slug>.md` at the repository root. Occasional
+contributors can submit Markdown through a pull request without an
 EmDash account. Editors can also write directly in EmDash. A merge makes a file
 available for manual import; it does not publish or import it automatically.
 

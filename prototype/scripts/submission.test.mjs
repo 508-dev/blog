@@ -14,7 +14,7 @@ import { readSubmission } from "./lib/submission.mjs";
 const scratch = mkdtempSync(join(tmpdir(), "emdash-submissions-test-"));
 const staticDirectory = join(scratch, "static");
 const baseline = join(scratch, "baseline.db");
-const template = readFileSync(new URL("../submissions/_template.md", import.meta.url), "utf8");
+const template = readFileSync(new URL("../../submissions/_template.md", import.meta.url), "utf8");
 let sequence = 0;
 
 before(async () => {

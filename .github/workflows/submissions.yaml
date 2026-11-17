@@ -3,7 +3,7 @@ name: Check Markdown submissions
 on:
   pull_request:
     paths:
-      - 'prototype/submissions/**'
+      - 'submissions/**'
       - 'prototype/scripts/**'
       - 'prototype/package.json'
       - 'prototype/pnpm-lock.yaml'

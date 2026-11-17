@@ -90,7 +90,7 @@ async function main() {
     console.log("Usage: node scripts/import-submission.mjs --check\n       node scripts/import-submission.mjs <slug> [--database path] [--apply]\nWithout --apply, only reads and previews. Imports are always drafts.");
     return;
   }
-  const directory = join(project, "submissions");
+  const directory = resolve(project, "../submissions");
   const staticDirectory = resolve(project, "../static");
   if (values.check) {
     if (positionals.length || values.apply || values.database) throw new Error("--check takes no slug, --apply, or --database");

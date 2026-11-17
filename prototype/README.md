@@ -4,7 +4,7 @@ This is an isolated CMS prototype for the 508.dev blog. The current Hugo site an
 
 ## Local development
 
-For occasional contributors, [Markdown submissions](submissions/README.md) provide
+For occasional contributors, [Markdown submissions](../submissions/README.md) provide
 a PR workflow alongside the CMS editor. Approved files are manually imported as
 drafts; subsequent CMS edits are preserved on repeated imports.
 

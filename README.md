@@ -16,7 +16,7 @@ This blog is hosted on Github Pages. Upon a merge to the `main` branch, a Github
 
 ## Writing a Blog Post
 
-For the EmDash preview, you can also [submit Markdown through a GitHub PR](prototype/submissions/README.md).
+For the EmDash preview, you can also [submit Markdown through a GitHub PR](submissions/README.md).
 An editor manually imports an approved submission as a CMS draft after merge.
 The Hugo publishing workflow below remains available for the current static site.
 
